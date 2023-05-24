@@ -12,26 +12,29 @@ jobs:
     name: Release
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v2
-
-      - name: Setup Node.js 16.x
-        uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
         with:
-          node-version: 16.x
+          fetch-depth: 0
+          persist-credentials: false
 
-      - name: Install Dependencies
-        run: yarn
+      - uses: ./.github/actions/setup
 
-      - name: Create Release Pull Request or Publish to npm
+      - name: Install
+        run: pnpm install
+
+      - name: Creating .npmrc
+        run: |
+          cat << EOF > "$HOME/.npmrc"
+            //npm.pkg.github.com/:_authToken=$PAT
+          EOF
+        env:
+          PAT: ${{ secrets.PAT }}
+
+      - name: Create Release Pull Request
         id: changesets
         uses: changesets/action@v1
-        with:
-          # This expects you to have a script called release which does a build for your packages and calls changeset publish
-          publish: yarn release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       - name: Send a Slack notification if a publish happens
         if: steps.changesets.outputs.published == 'true'
