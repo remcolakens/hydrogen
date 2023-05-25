@@ -1,0 +1,9 @@
+{
+  "name": "@code-internet-applications/tsconfig",
+  "version": "0.0.0",
+  "private": true,
+  "license": "MIT",
+  "publishConfig": {
+    "code-internet-applications:registry": "https://npm.pkg.github.com"
+  }
+}
