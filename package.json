@@ -1,22 +1,29 @@
 {
-  "private": true,
-  "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev --no-cache --continue",
-    "lint": "turbo run lint",
-    "typecheck": "turbo run typecheck",
-    "clean": "turbo run clean && rm -rf node_modules",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "changeset": "changeset",
-    "version-packages": "changeset version",
-    "release": "turbo run build --filter=docs^... && changeset publish"
-  },
-  "devDependencies": {
-    "@changesets/cli": "^2.25.2",
-    "eslint": "^8.29.0",
-    "@code-internet-applications/eslint-config-code": "workspace:*",
-    "prettier": "^2.8.0",
-    "turbo": "latest"
-  },
-  "packageManager": "pnpm@7.15.0"
+	"name": "cbt-hydrogen",
+	"description": "🚀 Hydrogen's Code Base Theme: Simple, Modular & Accessible components and best practices for Shopify's headless commerce, providing a solid foundation.",
+	"author": "Code Internet Applications <info@code.nl>",
+	"private": true,
+	"scripts": {
+		"preinstall": "npx only-allow pnpm",
+		"build": "turbo run build",
+		"dev": "turbo run dev --no-cache --continue",
+		"lint": "turbo run lint",
+		"typecheck": "turbo run typecheck",
+		"clean": "turbo run clean && rm -rf node_modules",
+		"format": "prettier --write \"**/*.{ts,tsx,md}\"",
+		"changeset": "changeset",
+		"version-packages": "changeset version",
+		"release": "turbo run build --filter=docs^... && changeset publish"
+	},
+	"devDependencies": {
+		"@changesets/cli": "^2.25.2",
+		"eslint": "^8.41.0",
+		"@code-internet-applications/eslint-config-code": "workspace:*",
+		"prettier": "^2.8.8",
+		"turbo": "^1.9.9"
+	},
+	"engines": {
+		"node": ">=v18.16.0"
+	},
+	"packageManager": "pnpm@8.5.1"
 }
