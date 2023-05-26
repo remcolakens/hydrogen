@@ -1,4 +1,4 @@
-import * as React from 'react';
+import * as React from "react";
 
 /**
  * On the server, React emits a warning when calling `useLayoutEffect`.
@@ -8,8 +8,6 @@ import * as React from 'react';
  * See: https://reactjs.org/docs/hooks-reference.html#uselayouteffect
  */
 const useIsomorphicLayoutEffect =
-  typeof window !== 'undefined'
-    ? React.useLayoutEffect
-    : () => undefined;
+  typeof window !== "undefined" ? React.useLayoutEffect : () => undefined;
 
 export { useIsomorphicLayoutEffect };
