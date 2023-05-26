@@ -66,6 +66,8 @@ importers:
         specifier: ^2.9.15
         version: 2.9.15
 
+  packages/config: {}
+
   packages/core:
     devDependencies:
       '@code-internet-applications/tsconfig':
