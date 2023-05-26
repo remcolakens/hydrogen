@@ -25,6 +25,7 @@ jobs:
       - name: Creating .npmrc
         run: |
           cat << EOF > "$HOME/.npmrc"
+            @code-internet-applications:registry = https://npm.pkg.github.com
             //npm.pkg.github.com/:_authToken=$PAT
           EOF
         env:
@@ -33,10 +34,17 @@ jobs:
       - name: Create Release Pull Request
         id: changesets
         uses: changesets/action@v1
+        with:
+          publish: pnpm release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Send a Slack notification if a publish happens
         if: steps.changesets.outputs.published == 'true'
-        # You can do something when a publish happens.
-        run: my-slack-bot send-notification --message "A new version of ${GITHUB_REPOSITORY} was published!"
+        id: slack
+        uses: slackapi/slack-github-action@v1.24.0
+        with:
+          channel-id: 'headless-updates'
+          slack-message: "🎉 A new version of cbt-hydrogen has been published! 🚀, \n \n To access the latest release, visit: https://github.com/code-internet-applications/cbt-hydrogen/ \n \n Stay updated and happy coding! 💻"
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
