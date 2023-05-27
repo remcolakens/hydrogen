@@ -17,9 +17,9 @@ _Upload here a screenshot of your change (visual changes only)_
 ## Checklist
 
 - [ ] My code follows the style guidelines of this project
-- [ ] I have performed a self-review of my own code
-- [ ] I have commented my code, particularly in hard-to-understand areas
-- [ ] I have made corresponding changes to the documentation
-- [ ] I have tested my code for breaking changes and added the corresponding
+- [ ] I've performed a self-review of my own code
+- [ ] I've added a changeset if this PR contains user-facing or noteworthy changes
+- [ ] I've commented my code, particularly in hard-to-understand areas
+- [ ] I've made corresponding changes to the documentation
+- [ ] I've tested my code for breaking changes and added the corresponding
       footer in this PR if needed
-- [ ] I have added tests that prove my fix is effective or that my feature works

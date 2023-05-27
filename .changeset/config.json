@@ -1,10 +1,14 @@
 {
-  "$schema": "https://unpkg.com/@changesets/config@2.0.0/schema.json",
-  "changelog": "@changesets/cli/changelog",
-  "commit": false,
-  "fixed": [],
-  "linked": [],
-  "access": "public",
-  "updateInternalDependencies": "patch",
-  "ignore": ["@code-internet-applications/docs"]
+	"$schema": "https://unpkg.com/@changesets/config@2.0.0/schema.json",
+	"changelog": [
+		"@changesets/changelog-github",
+		{ "repo": "code-internet-applications/cbt-hydrogen" }
+	],
+	"commit": false,
+	"fixed": [],
+	"linked": [],
+	"access": "public",
+	"baseBranch": "main",
+	"updateInternalDependencies": "patch",
+	"ignore": ["@code-internet-applications/docs"]
 }
