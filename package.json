@@ -1,7 +1,4 @@
 {
-	"name": "cbt-hydrogen",
-	"description": "🚀 Hydrogen's Code Base Theme: Simple, Modular & Accessible components and best practices for Shopify's headless commerce, providing a solid foundation.",
-	"author": "Code Internet Applications <info@code.nl>",
 	"private": true,
 	"scripts": {
 		"preinstall": "npx only-allow pnpm",
