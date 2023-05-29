@@ -1,9 +1,9 @@
 {
 	"name": "@code-internet-applications/tsconfig",
+	"version": "0.0.0",
 	"description": "Shareable TypeScript config",
 	"author": "Code Internet Applications <info@code.nl>",
 	"repository": "https://github.com/code-internet-applications/cbt-hydrogen",
-	"version": "0.0.0",
 	"main": "tsconfig.json",
 	"files": [
 		"tsconfig.json"
