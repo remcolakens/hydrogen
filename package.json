@@ -1,4 +1,6 @@
 {
+	"name": "cbt-hydrogen",
+	"author": "Code Internet Applications <info@code.nl>",
 	"private": true,
 	"scripts": {
 		"preinstall": "npx only-allow pnpm",
@@ -14,10 +16,13 @@
 		"release": "turbo run build --filter=docs^... && changeset publish"
 	},
 	"devDependencies": {
-		"@changesets/cli": "^2.25.2",
-		"eslint": "^8.41.0",
+		"@changesets/changelog-github": "^0.4.8",
+		"@changesets/cli": "^2.26.1",
 		"@code-internet-applications/eslint-config-code": "workspace:*",
+		"@code-internet-applications/tsconfig": "workspace:*",
+		"eslint": "^8.41.0",
 		"prettier": "^2.8.8",
+		"tsup": "^6.7.0",
 		"turbo": "^1.9.9"
 	},
 	"engines": {
