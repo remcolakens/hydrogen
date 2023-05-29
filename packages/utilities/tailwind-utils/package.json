@@ -1,0 +1,25 @@
+{
+	"name": "@code-internet-applications/tailwind-utils",
+	"version": "0.0.0",
+	"description": "A utility library designed to help you with building custom storefronts",
+	"author": "Code Internet Applications <info@code.nl>",
+	"repository": "https://github.com/code-internet-applications/cbt-hydrogen",
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"sideEffects": false,
+	"files": [
+		"dist/**"
+	],
+	"scripts": {
+		"build": "tsup src/index.ts --format esm,cjs --dts --external react",
+		"dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react",
+		"typecheck": "tsc --noEmit",
+		"lint": "eslint \"src/**/*.ts*\"",
+		"clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+	},
+	"dependencies": {
+		"clsx": "^1.2.1",
+		"tailwind-merge": "^1.12.0"
+	}
+}
