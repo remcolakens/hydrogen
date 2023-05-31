@@ -5,10 +5,6 @@
 			"outputs": ["dist/**", "storybook-static/**"],
 			"dependsOn": ["^build"]
 		},
-		"build:core": {
-			"outputs": ["dist/**"],
-			"dependsOn": ["^build:core"]
-		},
 		"test": {
 			"outputs": ["coverage/**"],
 			"dependsOn": []
