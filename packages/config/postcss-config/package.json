@@ -1,0 +1,19 @@
+{
+	"name": "@code-internet-applications/postcss-config",
+	"version": "0.0.0",
+	"description": "Shareable Postcss config",
+	"author": "Code Internet Applications <info@code.nl>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/code-internet-applications/cbt-hydrogen",
+		"directory": "packages/config/postcss-config"
+	},
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"scripts": {
+		"build": "tsup src/index.ts --format esm,cjs",
+		"dev": "tsup src/index.ts --format esm,cjs --watch",
+		"clean": "rimraf .turbo node_modules dist"
+	}
+}
