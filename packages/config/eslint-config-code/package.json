@@ -3,7 +3,11 @@
 	"version": "0.0.0",
 	"description": "Shareable ESLint config",
 	"author": "Code Internet Applications <info@code.nl>",
-	"repository": "https://github.com/code-internet-applications/cbt-hydrogen",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/code-internet-applications/cbt-hydrogen",
+		"directory": "packages/config/eslint-config-code"
+	},
 	"main": ".eslintrc.json",
 	"files": [
 		".eslintrc.json"
