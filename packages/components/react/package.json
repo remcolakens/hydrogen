@@ -1,0 +1,43 @@
+{
+	"name": "@code-internet-applications/react",
+	"version": "0.0.0",
+	"description": "The React component library of the Code Base Theme",
+	"author": "Code Internet Applications <info@code.nl>",
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"sideEffects": false,
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/code-internet-applications/cbt-hydrogen",
+		"directory": "packages/components/react"
+	},
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup src/index.ts",
+		"dev": "tsup src/index.ts --watch",
+		"clean": "rimraf dist .turbo node_modules",
+		"typecheck": "tsc --noEmit",
+		"lint": "eslint \"src/**/*.ts*\""
+	},
+	"tsup": {
+		"dts": true,
+		"clean": true,
+		"target": "es2019",
+		"format": [
+			"cjs",
+			"esm"
+		]
+	},
+	"dependencies": {
+		"@code-internet-applications/accordion": "workspace:*"
+	},
+	"devDependencies": {
+		"react": "^18.2.0"
+	},
+	"peerDependencies": {
+		"react": ">=18"
+	}
+}

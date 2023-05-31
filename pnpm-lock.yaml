@@ -120,6 +120,20 @@ importers:
       lucide-react:
         specifier: ^0.229.0
         version: 0.229.0(react@18.2.0)
+    devDependencies:
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+
+  packages/components/react:
+    dependencies:
+      '@code-internet-applications/accordion':
+        specifier: workspace:*
+        version: link:../accordion
+    devDependencies:
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
 
   packages/config/eslint-config-code:
     dependencies:
