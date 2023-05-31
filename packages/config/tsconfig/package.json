@@ -3,7 +3,11 @@
 	"version": "0.0.0",
 	"description": "Shareable TypeScript config",
 	"author": "Code Internet Applications <info@code.nl>",
-	"repository": "https://github.com/code-internet-applications/cbt-hydrogen",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/code-internet-applications/tsconfig",
+		"directory": "packages/config/tsconfig"
+	},
 	"main": "tsconfig.json",
 	"files": [
 		"tsconfig.json"
