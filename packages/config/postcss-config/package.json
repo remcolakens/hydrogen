@@ -19,9 +19,6 @@
 	"tsup": {
 		"clean": true,
 		"target": "es2019",
-		"external": [
-			"react"
-		],
 		"format": [
 			"cjs",
 			"esm"
