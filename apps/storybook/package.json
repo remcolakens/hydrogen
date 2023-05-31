@@ -1,0 +1,30 @@
+{
+	"name": "@code-internet-applications/storybook",
+	"author": "Code Internet Applications <info@code.nl>",
+	"private": true,
+	"description": "The storybook libray for the Code Base Theme",
+	"scripts": {
+		"dev": "storybook dev -p 6006",
+		"build": "storybook build",
+		"clean": "rimraf dist .turbo node_modules"
+	},
+	"devDependencies": {
+		"@code-internet-applications/accordion": "workspace:*",
+		"@code-internet-applications/postcss-config": "workspace:*",
+		"@code-internet-applications/tailwind-config": "workspace:*",
+		"@storybook/addon-essentials": "^7.0.18",
+		"@storybook/addon-interactions": "^7.0.18",
+		"@storybook/addon-links": "^7.0.18",
+		"@storybook/blocks": "^7.0.18",
+		"@storybook/react": "^7.0.18",
+		"@storybook/react-vite": "^7.0.18",
+		"@storybook/testing-library": "^0.0.14-next.2",
+		"autoprefixer": "^10.4.14",
+		"prop-types": "^15.8.1",
+		"storybook": "^7.0.18",
+		"vite": "^4.3.9"
+	},
+	"dependencies": {
+		"tailwindcss": "^3.3.2"
+	}
+}

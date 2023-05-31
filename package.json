@@ -9,19 +9,21 @@
 		"lint:eslint": "turbo run lint",
 		"lint:typecheck": "turbo run typecheck",
 		"lint": "pnpm lint:typecheck && pnpm lint:eslint",
-		"clean": "turbo run clean && rm -rf node_modules",
+		"clean": "turbo run clean && rimraf node_modules",
 		"format": "prettier --write \"**/*.{ts,tsx,md}\"",
 		"changeset": "changeset",
 		"version-packages": "changeset version",
-		"release": "turbo run build --filter=docs^... && changeset publish"
+		"release": "turbo run build --filter=storybook^... && changeset publish"
 	},
 	"devDependencies": {
 		"@changesets/changelog-github": "^0.4.8",
 		"@changesets/cli": "^2.26.1",
 		"@code-internet-applications/eslint-config-code": "workspace:*",
+		"@code-internet-applications/tailwind-config": "workspace:^",
 		"@code-internet-applications/tsconfig": "workspace:*",
 		"eslint": "^8.41.0",
 		"prettier": "^2.8.8",
+		"rimraf": "^5.0.1",
 		"tsup": "^6.7.0",
 		"turbo": "^1.9.9",
 		"typescript": "^5.0.4"
@@ -29,5 +31,12 @@
 	"engines": {
 		"node": ">=v18.16.0"
 	},
-	"packageManager": "pnpm@8.5.1"
+	"packageManager": "pnpm@8.5.1",
+	"dependencies": {
+		"@types/react": "^18.2.7",
+		"@types/react-dom": "^18.2.4",
+		"react": "^18.2.0",
+		"react-dom": "^18.2.0",
+		"tailwindcss": "^3.3.2"
+	}
 }
