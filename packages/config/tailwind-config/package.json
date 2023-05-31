@@ -1,0 +1,15 @@
+{
+	"name": "@code-internet-applications/tailwind-config",
+	"version": "0.0.0",
+	"description": "Shareable Tailwind config",
+	"author": "Code Internet Applications <info@code.nl>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/code-internet-applications/cbt-hydrogen",
+		"directory": "packages/config/tailwind-config"
+	},
+	"main": "tailwind.config.ts",
+	"devDependencies": {
+		"tailwindcss-animate": "^1.0.5"
+	}
+}
