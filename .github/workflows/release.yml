@@ -19,9 +19,6 @@ jobs:
 
       - uses: ./.github/actions/setup
 
-      - name: Install
-        run: pnpm install
-
       - name: Creating .npmrc
         run: |
           cat << EOF > "$HOME/.npmrc"

@@ -12,8 +12,9 @@
 		"dist/**"
 	],
 	"scripts": {
-		"build": "tsup src/index.ts --format esm,cjs --dts --external react",
-		"dev": "tsup src/index.ts --format esm,cjs --watch --dts --external react",
+		"build": "tsup src/index.ts",
+		"build:core": "tsup src/index.ts",
+		"dev": "tsup src/index.ts --watch",
 		"typecheck": "tsc --noEmit",
 		"lint": "eslint \"src/**/*.ts*\"",
 		"clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
@@ -21,5 +22,17 @@
 	"dependencies": {
 		"clsx": "^1.2.1",
 		"tailwind-merge": "^1.12.0"
+	},
+	"tsup": {
+		"dts": true,
+		"clean": true,
+		"target": "es2019",
+		"external": [
+			"react"
+		],
+		"format": [
+			"cjs",
+			"esm"
+		]
 	}
 }
