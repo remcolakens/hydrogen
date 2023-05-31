@@ -9,7 +9,6 @@
 		"clean": "rimraf dist .turbo node_modules"
 	},
 	"devDependencies": {
-		"@code-internet-applications/accordion": "workspace:*",
 		"@code-internet-applications/postcss-config": "workspace:*",
 		"@code-internet-applications/tailwind-config": "workspace:*",
 		"@code-internet-applications/tsconfig": "workspace:^",
@@ -19,9 +18,7 @@
 		"@storybook/blocks": "^7.0.18",
 		"@storybook/react": "^7.0.18",
 		"@storybook/react-vite": "^7.0.18",
-		"@storybook/testing-library": "^0.1.0",
 		"autoprefixer": "^10.4.14",
-		"prop-types": "^15.8.1",
 		"storybook": "^7.0.18",
 		"vite": "^4.3.9"
 	}
