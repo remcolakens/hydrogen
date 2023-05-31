@@ -5,8 +5,6 @@ import {
 	AccordionTrigger,
 } from '@code-internet-applications/accordion';
 
-import * as React from 'react';
-
 export default {
 	title: 'Components / Accordion',
 };
