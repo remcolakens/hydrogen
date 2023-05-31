@@ -26,7 +26,7 @@
 		"@code-internet-applications/tailwind-utils": "workspace:*",
 		"@radix-ui/react-accordion": "^1.1.2",
 		"class-variance-authority": "^0.6.0",
-		"lucide-react": "^0.224.0"
+		"lucide-react": "^0.229.0"
 	},
 	"tsup": {
 		"dts": true,
