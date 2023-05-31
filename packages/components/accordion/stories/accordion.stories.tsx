@@ -3,7 +3,7 @@ import {
 	AccordionContent,
 	AccordionItem,
 	AccordionTrigger,
-} from '@code-internet-applications/accordion';
+} from '../src/accordion';
 
 export default {
 	title: 'Components / Accordion',

@@ -22,22 +22,25 @@
 		"typecheck": "tsc --noEmit",
 		"lint": "eslint \"src/**/*.ts*\""
 	},
+	"tsup": {
+		"dts": true,
+		"clean": true,
+		"target": "es2019",
+		"format": [
+			"cjs",
+			"esm"
+		]
+	},
 	"dependencies": {
 		"@code-internet-applications/tailwind-utils": "workspace:*",
 		"@radix-ui/react-accordion": "^1.1.2",
 		"class-variance-authority": "^0.6.0",
 		"lucide-react": "^0.229.0"
 	},
-	"tsup": {
-		"dts": true,
-		"clean": true,
-		"target": "es2019",
-		"external": [
-			"react"
-		],
-		"format": [
-			"cjs",
-			"esm"
-		]
+	"devDependencies": {
+		"react": "^18.2.0"
+	},
+	"peerDependencies": {
+		"react": ">=18"
 	}
 }
