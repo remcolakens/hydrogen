@@ -59,10 +59,6 @@ importers:
         version: 5.0.4
 
   apps/storybook:
-    dependencies:
-      tailwindcss:
-        specifier: ^3.3.2
-        version: 3.3.2
     devDependencies:
       '@code-internet-applications/accordion':
         specifier: workspace:*

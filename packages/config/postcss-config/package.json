@@ -12,8 +12,19 @@
 	"module": "./dist/index.mjs",
 	"types": "./dist/index.d.ts",
 	"scripts": {
-		"build": "tsup src/index.ts --format esm,cjs",
-		"dev": "tsup src/index.ts --format esm,cjs --watch",
+		"build": "tsup src/index.ts",
+		"dev": "tsup src/index.ts --watch",
 		"clean": "rimraf .turbo node_modules dist"
+	},
+	"tsup": {
+		"clean": true,
+		"target": "es2019",
+		"external": [
+			"react"
+		],
+		"format": [
+			"cjs",
+			"esm"
+		]
 	}
 }

@@ -23,8 +23,5 @@
 		"prop-types": "^15.8.1",
 		"storybook": "^7.0.18",
 		"vite": "^4.3.9"
-	},
-	"dependencies": {
-		"tailwindcss": "^3.3.2"
 	}
 }
