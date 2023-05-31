@@ -2,4 +2,4 @@
 '@code-internet-applications/accordion': minor
 ---
 
-Add basic accordion component
+Add initial directory and basic accordion component
