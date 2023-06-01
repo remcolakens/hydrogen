@@ -3,6 +3,7 @@
 	"author": "Code Internet Applications <info@code.nl>",
 	"private": true,
 	"scripts": {
+		"prepare": "husky install",
 		"preinstall": "npx only-allow pnpm",
 		"build": "turbo run build",
 		"build:core": "turbo run build --filter='./packages/*/*'",
@@ -21,24 +22,26 @@
 		"@changesets/changelog-github": "^0.4.8",
 		"@changesets/cli": "^2.26.1",
 		"@code-internet-applications/eslint-config-code": "workspace:*",
-		"@code-internet-applications/tailwind-config": "workspace:^",
+		"@code-internet-applications/tailwind-config": "workspace:*",
 		"@code-internet-applications/tsconfig": "workspace:*",
 		"eslint": "^8.41.0",
+		"husky": "^8.0.3",
+		"lint-staged": "^13.2.2",
 		"prettier": "^2.8.8",
 		"rimraf": "^5.0.1",
 		"tsup": "^6.7.0",
 		"turbo": "^1.10.0",
 		"typescript": "^5.0.4"
 	},
-	"engines": {
-		"node": ">=v18.16.0"
-	},
-	"packageManager": "pnpm@8.6.0",
 	"dependencies": {
 		"@types/react": "^18.2.7",
 		"@types/react-dom": "^18.2.4",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
 		"tailwindcss": "^3.3.2"
-	}
+	},
+	"engines": {
+		"node": ">=v18.x"
+	},
+	"packageManager": "pnpm@8.6.0"
 }
