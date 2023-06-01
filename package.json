@@ -11,7 +11,8 @@
 		"lint:typecheck": "turbo run typecheck",
 		"lint": "pnpm lint:typecheck && pnpm lint:eslint",
 		"clean": "turbo run clean && rimraf node_modules",
-		"format": "prettier --write \"**/*.{ts,tsx,md}\"",
+		"format:check": "prettier --check **/* --cache",
+		"format:write": "prettier --write **/* --cache",
 		"changeset": "changeset",
 		"version-packages": "changeset version",
 		"release": "turbo run build --filter=storybook^... && changeset publish"

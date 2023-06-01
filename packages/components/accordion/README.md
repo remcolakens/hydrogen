@@ -1,6 +1,7 @@
 # @code-internet-applications/accordion
 
-An accordion is a vertically stacked set of interactive headings that each contain a title or content snippet representing a section of content.
+An accordion is a vertically stacked set of interactive headings that each
+contain a title or content snippet representing a section of content.
 
 ## Installation
 
@@ -26,7 +27,7 @@ import {
 - `AccordionItem`: manages the state for a single accordion item.
 - `AccordionButton`: the trigger to open/close an accordion item.
 - `AccordionPanel`: the main content area for the accordion item.
--
+
 ## Usage
 
 ```
@@ -49,11 +50,15 @@ import {
 
 ## Contribution
 
-See the [contributing guidelines](https://github.com/code-internet-applications/cbt-hydrogen/blob/main/CONTRIBUTING.md) for more details.
+See the
+[contributing guidelines](https://github.com/code-internet-applications/cbt-hydrogen/blob/main/CONTRIBUTING.md)
+for more details.
 
 ## Troubleshooting
 
-To ensure that you can access the packages from the GitHub package registry, make sure to add the following line to your `.npmrc` file in the root directory of your project:
+To ensure that you can access the packages from the GitHub package registry,
+make sure to add the following line to your `.npmrc` file in the root directory
+of your project:
 
 ```
 @code-internet-applications:registry=https://npm.pkg.github.com

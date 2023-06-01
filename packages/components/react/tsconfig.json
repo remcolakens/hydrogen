@@ -1,5 +1,5 @@
 {
-  "extends": "@code-internet-applications/tsconfig",
-  "include": ["src", "stories", "index.ts"],
-  "exclude": ["dist", "build", "node_modules"]
+	"extends": "@code-internet-applications/tsconfig",
+	"include": ["src", "stories", "index.ts"],
+	"exclude": ["dist", "build", "node_modules"]
 }

@@ -4,6 +4,7 @@ coverage
 .next
 build
 public
+storybook-static
 
 **/dist/**
 **/__tmp__/**
