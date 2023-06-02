@@ -1,5 +1,6 @@
 {
 	"$schema": "https://turbo.build/schema.json",
+	"globalEnv": ["NODE_ENV", "HYDROGEN_ASSET_BASE_URL"],
 	"pipeline": {
 		"build": {
 			"outputs": ["dist/**", "storybook-static/**"],

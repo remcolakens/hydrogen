@@ -12,9 +12,7 @@ const storyTitle = 'Accordion';
 const StoryComponent = () => (
 	<Accordion type="single" collapsible className="w-full">
 		<AccordionItem value="item-1">
-			<AccordionTrigger className="bg-yellow-100">
-				Is it accessible?
-			</AccordionTrigger>
+			<AccordionTrigger>Is it accessible?</AccordionTrigger>
 			<AccordionContent>
 				Yes. It adheres to the WAI-ARIA design pattern.
 			</AccordionContent>
@@ -38,7 +36,7 @@ const StoryComponent = () => (
 const storyJSX = `
 <Accordion type="single" collapsible className="w-full">
 	<AccordionItem value="item-1">
-		<AccordionTrigger className="bg-red-500">
+		<AccordionTrigger>
 			Is it accessible?
 		</AccordionTrigger>
 		<AccordionContent>

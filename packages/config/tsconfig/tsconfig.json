@@ -17,8 +17,10 @@
 		"removeComments": true,
 		"allowSyntheticDefaultImports": true,
 		"forceConsistentCasingInFileNames": true,
-		"noEmit": true
+		"noEmit": true,
+		"allowJs": true
 	},
 	"include": ["./**/*.d.ts", "./**/*.ts", "./**/*.tsx"],
 	"exclude": ["node_modules"]
 }
+

@@ -1,7 +1,5 @@
-import tailwindConfig from '@code-internet-applications/tailwind-config';
-
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-	presets: [tailwindConfig],
+	presets: [require('./packages/config/tailwind-config/tailwind.config')],
 	content: ['./packages/components/**/*.{js,ts,jsx,tsx,mdx}'],
 };
