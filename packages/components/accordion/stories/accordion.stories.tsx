@@ -12,7 +12,7 @@ const storyTitle = 'Accordion';
 const StoryComponent = () => (
 	<Accordion type="single" collapsible className="w-full">
 		<AccordionItem value="item-1">
-			<AccordionTrigger className="bg-red-500">
+			<AccordionTrigger className="bg-yellow-100">
 				Is it accessible?
 			</AccordionTrigger>
 			<AccordionContent>

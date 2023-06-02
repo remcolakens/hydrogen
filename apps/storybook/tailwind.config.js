@@ -1,6 +1,8 @@
-/** @type {import('tailwindcss').Config} */
+// import tailwindConfig from '../../packages/config/tailwind-config/tailwind.config';
+import tailwindConfig from '@code-internet-applications/tailwind-config';
 
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-	presets: [require('@code-internet-applications/tailwind-config')],
-	content: ['./**/*.{js,ts,jsx,tsx,mdx}'],
+	presets: [tailwindConfig],
+	content: ['../../packages/components/**/*.{js,ts,jsx,tsx,mdx}'],
 };

@@ -1,0 +1,5 @@
+{
+	"extends": "@code-internet-applications/tsconfig",
+	"include": ["."],
+	"exclude": ["dist", "build", "node_modules"]
+}

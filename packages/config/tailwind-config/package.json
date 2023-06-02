@@ -9,6 +9,9 @@
 		"directory": "packages/config/tailwind-config"
 	},
 	"main": "tailwind.config.ts",
+	"files": [
+		"tailwind.config.ts"
+	],
 	"devDependencies": {
 		"tailwindcss-animate": "^1.0.5"
 	}
