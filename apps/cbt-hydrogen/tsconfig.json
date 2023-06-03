@@ -1,22 +1,22 @@
 {
-  "extends": "@code-internet-applications/tsconfig",
-  "compilerOptions": {
-    "baseUrl": ".",
-    "types": ["@shopify/oxygen-workers-types", "node"],
-    "paths": {
-      "~/*": ["app/*"]
-    },
-    "noEmit": true,
-    "allowJs": true,
-    "forceConsistentCasingInFileNames": true,
-    "lib": ["DOM", "DOM.Iterable", "ES2019"],
-    "strict": true,
-    "target": "ES2019",
-    "esModuleInterop": true,
-    "isolatedModules": true,
-    "jsx": "react-jsx",
-    "resolveJsonModule": true,
-    "moduleResolution": "node"
-  },
-  "include": ["remix.env.d.ts", "**/*.ts", "**/*.tsx", "."]
+	"extends": "@code-internet-applications/tsconfig",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"types": ["@shopify/oxygen-workers-types", "node"],
+		"paths": {
+			"~/*": ["app/*"]
+		},
+		"noEmit": true,
+		"allowJs": true,
+		"forceConsistentCasingInFileNames": true,
+		"lib": ["DOM", "DOM.Iterable", "ES2019"],
+		"strict": true,
+		"target": "ES2019",
+		"esModuleInterop": true,
+		"isolatedModules": true,
+		"jsx": "react-jsx",
+		"resolveJsonModule": true,
+		"moduleResolution": "node"
+	},
+	"include": ["remix.env.d.ts", "**/*.ts", "**/*.tsx", "."]
 }
