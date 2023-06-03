@@ -210,6 +210,10 @@ importers:
         version: 4.9.5
 
   apps/storybook:
+    dependencies:
+      tailwindcss:
+        specifier: ^3.3.2
+        version: 3.3.2(ts-node@10.9.1)
     devDependencies:
       '@code-internet-applications/postcss-config':
         specifier: workspace:*

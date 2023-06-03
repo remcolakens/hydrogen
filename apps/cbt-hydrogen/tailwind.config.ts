@@ -1,9 +1,10 @@
 import formsPlugin from '@tailwindcss/forms';
 import typographyPlugin from '@tailwindcss/typography';
 import type {Config} from 'tailwindcss';
+import {tailwindConfig} from '../../packages/config/tailwind-config/tailwind.config';
 
 export default {
-	presets: [require('../../packages/config/tailwind-config/tailwind.config')],
+	presets: [tailwindConfig],
 	content: [
 		'../../packages/**/**/*.{js,ts,jsx,tsx,mdx}',
 		'../../packages/**/**/**/*.{js,ts,jsx,tsx,mdx}',
