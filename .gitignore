@@ -54,3 +54,4 @@ test/traces
 .swc/
 .turbo
 .cache
+.eslintcache

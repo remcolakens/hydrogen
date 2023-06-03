@@ -1,0 +1,5 @@
+{
+	"*.{ts,tsx,js,jsx}": ["eslint --cache", "prettier --write"],
+
+	"*.{md,mdx,yml,json,babelrc,eslintrc,prettierrc}": ["prettier --write"]
+}
