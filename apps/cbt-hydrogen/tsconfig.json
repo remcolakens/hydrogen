@@ -2,7 +2,7 @@
   "extends": "@code-internet-applications/tsconfig",
   "compilerOptions": {
     "baseUrl": ".",
-    "types": ["@shopify/oxygen-workers-types"],
+    "types": ["@shopify/oxygen-workers-types", "node"],
     "paths": {
       "~/*": ["app/*"]
     },
@@ -18,5 +18,5 @@
     "resolveJsonModule": true,
     "moduleResolution": "node"
   },
-  "include": ["remix.env.d.ts", "**/*.ts", "**/*.tsx"]
+  "include": ["remix.env.d.ts", "**/*.ts", "**/*.tsx", "."]
 }

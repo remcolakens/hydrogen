@@ -1,7 +1,7 @@
 import formsPlugin from '@tailwindcss/forms';
 import typographyPlugin from '@tailwindcss/typography';
+import type {Config} from 'tailwindcss';
 
-/** @type {import('tailwindcss').Config} */
 export default {
 	presets: [require('../../packages/config/tailwind-config/tailwind.config')],
 	content: [
@@ -67,4 +67,4 @@ export default {
 		},
 	},
 	plugins: [formsPlugin, typographyPlugin],
-};
+} satisfies Config;
