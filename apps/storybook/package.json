@@ -4,7 +4,7 @@
 	"private": true,
 	"description": "The storybook libray for the Code Base Theme",
 	"scripts": {
-		"dev": "storybook dev -p 6006",
+		"dev": "storybook dev -p 6006 --no-open",
 		"build": "storybook build",
 		"clean": "rimraf dist .turbo node_modules"
 	},
