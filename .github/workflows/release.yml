@@ -48,9 +48,9 @@ jobs:
         with:
           channel-id: 'headless-updates'
           slack-message:
-            "Hey there! We've just released a new package for cbt-hydrogen!
-            🚀\n\n You can find all the details about this release by visiting:
-            https://github.com/code-internet-applications/cbt-hydrogen/releases\n\n
-            Stay up-to-date and happy coding! 💻"
+            "Hey there! I have just finished the new release for cbt-hydrogen!
+            🚀\n\nYou can find all the details about this release by visiting:
+            https://github.com/code-internet-applications/cbt-hydrogen/releases\n\nStay
+            up-to-date and happy coding! 💻"
         env:
           SLACK_BOT_TOKEN: ${{ secrets.SLACK_BOT_TOKEN }}
