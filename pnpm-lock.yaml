@@ -205,6 +205,9 @@ importers:
       '@code-internet-applications/postcss-config':
         specifier: workspace:*
         version: link:../../packages/config/postcss-config
+      '@code-internet-applications/tailwind-utils':
+        specifier: workspace:^
+        version: link:../../packages/utilities/tailwind-utils
       '@code-internet-applications/tsconfig':
         specifier: workspace:*
         version: link:../../packages/config/tsconfig
