@@ -51,7 +51,7 @@ importers:
         specifier: ^8.0.3
         version: 8.0.3
       inquirer:
-        specifier: '8'
+        specifier: 8.2.5
         version: 8.2.5
       lint-staged:
         specifier: ^13.2.2
