@@ -1,4 +1,4 @@
-export const defaultConfig = {
+export const postcssConfig = {
 	plugins: {
 		tailwindcss: {},
 		autoprefixer: {},

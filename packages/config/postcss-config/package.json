@@ -8,20 +8,8 @@
 		"url": "https://github.com/code-internet-applications/cbt-hydrogen",
 		"directory": "packages/config/postcss-config"
 	},
-	"main": "./dist/index.js",
-	"module": "./dist/index.mjs",
-	"types": "./dist/index.d.ts",
-	"scripts": {
-		"build": "tsup src/index.ts",
-		"dev": "tsup src/index.ts --watch",
-		"clean": "rimraf .turbo node_modules dist"
-	},
-	"tsup": {
-		"clean": true,
-		"target": "es2019",
-		"format": [
-			"cjs",
-			"esm"
-		]
-	}
+	"main": "postcss.config.ts",
+	"files": [
+		"postcss.config.ts"
+	]
 }
