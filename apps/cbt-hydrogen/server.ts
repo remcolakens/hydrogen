@@ -1,7 +1,8 @@
 // Virtual entry point for the app
 import * as remixBuild from '@remix-run/dev/server-build';
 import {createRequestHandler} from '@remix-run/server-runtime';
-import {createStorefrontClient} from '@shopify/hydrogen';
+import {createStorefrontClient, storefrontRedirect} from '@shopify/hydrogen';
+import {getStorefrontHeaders} from '@shopify/remix-oxygen';
 import {HydrogenSession} from '~/lib/session.server';
 
 /**
@@ -28,11 +29,12 @@ export default async function (request: Request): Promise<Response> {
 		env.PUBLIC_STOREFRONT_API_VERSION =
 			process.env.PUBLIC_STOREFRONT_API_VERSION;
 		env.PUBLIC_STORE_DOMAIN = process.env.PUBLIC_STORE_DOMAIN;
+
 		/**
 		 * Open a cache instance in the worker and a custom session instance.
 		 */
 		if (!env?.SESSION_SECRET) {
-			throw new Error('SESSION_SECRET process.environment variable is not set');
+			throw new Error('SESSION_SECRET environment variable is not set');
 		}
 
 		const [session] = await Promise.all([
@@ -48,12 +50,15 @@ export default async function (request: Request): Promise<Response> {
 			publicStorefrontToken: env.PUBLIC_STOREFRONT_API_TOKEN,
 			privateStorefrontToken: env.PRIVATE_STOREFRONT_API_TOKEN,
 			storeDomain: `https://${env.PUBLIC_STORE_DOMAIN}`,
-			storefrontApiVersion: env.PUBLIC_STOREFRONT_API_VERSION || '2023-01',
-			// storefrontId: process.env.PUBLIC_STOREFRONT_ID,
-			// requestGroupId: request.headers.get('request-id'),
+			storefrontApiVersion: env.PUBLIC_STOREFRONT_API_VERSION || '2023-04',
+			storefrontId: env.PUBLIC_STOREFRONT_ID,
+			storefrontHeaders: getStorefrontHeaders(request),
 		});
 
-		const handleRequest = createRequestHandler(remixBuild as any, 'production');
+		const handleRequest = createRequestHandler(
+			remixBuild as any,
+			process.env.NODE_ENV,
+		);
 
 		const response = await handleRequest(request, {
 			session,
@@ -68,7 +73,7 @@ export default async function (request: Request): Promise<Response> {
 			 * If the redirect doesn't exist, then `storefrontRedirect`
 			 * will pass through the 404 response.
 			 */
-			// return storefrontRedirect({request, response, storefront});
+			return storefrontRedirect({request, response, storefront});
 		}
 
 		return response;
