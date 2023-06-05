@@ -10,13 +10,16 @@ pnpm add @code-internet-applications/tailwind-config
 
 ## Usage
 
-To use the library, install it and then use the present in `tailwind.config.js`
+To use the library, install it and then use the present in `tailwind.config.ts`
 file as follows:
 
 ```
-module.exports = {
-	presets: [require('@code-internet-applications/tailwind-config')],
-};
+import type { Config } from 'tailwindcss';
+import { tailwindConfig } from '../../packages/config/tailwind-config/tailwind.config';
+
+export default {
+	presets: [tailwindConfig],
+} satisfies Config;
 
 ```
 

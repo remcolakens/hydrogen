@@ -15,7 +15,7 @@ file as follows:
 
 ```
 module.exports =
-	require('@code-internet-applications/postcss-config').defaultConfig;
+	require('@code-internet-applications/postcss-config').postcssConfig;
 ```
 
 ## Contribution
