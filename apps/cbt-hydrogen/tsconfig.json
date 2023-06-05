@@ -1,22 +1,25 @@
 {
-	"extends": "@code-internet-applications/tsconfig",
+	"include": ["./**/*.d.ts", "./**/*.ts", "./**/*.tsx"],
 	"compilerOptions": {
+		"lib": ["DOM", "DOM.Iterable", "ES2022"],
+		"isolatedModules": true,
+		"esModuleInterop": true,
+		"jsx": "react-jsx",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"target": "ES2022",
+		"strict": true,
+		"allowJs": true,
+		"forceConsistentCasingInFileNames": true,
+		"skipLibCheck": true,
 		"baseUrl": ".",
-		"types": ["@shopify/oxygen-workers-types", "node"],
+		"types": ["@shopify/oxygen-workers-types"],
 		"paths": {
 			"~/*": ["app/*"]
 		},
-		"noEmit": true,
-		"allowJs": true,
-		"forceConsistentCasingInFileNames": true,
-		"lib": ["DOM", "DOM.Iterable", "ES2019"],
-		"strict": true,
-		"target": "ES2019",
-		"esModuleInterop": true,
-		"isolatedModules": true,
-		"jsx": "react-jsx",
-		"resolveJsonModule": true,
-		"moduleResolution": "node"
-	},
-	"include": ["remix.env.d.ts", "**/*.ts", "**/*.tsx", "."]
+
+		// Remix takes care of building everything in `./app` with `remix build`.
+		// Wrangler takes care of building everything in `./worker` with `wrangler start` / `wrangler publish`.
+		"noEmit": true
+	}
 }
