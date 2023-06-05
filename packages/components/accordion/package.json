@@ -1,6 +1,6 @@
 {
 	"name": "@code-internet-applications/accordion",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "A simple and accessible accordion component",
 	"author": "Code Internet Applications <info@code.nl>",
 	"main": "dist/index.js",

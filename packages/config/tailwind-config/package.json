@@ -1,6 +1,6 @@
 {
 	"name": "@code-internet-applications/tailwind-config",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "Shareable Tailwind config",
 	"author": "Code Internet Applications <info@code.nl>",
 	"repository": {

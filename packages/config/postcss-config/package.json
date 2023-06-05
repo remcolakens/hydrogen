@@ -1,6 +1,6 @@
 {
 	"name": "@code-internet-applications/postcss-config",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "Shareable Postcss config",
 	"author": "Code Internet Applications <info@code.nl>",
 	"repository": {
