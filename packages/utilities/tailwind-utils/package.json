@@ -3,7 +3,11 @@
 	"version": "0.0.0",
 	"description": "A utility library designed to help you with building custom storefronts",
 	"author": "Code Internet Applications <info@code.nl>",
-	"repository": "https://github.com/code-internet-applications/cbt-hydrogen",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/code-internet-applications/cbt-hydrogen",
+		"directory": "packages/utilities/tailwind-utils"
+	},
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
 	"types": "./dist/index.d.ts",

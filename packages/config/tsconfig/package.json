@@ -5,7 +5,7 @@
 	"author": "Code Internet Applications <info@code.nl>",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/code-internet-applications/tsconfig",
+		"url": "https://github.com/code-internet-applications/cbt-hydrogen",
 		"directory": "packages/config/tsconfig"
 	},
 	"main": "tsconfig.json",
