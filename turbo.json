@@ -19,21 +19,14 @@
 			"outputs": ["dist/**"],
 			"dependsOn": ["^build"]
 		},
-		"test": {
-			"outputs": ["coverage/**"],
-			"dependsOn": []
+		"dev": {
+			"cache": false
 		},
 		"lint": {},
-		"dev": {
-			"cache": false,
-			"persistent": true
-		},
+		"clean": {},
 		"typecheck": {
 			"cache": false,
 			"dependsOn": ["^typecheck"]
-		},
-		"clean": {
-			"cache": false
 		}
 	}
 }

@@ -16,14 +16,13 @@
 		"dist"
 	],
 	"scripts": {
-		"build": "tsup src/index.ts",
+		"build": "tsup src/index.ts --dts",
 		"dev": "tsup src/index.ts --watch",
 		"clean": "rimraf dist .turbo node_modules",
 		"typecheck": "tsc --noEmit",
 		"lint": "eslint \"src/**/*.ts*\""
 	},
 	"tsup": {
-		"dts": true,
 		"clean": true,
 		"target": "es2019",
 		"format": [
