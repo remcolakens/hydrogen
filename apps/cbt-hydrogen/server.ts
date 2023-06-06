@@ -23,12 +23,14 @@ export default async function (request: Request): Promise<Response> {
 			PUBLIC_STORE_DOMAIN: '',
 			PUBLIC_STOREFRONT_ID: '',
 		};
-		env.SESSION_SECRET = process.env.SESSION_SECRET;
-		env.PUBLIC_STOREFRONT_API_TOKEN = process.env.PUBLIC_STOREFRONT_API_TOKEN;
-		env.PRIVATE_STOREFRONT_API_TOKEN = process.env.PRIVATE_STOREFRONT_API_TOKEN;
-		env.PUBLIC_STOREFRONT_API_VERSION =
-			process.env.PUBLIC_STOREFRONT_API_VERSION;
-		env.PUBLIC_STORE_DOMAIN = process.env.PUBLIC_STORE_DOMAIN;
+		env.SESSION_SECRET = process.env.SESSION_SECRET as string;
+		env.PUBLIC_STOREFRONT_API_TOKEN = process.env
+			.PUBLIC_STOREFRONT_API_TOKEN as string;
+		env.PRIVATE_STOREFRONT_API_TOKEN = process.env
+			.PRIVATE_STOREFRONT_API_TOKEN as string;
+		env.PUBLIC_STOREFRONT_API_VERSION = process.env
+			.PUBLIC_STOREFRONT_API_VERSION as string;
+		env.PUBLIC_STORE_DOMAIN = process.env.PUBLIC_STORE_DOMAIN as string;
 
 		/**
 		 * Open a cache instance in the worker and a custom session instance.
@@ -38,7 +40,7 @@ export default async function (request: Request): Promise<Response> {
 		}
 
 		const [session] = await Promise.all([
-			HydrogenSession.init(request, [process.env.SESSION_SECRET]),
+			HydrogenSession.init(request, [process.env.SESSION_SECRET as string]),
 		]);
 
 		/**

@@ -9,7 +9,7 @@ import {
 import type {Shop} from '@shopify/hydrogen/storefront-api-types';
 import {type LinksFunction, type LoaderArgs} from '@shopify/remix-oxygen';
 import favicon from '../public/favicon.svg';
-import styles from './styles/app.css';
+import styles from './styles/tailwind.css';
 
 export const links: LinksFunction = () => {
 	return [

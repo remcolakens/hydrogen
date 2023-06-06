@@ -2,7 +2,11 @@
 module.exports = {
 	appDirectory: 'app',
 	ignoredRouteFiles: ['**/.*'],
-	watchPaths: ['./public'],
+	watchPaths: [
+		'./public',
+		'../../packages/**/**/*.{js,ts,jsx,tsx,mdx}',
+		'../../packages/**/**/**/*.{js,ts,jsx,tsx,mdx}',
+	],
 	server:
 		process.env.NODE_ENV === 'development' ? './server-dev.ts' : './server.ts',
 	/**
@@ -18,6 +22,7 @@ module.exports = {
 	serverPlatform: 'neutral',
 	serverMinify: process.env.NODE_ENV === 'production',
 	future: {
+		unstable_tailwind: true,
 		v2_meta: true,
 		v2_errorBoundary: true,
 		v2_routeConvention: true,

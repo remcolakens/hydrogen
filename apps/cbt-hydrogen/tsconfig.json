@@ -1,4 +1,5 @@
 {
+	"extends": "@code-internet-applications/tsconfig",
 	"include": ["./**/*.d.ts", "./**/*.ts", "./**/*.tsx"],
 	"compilerOptions": {
 		"lib": ["DOM", "DOM.Iterable", "ES2022"],
@@ -13,7 +14,7 @@
 		"forceConsistentCasingInFileNames": true,
 		"skipLibCheck": true,
 		"baseUrl": ".",
-		"types": ["@shopify/oxygen-workers-types"],
+		"types": ["@shopify/oxygen-workers-types", "node"],
 		"paths": {
 			"~/*": ["app/*"]
 		},
