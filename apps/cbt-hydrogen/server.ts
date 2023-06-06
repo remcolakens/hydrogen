@@ -1,9 +1,9 @@
 // Virtual entry point for the app
 import * as remixBuild from '@remix-run/dev/server-build';
-import {createRequestHandler} from '@remix-run/server-runtime';
-import {createStorefrontClient, storefrontRedirect} from '@shopify/hydrogen';
-import {getStorefrontHeaders} from '@shopify/remix-oxygen';
-import {HydrogenSession} from '~/lib/session.server';
+import { createRequestHandler } from '@remix-run/server-runtime';
+import { createStorefrontClient, storefrontRedirect } from '@shopify/hydrogen';
+import { ServerBuild, getStorefrontHeaders } from '@shopify/remix-oxygen';
+import { HydrogenSession } from '~/lib/session.server';
 
 /**
  * Export a fetch handler in module format.
@@ -46,9 +46,9 @@ export default async function (request: Request): Promise<Response> {
 		/**
 		 * Create Hydrogen's Storefront client.
 		 */
-		const {storefront} = createStorefrontClient({
+		const { storefront } = createStorefrontClient({
 			buyerIp: request.headers.get('x-forwarded-for') ?? undefined,
-			i18n: {language: 'EN', country: 'US'},
+			i18n: { language: 'EN', country: 'US' },
 			publicStorefrontToken: env.PUBLIC_STOREFRONT_API_TOKEN,
 			privateStorefrontToken: env.PRIVATE_STOREFRONT_API_TOKEN,
 			storeDomain: `https://${env.PUBLIC_STORE_DOMAIN}`,
@@ -58,7 +58,7 @@ export default async function (request: Request): Promise<Response> {
 		});
 
 		const handleRequest = createRequestHandler(
-			remixBuild as any,
+			remixBuild as ServerBuild,
 			process.env.NODE_ENV,
 		);
 
@@ -75,13 +75,13 @@ export default async function (request: Request): Promise<Response> {
 			 * If the redirect doesn't exist, then `storefrontRedirect`
 			 * will pass through the 404 response.
 			 */
-			return storefrontRedirect({request, response, storefront});
+			return storefrontRedirect({ request, response, storefront });
 		}
 
 		return response;
 	} catch (error) {
 		// eslint-disable-next-line no-console
 		console.error(error);
-		return new Response('An unexpected error occurred', {status: 500});
+		return new Response('An unexpected error occurred', { status: 500 });
 	}
 }

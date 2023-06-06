@@ -6,14 +6,14 @@ import {
 	ScrollRestoration,
 	useLoaderData,
 } from '@remix-run/react';
-import type {Shop} from '@shopify/hydrogen/storefront-api-types';
-import {type LinksFunction, type LoaderArgs} from '@shopify/remix-oxygen';
+import type { Shop } from '@shopify/hydrogen/storefront-api-types';
+import { type LinksFunction, type LoaderArgs } from '@shopify/remix-oxygen';
 import favicon from '../public/favicon.svg';
 import styles from './styles/tailwind.css';
 
 export const links: LinksFunction = () => {
 	return [
-		{rel: 'stylesheet', href: styles},
+		{ rel: 'stylesheet', href: styles },
 		{
 			rel: 'preconnect',
 			href: 'https://cdn.shopify.com',
@@ -22,19 +22,21 @@ export const links: LinksFunction = () => {
 			rel: 'preconnect',
 			href: 'https://shop.app',
 		},
-		{rel: 'icon', type: 'image/svg+xml', href: favicon},
+		{ rel: 'icon', type: 'image/svg+xml', href: favicon },
 	];
 };
 
-export async function loader({context}: LoaderArgs) {
-	const layout = await context.storefront.query<{shop: Shop}>(LAYOUT_QUERY);
-	return {layout};
+export async function loader({ context }: LoaderArgs) {
+	const layout = await context.storefront.query<{ shop: Shop }>(LAYOUT_QUERY);
+	return { layout };
 }
 
 export default function App() {
 	const data = useLoaderData<typeof loader>();
 
-	const {name} = data.layout.shop;
+	const { name } = data.layout.shop;
+
+	console.log(name);
 
 	return (
 		<html lang="en">

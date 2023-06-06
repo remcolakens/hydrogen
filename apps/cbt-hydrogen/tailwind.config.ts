@@ -1,5 +1,5 @@
-import type {Config} from 'tailwindcss';
-import {tailwindConfig} from '../../packages/config/tailwind-config/tailwind.config';
+import type { Config } from 'tailwindcss';
+import { tailwindConfig } from '../../packages/config/tailwind-config/tailwind.config';
 
 export default {
 	presets: [tailwindConfig],
