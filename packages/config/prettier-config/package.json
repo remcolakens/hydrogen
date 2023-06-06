@@ -1,0 +1,16 @@
+{
+	"name": "@code-internet-applications/prettier-config",
+	"version": "0.0.0",
+	"sideEffects": false,
+	"description": "Shared prettier configuration",
+	"author": "Code Internet Applications <info@code.nl>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/code-internet-applications/cbt-hydrogen",
+		"directory": "packages/config/prettier-config"
+	},
+	"main": ".prettierrc.json",
+	"files": [
+		".prettierrc.json"
+	]
+}

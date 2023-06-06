@@ -17,6 +17,9 @@ importers:
       '@code-internet-applications/eslint-config-code':
         specifier: workspace:*
         version: link:packages/config/eslint-config-code
+      '@code-internet-applications/prettier-config':
+        specifier: workspace:*
+        version: link:packages/config/prettier-config
       '@code-internet-applications/tsconfig':
         specifier: workspace:*
         version: link:packages/config/tsconfig
@@ -91,13 +94,13 @@ importers:
         version: 1.15.0(react-dom@18.2.0)(react@18.2.0)
       '@shopify/cli':
         specifier: 3.45.0
-        version: registry.npmjs.org/@shopify/cli@3.45.0(@types/node@20.2.5)(typescript@5.1.3)
+        version: registry.npmjs.org/@shopify/cli@3.45.0(@types/node@20.2.5)(@types/react@18.2.8)(typescript@5.1.3)
       '@shopify/cli-hydrogen':
         specifier: ^4.2.1
-        version: registry.npmjs.org/@shopify/cli-hydrogen@4.2.1(@babel/core@7.22.1)(@remix-run/react@1.15.0)(@shopify/hydrogen-react@2023.4.3)(@shopify/remix-oxygen@1.0.7)(@types/node@20.2.5)(graphql@16.6.0)
+        version: registry.npmjs.org/@shopify/cli-hydrogen@4.2.1(@babel/core@7.22.1)(@remix-run/react@1.15.0)(@shopify/hydrogen-react@2023.4.3)(@shopify/remix-oxygen@1.0.7)(@types/node@20.2.5)(@types/react@18.2.8)(graphql@16.6.0)(ts-node@10.9.1)
       '@shopify/hydrogen':
         specifier: ^2023.4.3
-        version: registry.npmjs.org/@shopify/hydrogen@2023.4.3(@remix-run/react@1.15.0)(@remix-run/server-runtime@1.16.1)(react-dom@18.2.0)
+        version: registry.npmjs.org/@shopify/hydrogen@2023.4.3(@remix-run/react@1.15.0)(@remix-run/server-runtime@1.16.1)(@types/react@18.2.8)(react-dom@18.2.0)
       '@shopify/remix-oxygen':
         specifier: ^1.0.7
         version: registry.npmjs.org/@shopify/remix-oxygen@1.0.7(@shopify/oxygen-workers-types@3.17.2)
@@ -131,7 +134,7 @@ importers:
         version: link:../../packages/config/tsconfig
       '@remix-run/dev':
         specifier: 1.15.0
-        version: 1.15.0(@types/node@20.2.5)
+        version: 1.15.0(@types/node@20.2.5)(ts-node@10.9.1)
       '@shopify/oxygen-workers-types':
         specifier: ^3.17.2
         version: registry.npmjs.org/@shopify/oxygen-workers-types@3.17.2
@@ -237,6 +240,8 @@ importers:
         version: 7.32.2(eslint@8.42.0)
 
   packages/config/postcss-config: {}
+
+  packages/config/prettier-config: {}
 
   packages/config/tailwind-config:
     dependencies:
@@ -4919,7 +4924,7 @@ packages:
       react: 18.2.0
     dev: false
 
-  /@remix-run/dev@1.15.0(@types/node@20.2.5):
+  /@remix-run/dev@1.15.0(@types/node@20.2.5)(ts-node@10.9.1):
     resolution: {integrity: sha512-BsE1GN6WM9PhN+agZi4TqUIuYzoHYZrufEdXLg3ZEYxWXqvtRKUNfhsYSDlEhrW+D5fyVQhJrs61wQ83sEXHLQ==}
     engines: {node: '>=14'}
     hasBin: true
@@ -4967,7 +4972,7 @@ packages:
       ora: 5.4.1
       postcss: 8.4.24
       postcss-discard-duplicates: 5.1.0(postcss@8.4.24)
-      postcss-load-config: 4.0.1(postcss@8.4.24)
+      postcss-load-config: 4.0.1(postcss@8.4.24)(ts-node@10.9.1)
       postcss-modules: 6.0.0(postcss@8.4.24)
       prettier: 2.7.1
       pretty-ms: 7.0.1
@@ -6549,7 +6554,7 @@ packages:
     resolution: {integrity: sha512-p/zcvBMoU2ap5byMefLkR+AM+Eh99CU/SDEQeccgKlmFNOMDwphaRGqdk+emvel/SaGZ7Rf9sDvzAplLzLdEVQ==}
     dev: false
 
-  /@xstate/react@3.2.2(@xstate/fsm@2.0.0)(react@18.2.0):
+  /@xstate/react@3.2.2(@types/react@18.2.8)(@xstate/fsm@2.0.0)(react@18.2.0):
     resolution: {integrity: sha512-feghXWLedyq8JeL13yda3XnHPZKwYDN5HPBLykpLeuNpr9178tQd2/3d0NrH6gSd0sG5mLuLeuD+ck830fgzLQ==}
     peerDependencies:
       '@xstate/fsm': ^2.0.0
@@ -6563,7 +6568,7 @@ packages:
     dependencies:
       '@xstate/fsm': 2.0.0
       react: 18.2.0
-      use-isomorphic-layout-effect: 1.1.2(react@18.2.0)
+      use-isomorphic-layout-effect: 1.1.2(@types/react@18.2.8)(react@18.2.0)
       use-sync-external-store: 1.2.0(react@18.2.0)
     transitivePeerDependencies:
       - '@types/react'
@@ -10326,7 +10331,7 @@ packages:
   /ini@1.3.8:
     resolution: {integrity: sha512-JV/yugV2uzW5iMRSiZAyDtQd+nxtUnjeLt0acNdw98kKLrvuRVyB80tsREOE7yvGVgalhZ6RNXCmEHkUKBKxew==}
 
-  /ink@4.0.0(react@18.2.0):
+  /ink@4.0.0(@types/react@18.2.8)(react@18.2.0):
     resolution: {integrity: sha512-PmYgFfkTJYAxK+8pkvDghOTTLY5rAa58s7aLCd5lsiWBWxEil2f5VCjWP1I/7uLmgZDver/wXmVzF4sJhZvSIw==}
     engines: {node: '>=14.16'}
     peerDependencies:
@@ -10339,6 +10344,7 @@ packages:
       react-devtools-core:
         optional: true
     dependencies:
+      '@types/react': 18.2.8
       ansi-escapes: 6.0.0
       auto-bind: 5.0.1
       chalk: 5.2.0
@@ -12965,22 +12971,6 @@ packages:
       yaml: 1.10.2
     dev: true
 
-  /postcss-load-config@4.0.1(postcss@8.4.24):
-    resolution: {integrity: sha512-vEJIc8RdiBRu3oRAI0ymerOn+7rPuMvRXslTvZUKZonDHFIczxztIyJ1urxM1x9JXEikvpWWTUUqal5j/8QgvA==}
-    engines: {node: '>= 14'}
-    peerDependencies:
-      postcss: '>=8.0.9'
-      ts-node: '>=9.0.0'
-    peerDependenciesMeta:
-      postcss:
-        optional: true
-      ts-node:
-        optional: true
-    dependencies:
-      lilconfig: 2.1.0
-      postcss: 8.4.24
-      yaml: 2.3.1
-
   /postcss-load-config@4.0.1(postcss@8.4.24)(ts-node@10.9.1):
     resolution: {integrity: sha512-vEJIc8RdiBRu3oRAI0ymerOn+7rPuMvRXslTvZUKZonDHFIczxztIyJ1urxM1x9JXEikvpWWTUUqal5j/8QgvA==}
     engines: {node: '>= 14'}
@@ -15278,7 +15268,7 @@ packages:
     resolution: {integrity: sha512-Qp95D4TPJl1kC9SKigDcqgyM2VDVO4RiJc2d4qe5GrYm+zbIQCWWKAFaJNQ4BhdFeDGwBmAxqJBwWSJDb9T3BQ==}
     dev: false
 
-  /use-isomorphic-layout-effect@1.1.2(react@18.2.0):
+  /use-isomorphic-layout-effect@1.1.2(@types/react@18.2.8)(react@18.2.0):
     resolution: {integrity: sha512-49L8yCO3iGT/ZF9QttjwLF/ZD9Iwto5LnH5LmEdk/6cFmXddqi2ulF0edxTwjj+7mqvpVVGQWvbXZdn32wRSHA==}
     peerDependencies:
       '@types/react': '*'
@@ -15287,6 +15277,7 @@ packages:
       '@types/react':
         optional: true
     dependencies:
+      '@types/react': 18.2.8
       react: 18.2.0
     dev: false
 
@@ -15850,7 +15841,7 @@ packages:
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
-  registry.npmjs.org/@shopify/cli-hydrogen@4.2.1(@babel/core@7.22.1)(@remix-run/react@1.15.0)(@shopify/hydrogen-react@2023.4.3)(@shopify/remix-oxygen@1.0.7)(@types/node@20.2.5)(graphql@16.6.0):
+  registry.npmjs.org/@shopify/cli-hydrogen@4.2.1(@babel/core@7.22.1)(@remix-run/react@1.15.0)(@shopify/hydrogen-react@2023.4.3)(@shopify/remix-oxygen@1.0.7)(@types/node@20.2.5)(@types/react@18.2.8)(graphql@16.6.0)(ts-node@10.9.1):
     resolution: {integrity: sha512-VbLSw+BuJvNVc7hQ8Vo82X/Yt6neCwPlrYpbLK7Rafdu6c6VaejuV2gzoNNV84sLY6Zexo4WqzPZaTPidxTDbg==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@shopify/cli-hydrogen/-/cli-hydrogen-4.2.1.tgz}
     id: registry.npmjs.org/@shopify/cli-hydrogen/4.2.1
     name: '@shopify/cli-hydrogen'
@@ -15864,11 +15855,11 @@ packages:
     dependencies:
       '@graphql-codegen/cli': 3.3.1(@babel/core@7.22.1)(@types/node@20.2.5)(graphql@16.6.0)
       '@oclif/core': 2.1.4
-      '@remix-run/dev': 1.15.0(@types/node@20.2.5)
+      '@remix-run/dev': 1.15.0(@types/node@20.2.5)(ts-node@10.9.1)
       '@remix-run/react': 1.15.0(react-dom@18.2.0)(react@18.2.0)
-      '@shopify/cli-kit': registry.npmjs.org/@shopify/cli-kit@3.45.0
+      '@shopify/cli-kit': registry.npmjs.org/@shopify/cli-kit@3.45.0(@types/react@18.2.8)
       '@shopify/hydrogen-codegen': registry.npmjs.org/@shopify/hydrogen-codegen@0.0.1(graphql@16.6.0)
-      '@shopify/hydrogen-react': registry.npmjs.org/@shopify/hydrogen-react@2023.4.3(react-dom@18.2.0)(react@18.2.0)
+      '@shopify/hydrogen-react': registry.npmjs.org/@shopify/hydrogen-react@2023.4.3(@types/react@18.2.8)(react-dom@18.2.0)(react@18.2.0)
       '@shopify/mini-oxygen': registry.npmjs.org/@shopify/mini-oxygen@1.6.0
       '@shopify/remix-oxygen': registry.npmjs.org/@shopify/remix-oxygen@1.0.7(@shopify/oxygen-workers-types@3.17.2)
       ansi-colors: 4.1.3
@@ -15901,8 +15892,9 @@ packages:
       - utf-8-validate
     dev: false
 
-  registry.npmjs.org/@shopify/cli-kit@3.45.0:
+  registry.npmjs.org/@shopify/cli-kit@3.45.0(@types/react@18.2.8):
     resolution: {integrity: sha512-93b0OHFw2Hv/ryzV6KbgdxhGBORiDSuOtlTkdvLAxP7SeJs6fX99Ck6Hj4pB+gemo4cDI0GLCgryPqOPYWDzKw==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@shopify/cli-kit/-/cli-kit-3.45.0.tgz}
+    id: registry.npmjs.org/@shopify/cli-kit/3.45.0
     name: '@shopify/cli-kit'
     version: 3.45.0
     engines: {node: '>=14.17.0'}
@@ -15938,7 +15930,7 @@ packages:
       gradient-string: 2.0.2
       graphql: 16.4.0
       graphql-request: 5.2.0(graphql@16.4.0)
-      ink: 4.0.0(react@18.2.0)
+      ink: 4.0.0(@types/react@18.2.8)(react@18.2.0)
       is-interactive: 2.0.0
       js-yaml: 4.1.0
       kill-port-process: 3.1.0
@@ -15973,7 +15965,7 @@ packages:
       - utf-8-validate
     dev: false
 
-  registry.npmjs.org/@shopify/cli@3.45.0(@types/node@20.2.5)(typescript@5.1.3):
+  registry.npmjs.org/@shopify/cli@3.45.0(@types/node@20.2.5)(@types/react@18.2.8)(typescript@5.1.3):
     resolution: {integrity: sha512-RhhIWnd98PaWmF++iw8JWunsj6kkX6Ia1ajxhiXOPoulN3WkPhdfNN7MbCHCZZsnVLfjHt8iWouFPU4KkIz2DA==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@shopify/cli/-/cli-3.45.0.tgz}
     id: registry.npmjs.org/@shopify/cli/3.45.0
     name: '@shopify/cli'
@@ -15986,8 +15978,8 @@ packages:
       '@oclif/plugin-commands': 2.2.10(@types/node@20.2.5)(typescript@5.1.3)
       '@oclif/plugin-help': 5.2.6(@types/node@20.2.5)(typescript@5.1.3)
       '@oclif/plugin-plugins': 2.3.2
-      '@shopify/cli-kit': registry.npmjs.org/@shopify/cli-kit@3.45.0
-      '@shopify/plugin-did-you-mean': registry.npmjs.org/@shopify/plugin-did-you-mean@3.45.0
+      '@shopify/cli-kit': registry.npmjs.org/@shopify/cli-kit@3.45.0(@types/react@18.2.8)
+      '@shopify/plugin-did-you-mean': registry.npmjs.org/@shopify/plugin-did-you-mean@3.45.0(@types/react@18.2.8)
     transitivePeerDependencies:
       - '@swc/core'
       - '@swc/wasm'
@@ -16017,7 +16009,7 @@ packages:
       - supports-color
     dev: false
 
-  registry.npmjs.org/@shopify/hydrogen-react@2023.4.3(react-dom@18.2.0)(react@18.2.0):
+  registry.npmjs.org/@shopify/hydrogen-react@2023.4.3(@types/react@18.2.8)(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-b8dV+antvRmlhJOonMa5mX+tLbmw+Jgj6gidgfD8Awn5xI06YRKcyEb1UMuncEsy5d+yvWlAnIUCdIVHKHyvKw==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@shopify/hydrogen-react/-/hydrogen-react-2023.4.3.tgz}
     id: registry.npmjs.org/@shopify/hydrogen-react/2023.4.3
     name: '@shopify/hydrogen-react'
@@ -16029,7 +16021,7 @@ packages:
     dependencies:
       '@google/model-viewer': 1.12.1
       '@xstate/fsm': 2.0.0
-      '@xstate/react': 3.2.2(@xstate/fsm@2.0.0)(react@18.2.0)
+      '@xstate/react': 3.2.2(@types/react@18.2.8)(@xstate/fsm@2.0.0)(react@18.2.0)
       graphql: 16.6.0
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
@@ -16040,7 +16032,7 @@ packages:
       - xstate
     dev: false
 
-  registry.npmjs.org/@shopify/hydrogen@2023.4.3(@remix-run/react@1.15.0)(@remix-run/server-runtime@1.16.1)(react-dom@18.2.0):
+  registry.npmjs.org/@shopify/hydrogen@2023.4.3(@remix-run/react@1.15.0)(@remix-run/server-runtime@1.16.1)(@types/react@18.2.8)(react-dom@18.2.0):
     resolution: {integrity: sha512-Zhgm3y35NJmGvEmvBRKBLxfruupSsUuQtmIXue/kDLw+IdCCqGGW399leXs55lelZRoZ1LrZp/zCSP5Qe/5mGw==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@shopify/hydrogen/-/hydrogen-2023.4.3.tgz}
     id: registry.npmjs.org/@shopify/hydrogen/2023.4.3
     name: '@shopify/hydrogen'
@@ -16051,7 +16043,7 @@ packages:
     dependencies:
       '@remix-run/react': 1.15.0(react-dom@18.2.0)(react@18.2.0)
       '@remix-run/server-runtime': 1.16.1
-      '@shopify/hydrogen-react': registry.npmjs.org/@shopify/hydrogen-react@2023.4.3(react-dom@18.2.0)(react@18.2.0)
+      '@shopify/hydrogen-react': registry.npmjs.org/@shopify/hydrogen-react@2023.4.3(@types/react@18.2.8)(react-dom@18.2.0)(react@18.2.0)
       react: 18.2.0
     transitivePeerDependencies:
       - '@types/react'
@@ -16096,15 +16088,16 @@ packages:
     name: '@shopify/oxygen-workers-types'
     version: 3.17.2
 
-  registry.npmjs.org/@shopify/plugin-did-you-mean@3.45.0:
+  registry.npmjs.org/@shopify/plugin-did-you-mean@3.45.0(@types/react@18.2.8):
     resolution: {integrity: sha512-XAVz5UbFwlL+vfMWAISOt/DJpf5Ue6JiMOdcS/QbK6OqP6Un+JFSNeG5kJzmMzuYNhk72ibTFGEd5N1iL+krig==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@shopify/plugin-did-you-mean/-/plugin-did-you-mean-3.45.0.tgz}
+    id: registry.npmjs.org/@shopify/plugin-did-you-mean/3.45.0
     name: '@shopify/plugin-did-you-mean'
     version: 3.45.0
     engines: {node: '>=14.17.0'}
     os: [darwin, linux, win32]
     dependencies:
       '@oclif/core': 2.1.4
-      '@shopify/cli-kit': registry.npmjs.org/@shopify/cli-kit@3.45.0
+      '@shopify/cli-kit': registry.npmjs.org/@shopify/cli-kit@3.45.0(@types/react@18.2.8)
       n-gram: 2.0.2
     transitivePeerDependencies:
       - '@types/react'
