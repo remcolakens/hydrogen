@@ -5,6 +5,7 @@ coverage
 build
 public
 storybook-static
+*.hbs
 
 **/dist/**
 **/__tmp__/**

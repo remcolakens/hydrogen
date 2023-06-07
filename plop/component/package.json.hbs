@@ -1,0 +1,38 @@
+{
+	"name": "@code-internet-applications/{{dashCase componentName}}",
+	"version": "0.0.0",
+	"description": "{{description}}",
+	"author": "Code Internet Applications <info@code.nl>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/code-internet-applications/cbt-hydrogen",
+		"directory": "{{outDir}}/{{dashCase componentName}}"
+	},
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"sideEffects": false,
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup src/index.ts --dts",
+		"dev": "tsup src/index.ts --watch",
+		"clean": "rimraf .turbo node_modules dist",
+		"typecheck": "tsc --noEmit",
+		"lint": "eslint \"src/**/*.ts*\""
+	},
+	"tsup": {
+		"clean": true,
+		"target": "es2019",
+		"format": [
+			"cjs",
+			"esm"
+		]
+	},
+	"dependencies": {},
+	"devDependencies": {},
+	"engines": {
+		"node": ">=v18.16.0"
+	}
+}
