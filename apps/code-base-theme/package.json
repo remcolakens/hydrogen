@@ -1,13 +1,14 @@
 {
-	"name": "@code-internet-applications/code-base-theme-hydrogen",
+	"name": "@code-internet-applications/code-base-theme",
 	"author": "Code Internet Applications <info@code.nl>",
 	"private": true,
+	"description": "The repository for the Code Base Theme Hydrogen",
 	"sideEffects": false,
 	"scripts": {
 		"dev": "shopify hydrogen dev",
 		"build": "shopify hydrogen build",
-		"preview": "npm run build && shopify hydrogen preview",
 		"clean": "rimraf dist .turbo node_modules .cache",
+		"preview": "npm run build && shopify hydrogen preview",
 		"typecheck": "tsc --noEmit",
 		"lint": "eslint ."
 	},

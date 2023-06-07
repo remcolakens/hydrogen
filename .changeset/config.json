@@ -10,5 +10,8 @@
 	"access": "public",
 	"baseBranch": "main",
 	"updateInternalDependencies": "patch",
-	"ignore": ["@code-internet-applications/storybook"]
+	"ignore": [
+		"@code-internet-applications/storybook",
+		"@code-internet-applications/code-base-theme"
+	]
 }
