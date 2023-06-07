@@ -19,9 +19,6 @@ jobs:
 
       - uses: ./.github/actions/setup
 
-      - name: Build core
-        run: pnpm build:core
-
       - name: Creating .npmrc
         run: |
           cat << EOF > "$HOME/.npmrc"
