@@ -1,6 +1,6 @@
 {
 	"name": "@code-internet-applications/prettier-config",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"sideEffects": false,
 	"description": "Shared prettier configuration",
 	"author": "Code Internet Applications <info@code.nl>",
