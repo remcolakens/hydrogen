@@ -32,4 +32,10 @@ of your project:
 
 ```
 @code-internet-applications:registry=https://npm.pkg.github.com
+public-hoist-pattern[]=@code-internet-applications/*
+
+auto-install-peers=true
+strict-peer-dependencies=false
+enable-pre-post-scripts=true
+node-linker=hoisted
 ```

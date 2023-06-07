@@ -15,10 +15,14 @@ file as follows:
 
 ```
 import type { Config } from 'tailwindcss';
-import { tailwindConfig } from '../../packages/config/tailwind-config/tailwind.config';
+import { tailwindConfig } from '@code-internet-applications/tailwind-config';
 
 export default {
 	presets: [tailwindConfig],
+	  content: [
+    './app/**/*.{js,jsx,ts,tsx}',
+    './node_modules/@code-internet-applications/**/**/*.js',
+  ],
 } satisfies Config;
 
 ```
@@ -37,4 +41,10 @@ of your project:
 
 ```
 @code-internet-applications:registry=https://npm.pkg.github.com
+public-hoist-pattern[]=@code-internet-applications/*
+
+auto-install-peers=true
+strict-peer-dependencies=false
+enable-pre-post-scripts=true
+node-linker=hoisted
 ```
