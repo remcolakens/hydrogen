@@ -12,5 +12,9 @@
 	"main": ".prettierrc.json",
 	"files": [
 		".prettierrc.json"
-	]
+	],
+	"dependencies": {
+		"prettier-plugin-organize-imports": "^3.2.2",
+		"prettier-plugin-tailwindcss": "^0.3.0"
+	}
 }
