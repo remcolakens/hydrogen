@@ -6,5 +6,8 @@
 	"singleQuote": true,
 	"useTabs": true,
 	"tabWidth": 2,
-	"trailingComma": "all"
+	"trailingComma": "all",
+	"tailwindFunctions": ["clsx", "cva"],
+
+	"plugins": ["prettier-plugin-organize-imports", "prettier-plugin-tailwindcss"]
 }

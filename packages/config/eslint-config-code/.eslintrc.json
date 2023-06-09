@@ -23,6 +23,8 @@
 		"react/prop-types": "off",
 		"@typescript-eslint/no-empty-function": "off",
 		"react/react-in-jsx-scope": "off",
+		"no-extra-boolean-cast": "off",
+		"no-debugger": "warn",
 		"prettier/prettier": "error",
 		"@typescript-eslint/no-unused-vars": "error",
 		"@typescript-eslint/no-explicit-any": "error"

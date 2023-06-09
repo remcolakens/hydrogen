@@ -4,6 +4,9 @@
 		"formulahendry.auto-rename-tag",
 		"editorconfig.editorconfig",
 		"dbaeumer.vscode-eslint",
-		"esbenp.prettier-vscode"
+		"esbenp.prettier-vscode",
+		"streetsidesoftware.code-spell-checker",
+		"visualstudioexptteam.vscodeintellicode",
+		"bradlc.vscode-tailwindcss"
 	]
 }
