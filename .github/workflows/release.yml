@@ -1,11 +1,11 @@
-name: CI
+name: CD
 
 on:
   push:
     branches:
       - main
 
-concurrency: ${{ github.workflow }}-${{ github.ref }}
+concurrency: ${{ github.workflow }}-${{ github.ref }}-${{ github.event.number }}
 
 jobs:
   release:
