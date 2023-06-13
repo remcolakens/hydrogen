@@ -13,9 +13,6 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}-${{ github.event.number }}
   cancel-in-progress: true
 
-env:
-  GITHUB_COMMENT: ${{ github.event_name == 'pull_request' }}
-
 jobs:
   cbt-hydrogen:
     runs-on: ubuntu-latest
@@ -27,14 +24,28 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - uses: amondnet/vercel-action@v25
+      - name: Deploy preview
+        id: vercel-action-cbth-preview
+        if: github.event_name == 'pull_request'
+        uses: amondnet/vercel-action@v25
         with:
+          github-comment: true
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          github-comment: ${{ env.GITHUB_COMMENT }}
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
           scope: code-internet-applications
+
+      - name: Deploy production
+        id: vercel-action-cbth-prod
+        if: github.event_name == 'push'
+        uses: amondnet/vercel-action@v25
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_ID}}
+          scope: code-internet-applications
+          vercel-args: '--prod'
 
   cbt-storybook:
     runs-on: ubuntu-latest
@@ -46,11 +57,25 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - uses: amondnet/vercel-action@v25
+      - name: Deploy preview
+        id: vercel-action-storybook-preview
+        if: github.event_name == 'pull_request'
+        uses: amondnet/vercel-action@v25
         with:
+          github-comment: true
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          github-comment: ${{ env.GITHUB_COMMENT }}
           vercel-token: ${{ secrets.VERCEL_TOKEN }}
           vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
           vercel-project-id: ${{ secrets.VERCEL_PROJECT_STORYBOOK_ID}}
           scope: code-internet-applications
+
+      - name: Deploy production
+        id: vercel-action-storybook-prod
+        if: github.event_name == 'push'
+        uses: amondnet/vercel-action@v25
+        with:
+          vercel-token: ${{ secrets.VERCEL_TOKEN }}
+          vercel-org-id: ${{ secrets.VERCEL_ORG_ID}}
+          vercel-project-id: ${{ secrets.VERCEL_PROJECT_STORYBOOK_ID}}
+          scope: code-internet-applications
+          vercel-args: '--prod'
