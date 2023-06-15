@@ -102,8 +102,8 @@ importers:
         specifier: 3.45.0
         version: registry.npmjs.org/@shopify/cli@3.45.0(@types/node@20.2.5)(@types/react@18.2.12)(typescript@5.1.3)
       '@shopify/cli-hydrogen':
-        specifier: ^4.2.1
-        version: registry.npmjs.org/@shopify/cli-hydrogen@4.2.1(@babel/core@7.22.1)(@remix-run/react@1.15.0)(@shopify/hydrogen-react@2023.4.4)(@shopify/remix-oxygen@1.1.0)(@types/node@20.2.5)(@types/react@18.2.12)(graphql@16.6.0)(ts-node@10.9.1)
+        specifier: ^5.0.0
+        version: registry.npmjs.org/@shopify/cli-hydrogen@5.0.0(@babel/core@7.22.1)(@remix-run/react@1.15.0)(@shopify/hydrogen-react@2023.4.4)(@shopify/remix-oxygen@1.1.0)(@types/node@20.2.5)(@types/react@18.2.12)(graphql@16.6.0)(ts-node@10.9.1)
       '@shopify/hydrogen':
         specifier: ^2023.4.4
         version: registry.npmjs.org/@shopify/hydrogen@2023.4.4(@remix-run/react@1.15.0)(@remix-run/server-runtime@1.16.1)(@types/react@18.2.12)(react-dom@18.2.0)
@@ -2622,6 +2622,13 @@ packages:
 
   /@bugsnag/js@7.16.7:
     resolution: {integrity: sha512-i4MDIKhnPUMSpx5+XmKxrvFGAY6qZXcdBu+nplr2TrPymkJ+NNEpLyR6dijeqy5ehXaUnogN4RBfFeS9Btu1pw==}
+    dependencies:
+      '@bugsnag/browser': 7.20.2
+      '@bugsnag/node': 7.19.0
+    dev: false
+
+  /@bugsnag/js@7.20.2:
+    resolution: {integrity: sha512-Q08k0h0h6NFwFGkFmib39Uln2WpvJdqT1EGF1JlyYiGW03Y+VopVb9r37pZrRrN9IY08mxaIEO8la5xeaWAs6A==}
     dependencies:
       '@bugsnag/browser': 7.20.2
       '@bugsnag/node': 7.19.0
@@ -5989,6 +5996,12 @@ packages:
       '@types/glob': 8.1.0
     dev: false
 
+  /@types/archiver@5.3.2:
+    resolution: {integrity: sha512-IctHreBuWE5dvBDz/0WeKtyVKVRs4h75IblxOACL92wU66v+HGAfEYAOyXkOFphvRJMhuXdI9huDXpX0FC6lCw==}
+    dependencies:
+      '@types/readdir-glob': 1.1.1
+    dev: false
+
   /@types/babel__core@7.20.1:
     resolution: {integrity: sha512-aACu/U/omhdk15O4Nfb+fHgH/z3QsfQzpnvRZhYhThms83ZnAOZz7zZAWO7mn2yyNQaA4xTO8GLK3uqFU4bYYw==}
     dependencies:
@@ -6295,6 +6308,12 @@ packages:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.3
       csstype: 3.1.2
+
+  /@types/readdir-glob@1.1.1:
+    resolution: {integrity: sha512-ImM6TmoF8bgOwvehGviEj3tRdRBbQujr1N+0ypaln/GWjaerOB26jb93vsRHmdMtvVQZQebOlqt2HROark87mQ==}
+    dependencies:
+      '@types/node': 20.2.5
+    dev: false
 
   /@types/responselike@1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
@@ -6755,6 +6774,7 @@ packages:
   /ansi-colors@4.1.3:
     resolution: {integrity: sha512-/6w/C21Pm1A7aZitlI5Ni/2J6FFQN8i1Cvz3kHABAAbw93v/NlvKdVOqz7CCWz/3iv/JplRSEEZ83XION15ovw==}
     engines: {node: '>=6'}
+    dev: true
 
   /ansi-escapes@3.2.0:
     resolution: {integrity: sha512-cBhpre4ma+U0T1oM5fXg7Dy1Jw7zzwv7lt/GoCpr+hDQJoYnKVPLL4dCvSEFMmQurOQvSrwT7SL/DAlhBI97RQ==}
@@ -11323,6 +11343,14 @@ packages:
       commander: 10.0.1
     dev: false
 
+  /liquidjs@10.7.0:
+    resolution: {integrity: sha512-AEgEgbybxc17h2WBl5DTzj1tNy18ANpM/KJ2LigkNBwd/8sBc0uDaJH/MnvUbv1t2Md5RArTTZj5Wq1MGncIbg==}
+    engines: {node: '>=14'}
+    hasBin: true
+    dependencies:
+      commander: 10.0.1
+    dev: false
+
   /listr2@4.0.5:
     resolution: {integrity: sha512-juGHV1doQdpNT3GSTs9IUN43QJb7KHdF9uqg7Vufs/tG9VTzpFphqF4pm/ICdAABGQxsyNn9CiYA3StkI6jpwA==}
     engines: {node: '>=12'}
@@ -12326,6 +12354,11 @@ packages:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
     engines: {node: '>=4'}
 
+  /mrmime@1.0.1:
+    resolution: {integrity: sha512-hzzEagAgDyoU1Q6yg5uI+AorQgdvMCur3FcKf7NhMKWsaYg+RnbTyHRa/9IlLF9rf455MOCtcqqrQQ83pPP7Uw==}
+    engines: {node: '>=10'}
+    dev: false
+
   /ms@2.0.0:
     resolution: {integrity: sha512-Tpp60P6IUJDTuOq/5Z8cdskzJujfwqfOTkrwIwj7IRISpnkJnT6SyJ4PCPnGMoFjC9ddhal5KVIYtAt97ix05A==}
 
@@ -12436,6 +12469,15 @@ packages:
 
   /node-fetch@3.2.4:
     resolution: {integrity: sha512-WvYJRN7mMyOLurFR2YpysQGuwYrJN+qrrpHjJDuKMcSPdfFccRUla/kng2mz6HWSBxJcqPbvatS6Gb4RhOzCJw==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    dependencies:
+      data-uri-to-buffer: 4.0.1
+      fetch-blob: 3.2.0
+      formdata-polyfill: 4.0.10
+    dev: false
+
+  /node-fetch@3.3.1:
+    resolution: {integrity: sha512-cRVc/kyto/7E5shrWca1Wsea4y6tL9iYJE5FBCius3JQfb/4P4I295PfhgbJQBLTx6lATE4z+wK0rPM4VS2uow==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
     dependencies:
       data-uri-to-buffer: 4.0.1
@@ -14271,7 +14313,6 @@ packages:
     hasBin: true
     dependencies:
       lru-cache: 6.0.0
-    dev: true
 
   /semver@7.5.1:
     resolution: {integrity: sha512-Wvss5ivl8TMRZXXESstBA4uR5iXgEN/VC5/sOcuXdVLzcdkz4HWetIoRfG5gb5X+ij/G9rw9YoGn3QoQ8OCSpw==}
@@ -14403,6 +14444,16 @@ packages:
 
   /simple-git@3.16.0:
     resolution: {integrity: sha512-zuWYsOLEhbJRWVxpjdiXl6eyAyGo/KzVW+KFhhw9MqEEJttcq+32jTWSGyxTdf9e/YCohxRE+9xpWFj9FdiJNw==}
+    dependencies:
+      '@kwsites/file-exists': 1.1.1
+      '@kwsites/promise-deferred': 1.1.1
+      debug: 4.3.4(supports-color@8.1.1)
+    transitivePeerDependencies:
+      - supports-color
+    dev: false
+
+  /simple-git@3.17.0:
+    resolution: {integrity: sha512-JozI/s8jr3nvLd9yn2jzPVHnhVzt7t7QWfcIoDcqRIGN+f1IINGv52xoZti2kkYfoRhhRvzMSNPfogHMp97rlw==}
     dependencies:
       '@kwsites/file-exists': 1.1.1
       '@kwsites/promise-deferred': 1.1.1
@@ -16192,31 +16243,35 @@ packages:
     resolution: {integrity: sha512-4oKP5zvG6GGbMlqBkI5FESOAweldEhSOZ6LI6cG+JzUT7ofj1ZOC0PJudpQOpT1iqOFpYYtX5Pw0+o403y4bcg==}
     dev: false
 
+  /zod@3.21.4:
+    resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
+    dev: false
+
   /zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
-  registry.npmjs.org/@shopify/cli-hydrogen@4.2.1(@babel/core@7.22.1)(@remix-run/react@1.15.0)(@shopify/hydrogen-react@2023.4.4)(@shopify/remix-oxygen@1.1.0)(@types/node@20.2.5)(@types/react@18.2.12)(graphql@16.6.0)(ts-node@10.9.1):
-    resolution: {integrity: sha512-VbLSw+BuJvNVc7hQ8Vo82X/Yt6neCwPlrYpbLK7Rafdu6c6VaejuV2gzoNNV84sLY6Zexo4WqzPZaTPidxTDbg==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@shopify/cli-hydrogen/-/cli-hydrogen-4.2.1.tgz}
-    id: registry.npmjs.org/@shopify/cli-hydrogen/4.2.1
+  registry.npmjs.org/@shopify/cli-hydrogen@5.0.0(@babel/core@7.22.1)(@remix-run/react@1.15.0)(@shopify/hydrogen-react@2023.4.4)(@shopify/remix-oxygen@1.1.0)(@types/node@20.2.5)(@types/react@18.2.12)(graphql@16.6.0)(ts-node@10.9.1):
+    resolution: {integrity: sha512-ugJ7dOR26Vg7VMhinIQDsyanZyooXWaPU1JR9LDlaLxd5PymQL2eH5/wN7/aRjlcga9EDczqzCJyrwkjA4Fmng==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@shopify/cli-hydrogen/-/cli-hydrogen-5.0.0.tgz}
+    id: registry.npmjs.org/@shopify/cli-hydrogen/5.0.0
     name: '@shopify/cli-hydrogen'
-    version: 4.2.1
+    version: 5.0.0
     engines: {node: '>=16.13'}
     hasBin: true
     peerDependencies:
       '@remix-run/react': ^1.15.0
-      '@shopify/hydrogen-react': ^2023.4.3
-      '@shopify/remix-oxygen': ^1.0.7
+      '@shopify/hydrogen-react': ^2023.4.4
+      '@shopify/remix-oxygen': ^1.1.0
     dependencies:
       '@graphql-codegen/cli': 3.3.1(@babel/core@7.22.1)(@types/node@20.2.5)(graphql@16.6.0)
       '@oclif/core': 2.1.4
       '@remix-run/dev': 1.15.0(@types/node@20.2.5)(ts-node@10.9.1)
       '@remix-run/react': 1.15.0(react-dom@18.2.0)(react@18.2.0)
-      '@shopify/cli-kit': registry.npmjs.org/@shopify/cli-kit@3.45.0(@types/react@18.2.12)
-      '@shopify/hydrogen-codegen': registry.npmjs.org/@shopify/hydrogen-codegen@0.0.1(graphql@16.6.0)
+      '@shopify/cli-kit': registry.npmjs.org/@shopify/cli-kit@3.46.3(@types/react@18.2.12)
+      '@shopify/hydrogen-codegen': registry.npmjs.org/@shopify/hydrogen-codegen@0.0.2(graphql@16.6.0)
       '@shopify/hydrogen-react': registry.npmjs.org/@shopify/hydrogen-react@2023.4.4(@types/react@18.2.12)(react-dom@18.2.0)(react@18.2.0)
       '@shopify/mini-oxygen': registry.npmjs.org/@shopify/mini-oxygen@1.6.0
       '@shopify/remix-oxygen': registry.npmjs.org/@shopify/remix-oxygen@1.1.0(@shopify/oxygen-workers-types@3.17.2)
-      ansi-colors: 4.1.3
+      diff: 5.1.0
       fast-glob: 3.2.12
       fs-extra: 10.1.0
       gunzip-maybe: 1.4.2
@@ -16319,6 +16374,80 @@ packages:
       - utf-8-validate
     dev: false
 
+  registry.npmjs.org/@shopify/cli-kit@3.46.3(@types/react@18.2.12):
+    resolution: {integrity: sha512-8soaS7bvSVMc8m8lYo4TSiTHuO6a6w8AAeVwudCM3bgdm7UCr19WOA2uZdbKLvbeIUYC3SlJEybWTMkYsj4QaQ==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@shopify/cli-kit/-/cli-kit-3.46.3.tgz}
+    id: registry.npmjs.org/@shopify/cli-kit/3.46.3
+    name: '@shopify/cli-kit'
+    version: 3.46.3
+    engines: {node: '>=14.17.0'}
+    os: [darwin, linux, win32]
+    dependencies:
+      '@bugsnag/js': 7.20.2
+      '@iarna/toml': 2.2.5
+      '@oclif/core': 2.1.4
+      '@types/archiver': 5.3.2
+      abort-controller: 3.0.0
+      ansi-escapes: 6.0.0
+      archiver: 5.3.1
+      chalk: 5.2.0
+      change-case: 4.1.2
+      color-json: 3.0.5
+      commondir: 1.0.1
+      conf: 11.0.1
+      cross-zip: 4.0.0
+      deepmerge: 4.3.1
+      del: 6.0.0
+      env-paths: 3.0.0
+      envfile: 6.18.0
+      execa: 6.0.0
+      fast-glob: 3.2.12
+      figures: 5.0.0
+      find-process: 1.4.7
+      find-up: 6.3.0
+      find-versions: 5.1.0
+      form-data: 4.0.0
+      fs-extra: 11.1.0
+      fuzzy: 0.1.3
+      get-port-please: 3.0.1
+      gradient-string: 2.0.2
+      graphql: 16.4.0
+      graphql-request: 5.2.0(graphql@16.4.0)
+      ink: 4.0.0(@types/react@18.2.12)(react@18.2.0)
+      is-interactive: 2.0.0
+      js-yaml: 4.1.0
+      kill-port-process: 3.1.0
+      latest-version: 7.0.0
+      liquidjs: 10.7.0
+      lodash: 4.17.21
+      macaddress: 0.5.3
+      mrmime: 1.0.1
+      node-abort-controller: 3.0.1
+      node-fetch: 3.3.1
+      open: 8.4.2
+      pathe: 1.1.0
+      react: 18.2.0
+      semver: 7.5.0
+      simple-git: 3.17.0
+      source-map-support: 0.5.21
+      stacktracey: 2.1.8
+      strip-ansi: 7.0.1
+      supports-hyperlinks: 3.0.0
+      tempy: 3.0.0
+      term-size: 3.0.2
+      terminal-link: 3.0.0
+      tree-kill: 1.2.2
+      ts-error: 1.0.6
+      unique-string: 3.0.0
+      zod: 3.21.4
+    transitivePeerDependencies:
+      - '@types/react'
+      - bufferutil
+      - encoding
+      - react-devtools-core
+      - supports-color
+      - utf-8-validate
+    dev: false
+
   registry.npmjs.org/@shopify/cli@3.45.0(@types/node@20.2.5)(@types/react@18.2.12)(typescript@5.1.3):
     resolution: {integrity: sha512-RhhIWnd98PaWmF++iw8JWunsj6kkX6Ia1ajxhiXOPoulN3WkPhdfNN7MbCHCZZsnVLfjHt8iWouFPU4KkIz2DA==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@shopify/cli/-/cli-3.45.0.tgz}
     id: registry.npmjs.org/@shopify/cli/3.45.0
@@ -16347,15 +16476,16 @@ packages:
       - utf-8-validate
     dev: false
 
-  registry.npmjs.org/@shopify/hydrogen-codegen@0.0.1(graphql@16.6.0):
-    resolution: {integrity: sha512-jhvEuypij/lOplLCN4CKudgjiCqkJlDAAImoIgdm3TiVrmN5jaPsEtyI8av6K2W/h5jOc1ilqxgh7QogRFsqXg==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@shopify/hydrogen-codegen/-/hydrogen-codegen-0.0.1.tgz}
-    id: registry.npmjs.org/@shopify/hydrogen-codegen/0.0.1
+  registry.npmjs.org/@shopify/hydrogen-codegen@0.0.2(graphql@16.6.0):
+    resolution: {integrity: sha512-jIdsE8cBVaYGe2tKQDtgMVtzrMs6XM1n/EjIkB3k4tvCxvdFewCTFG4mIsXUAc2my1HTM+0JhxpzOXZchKOomg==, registry: https://registry.npmjs.com/, tarball: https://registry.npmjs.org/@shopify/hydrogen-codegen/-/hydrogen-codegen-0.0.2.tgz}
+    id: registry.npmjs.org/@shopify/hydrogen-codegen/0.0.2
     name: '@shopify/hydrogen-codegen'
-    version: 0.0.1
+    version: 0.0.2
     peerDependencies:
       graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
     dependencies:
       '@graphql-codegen/add': 4.0.1(graphql@16.6.0)
+      '@graphql-codegen/typescript': 3.0.4(graphql@16.6.0)
       '@graphql-codegen/typescript-operations': 3.0.4(graphql@16.6.0)
       graphql: 16.6.0
     transitivePeerDependencies:
