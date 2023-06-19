@@ -1,0 +1,49 @@
+{/* colors.mdx */}
+
+import { Canvas, Meta, Story } from '@storybook/blocks';
+
+import * as BlackStory from './black.stories';
+import * as WhiteStory from './white.stories';
+import * as GreyStory from './gray.stories';
+
+import * as PrimaryStory from './primary.stories';
+import * as SecondaryStory from './secondary.stories';
+import * as TertiaryStory from './tertiary.stories';
+import * as FunnelStory from './funnel.stories';
+
+import * as PositiveStory from './positive.stories';
+import * as NegativeStory from './negative.stories';
+import * as InfoStory from './info.stories';
+import * as NoticeStory from './notice.stories';
+
+<Meta title="Colors" name="Colors" />
+
+# Colors
+
+Here you will find all of the colors defined for the Code Base Theme Hydrogen
+
+### System
+
+<Canvas withSource="none">
+	<Story of={BlackStory.black} />
+	<Story of={WhiteStory.white} />
+	<Story of={GreyStory.gray} />
+</Canvas>
+
+### Brand
+
+<Canvas withSource="none">
+	<Story of={PrimaryStory.primary} />
+	<Story of={SecondaryStory.secondary} />
+	<Story of={TertiaryStory.tertiary} />
+	<Story of={FunnelStory.funnel} />
+</Canvas>
+
+### Sematic
+
+<Canvas withSource="none">
+	<Story of={PositiveStory.positive} />
+	<Story of={NegativeStory.negative} />
+	<Story of={InfoStory.info} />
+	<Story of={NoticeStory.notice} />
+</Canvas>

@@ -15,12 +15,24 @@ export const links: LinksFunction = () => {
 	return [
 		{ rel: 'stylesheet', href: styles },
 		{
+			rel: 'stylesheet',
+			href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap',
+		},
+		{
 			rel: 'preconnect',
 			href: 'https://cdn.shopify.com',
 		},
 		{
 			rel: 'preconnect',
 			href: 'https://shop.app',
+		},
+		{
+			rel: 'preconnect',
+			href: 'https://fonts.googleapis.com',
+		},
+		{
+			rel: 'preconnect',
+			href: 'https://fonts.gstatic.com',
 		},
 		{ rel: 'icon', type: 'image/svg+xml', href: favicon },
 	];

@@ -1,0 +1,24 @@
+{/* typography.mdx */}
+
+import { Canvas, Meta, Story } from '@storybook/blocks';
+
+import * as TypographyStory from './typography.stories';
+import * as TypographyGeneralStory from './typography-general.stories';
+
+<Meta title="Typography" name="Typography" />
+
+# Typography
+
+Here you will find the typography that has been used in the design system.
+
+# Base
+
+<Canvas withSource="none">
+	<Story of={TypographyStory.base} />
+</Canvas>
+
+# Brand
+
+<Canvas withSource="none">
+	<Story of={TypographyGeneralStory.brand} />
+</Canvas>

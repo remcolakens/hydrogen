@@ -8,9 +8,7 @@
 		"url": "https://github.com/code-internet-applications/cbt-hydrogen",
 		"directory": "{{outDir}}/{{dashCase componentName}}"
 	},
-	"main": "./dist/index.js",
-	"module": "./dist/index.mjs",
-	"types": "./dist/index.d.ts",
+	"main": "src/index.ts",
 	"sideEffects": false,
 	"files": [
 		"dist"
@@ -32,6 +30,11 @@
 	},
 	"dependencies": {},
 	"devDependencies": {},
+	"peerDependencies": {
+		"react": "^18.2.0",
+		"tailwindcss": "^3.3.2",
+		"class-variance-authority": "^0.6.0"
+	},
 	"engines": {
 		"node": ">=v18.16.0"
 	}

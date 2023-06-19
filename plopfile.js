@@ -2,7 +2,7 @@
  * @param {import("plop").NodePlopAPI} plop
  */
 module.exports = function main(plop) {
-	const workspaces = ['components', 'utilities'];
+	const workspaces = ['components'];
 
 	const validateInput = (value) => {
 		if (value.trim().length === 0) {

@@ -4,68 +4,69 @@
 
 @layer base {
 	:root {
-		--background: 0 0% 100%;
-		--foreground: 222.2 47.4% 11.2%;
+		--site-center: 1440px;
+		--site-center-md: 820px;
+		--site-center-sm: 620px;
 
-		--muted: 210 40% 96.1%;
-		--muted-foreground: 215.4 16.3% 46.9%;
+		--site-side-spacing: var(--spacing-4);
+		--site-side-spacing-md: var(--spacing-10);
 
-		--popover: 0 0% 100%;
-		--popover-foreground: 222.2 47.4% 11.2%;
+		--container-spacing: var(--spacing-8);
+		--container-spacing-md: var(--spacing-14);
 
-		--card: 0 0% 100%;
-		--card-foreground: 222.2 47.4% 11.2%;
+		--element-spacing: var(--spacing-6);
 
-		--border: 214.3 31.8% 91.4%;
-		--input: 214.3 31.8% 91.4%;
+		--grid-col-gap: var(--gap-4);
+		--grid-col-gap-md: var(--gap-8);
 
-		--primary: 222.2 47.4% 11.2%;
-		--primary-foreground: 210 40% 98%;
-
-		--secondary: 210 40% 96.1%;
-		--secondary-foreground: 222.2 47.4% 11.2%;
-
-		--accent: 210 40% 96.1%;
-		--accent-foreground: 222.2 47.4% 11.2%;
-
-		--destructive: 0 100% 50%;
-		--destructive-foreground: 210 40% 98%;
-
-		--ring: 215 20.2% 65.1%;
-
-		--radius: 0.5rem;
+		--grid-row-gap: var(--gap-4);
+		--grid-row-gap-md: var(--gap-8);
 	}
 
-	.dark {
-		--background: 224 71% 4%;
-		--foreground: 213 31% 91%;
+	@media (min-width: 768px) {
+		:root {
+			--site-side-spacing: var(--site-side-spacing-md);
+			--container-spacing: var(--container-spacing-md);
+			--grid-col-gap: var(--grid-col-gap-md);
+			--grid-row-gap: var(--grid-row-gap-md);
+		}
+	}
+}
 
-		--muted: 223 47% 11%;
-		--muted-foreground: 215.4 16.3% 56.9%;
+@layer components {
+	.container {
+		@apply my-[var(--container-spacing)];
+	}
 
-		--popover: 224 71% 4%;
-		--popover-foreground: 215 20.2% 65.1%;
+	.container--background {
+		@apply my-0 py-[var(--container-spacing)];
+	}
 
-		--card: 224 71% 4%;
-		--card-foreground: 213 31% 91%;
+	.container__header,
+	.container__content,
+	.container__footer {
+		@apply mx-auto;
+		@apply mb-element-spacing;
+		@apply w-full;
+		@apply max-w-screen-2xl;
+		@apply px-[var(--site-side-spacing)];
+		@apply last:mb-0;
+	}
 
-		--border: 216 34% 17%;
-		--input: 216 34% 17%;
+	.container--sm .container {
+		@apply max-w-[var(--site-center-sm)];
+	}
 
-		--primary: 210 40% 98%;
-		--primary-foreground: 222.2 47.4% 1.2%;
+	.container--md .container {
+		@apply max-w-[var(--site-center-md)];
+	}
 
-		--secondary: 222.2 47.4% 11.2%;
-		--secondary-foreground: 210 40% 98%;
+	.container--wide .container {
+		@apply max-w-full;
+	}
 
-		--accent: 216 34% 17%;
-		--accent-foreground: 210 40% 98%;
-
-		--destructive: 0 63% 31%;
-		--destructive-foreground: 210 40% 98%;
-
-		--ring: 216 34% 17%;
-
-		--radius: 0.5rem;
+	.container--full .container {
+		@apply max-w-full;
+		@apply px-0;
 	}
 }

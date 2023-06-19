@@ -13,6 +13,7 @@
 		"tailwind.config.ts"
 	],
 	"dependencies": {
-		"tailwindcss-animate": "^1.0.6"
+		"@tailwindcss/forms": "^0.5.3",
+		"@tailwindcss/typography": "^0.5.9"
 	}
 }

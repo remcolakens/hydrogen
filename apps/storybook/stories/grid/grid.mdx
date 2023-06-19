@@ -1,0 +1,24 @@
+{/* grid.mdx */}
+
+import { Canvas, Meta, Story } from '@storybook/blocks';
+
+import * as GridMobileStory from './grid.mobile.stories';
+import * as GridBaseStory from './grid.base.stories';
+
+<Meta title="Grid" name="Grid" />
+
+# Grid
+
+Here you will find all the grid of the Code Base Theme Hydrogen
+
+### Grid Desktop
+
+<Canvas withSource="none">
+	<Story of={GridBaseStory.base} />
+</Canvas>
+
+### Grid Mobile
+
+<Canvas withSource="none">
+	<Story of={GridMobileStory.mobile} />
+</Canvas>
