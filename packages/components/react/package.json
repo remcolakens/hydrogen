@@ -29,7 +29,6 @@
 		]
 	},
 	"dependencies": {
-		"@code-internet-applications/accordion": "workspace:*",
 		"@code-internet-applications/heading": "workspace:*",
 		"@code-internet-applications/text": "workspace:*"
 	},

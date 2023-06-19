@@ -9,7 +9,6 @@
 		"clean": "rimraf dist .turbo node_modules"
 	},
 	"devDependencies": {
-		"@code-internet-applications/postcss-config": "workspace:*",
 		"@code-internet-applications/tailwind-utils": "workspace:*",
 		"@code-internet-applications/tsconfig": "workspace:*",
 		"@storybook/addon-essentials": "^7.0.22",
