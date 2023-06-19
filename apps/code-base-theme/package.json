@@ -15,11 +15,11 @@
 	"dependencies": {
 		"@code-internet-applications/react": "workspace:*",
 		"@code-internet-applications/tailwind-utils": "workspace:*",
-		"@remix-run/react": "1.15.0",
+		"@remix-run/react": "1.17.1",
 		"@shopify/cli": "3.45.0",
-		"@shopify/cli-hydrogen": "^5.0.0",
-		"@shopify/hydrogen": "^2023.4.4",
-		"@shopify/remix-oxygen": "^1.1.0",
+		"@shopify/cli-hydrogen": "^5.0.1",
+		"@shopify/hydrogen": "^2023.4.5",
+		"@shopify/remix-oxygen": "^1.1.1",
 		"graphql": "^16.6.0",
 		"graphql-tag": "^2.12.6",
 		"isbot": "^3.6.10"
@@ -27,7 +27,7 @@
 	"devDependencies": {
 		"@code-internet-applications/eslint-config-code": "workspace:^",
 		"@code-internet-applications/tsconfig": "workspace:*",
-		"@remix-run/dev": "1.15.0",
+		"@remix-run/dev": "1.17.1",
 		"@shopify/oxygen-workers-types": "^3.17.2"
 	},
 	"peerDependencies": {
