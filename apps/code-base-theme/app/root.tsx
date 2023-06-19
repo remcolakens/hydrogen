@@ -7,8 +7,17 @@ import {
 	useLoaderData,
 } from '@remix-run/react';
 import type { Shop } from '@shopify/hydrogen/storefront-api-types';
-import { type LinksFunction, type LoaderArgs } from '@shopify/remix-oxygen';
-import favicon from '../public/favicon.svg';
+
+import {
+	V2_MetaFunction,
+	type LinksFunction,
+	type LoaderArgs,
+} from '@shopify/remix-oxygen';
+import appleTouchIcon from '../public/apple-touch-icon.png';
+import appleTouchIcon16 from '../public/favicon-16x16.png';
+import appleTouchIcon32 from '../public/favicon-32x32.png';
+import safariPinnedTab from '../public/safari-pinned-tab.svg';
+import siteWebmanifest from '../public/site.webmanifest';
 import styles from './styles/tailwind.css';
 
 export const links: LinksFunction = () => {
@@ -34,7 +43,30 @@ export const links: LinksFunction = () => {
 			rel: 'preconnect',
 			href: 'https://fonts.gstatic.com',
 		},
-		{ rel: 'icon', type: 'image/svg+xml', href: favicon },
+		{ rel: 'apple-touch-icon', sizes: '180x180', href: appleTouchIcon },
+		{ rel: 'icon', type: 'image/png', sizes: '32x32', href: appleTouchIcon32 },
+		{ rel: 'icon', type: 'image/png', sizes: '16x16', href: appleTouchIcon16 },
+		{ rel: 'manifest', href: siteWebmanifest },
+		{ rel: 'mask-icon', href: safariPinnedTab, color: '#000000' },
+	];
+};
+
+export const meta: V2_MetaFunction = () => {
+	return [
+		{ title: 'Code Base Theme Hydrogen' },
+		{
+			name: 'description',
+			content:
+				"🚀 Code Base Theme Hydrogen: Simple, modular and accessible components for Shopify's headless commerce ",
+		},
+		{
+			name: 'msapplication-TileColor',
+			content: '#000000',
+		},
+		{
+			name: 'theme-color',
+			content: '#ffffff',
+		},
 	];
 };
 
