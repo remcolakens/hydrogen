@@ -23,7 +23,7 @@
 		--grid-row-gap-md: var(--gap-8);
 	}
 
-	@media (min-width: 768px) {
+	@screen md {
 		:root {
 			--site-side-spacing: var(--site-side-spacing-md);
 			--container-spacing: var(--container-spacing-md);

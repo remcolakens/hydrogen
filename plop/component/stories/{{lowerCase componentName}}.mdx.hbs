@@ -1,0 +1,13 @@
+import { Canvas, Meta, Story } from '@storybook/blocks';
+
+import * as {{pascalCase componentName}}Stories from './{{lowerCase componentName}}.stories';
+
+<Meta title="Components/{{pascalCase componentName}}" name="Docs" />
+
+# {{pascalCase componentName}}
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam gravida a mi non sodales.
+
+<Canvas>
+	<Story of={ {{pascalCase componentName}}Stories.{{lowerCase componentName}} } />
+</Canvas>

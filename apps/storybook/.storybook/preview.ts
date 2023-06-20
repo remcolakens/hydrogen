@@ -32,6 +32,7 @@ const preview: Preview = {
 						'Flag',
 						'Icons',
 					],
+					'Buttons',
 					'Components',
 				],
 			},

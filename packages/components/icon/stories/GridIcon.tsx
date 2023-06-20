@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export interface IGridIcon {
 	children: React.ReactNode;
@@ -6,9 +6,14 @@ export interface IGridIcon {
 }
 
 export const GridIcon: React.FC<IGridIcon> = ({ children, name }) => {
+	const [isCopied, setIsCopied] = useState(false);
+
 	const handleClick = () => {
 		navigator.clipboard.writeText(name);
-		window.alert(`Copied ${name} to your clipboard`);
+		setIsCopied(true);
+		setTimeout(() => {
+			setIsCopied(false);
+		}, 1500);
 	};
 
 	return (
@@ -18,7 +23,7 @@ export const GridIcon: React.FC<IGridIcon> = ({ children, name }) => {
 				onClick={handleClick}
 			>
 				{children}
-				<span className="mt-1 text-xs">{name}</span>
+				<span className="mt-1 text-xs">{isCopied ? 'Copied...' : name}</span>
 			</button>
 		</div>
 	);
