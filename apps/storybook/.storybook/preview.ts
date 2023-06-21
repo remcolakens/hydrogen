@@ -33,6 +33,7 @@ const preview: Preview = {
 						'Icons',
 					],
 					'Buttons',
+					['Primary', 'Secondary', 'Outline', 'Funnel', 'Ghost'],
 					'Components',
 				],
 			},

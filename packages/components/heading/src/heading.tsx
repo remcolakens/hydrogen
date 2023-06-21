@@ -18,8 +18,8 @@ const headingVariants = cva('', {
 		},
 	},
 	defaultVariants: {
-		variant: 'regular',
-		size: 'heading2',
+		variant: 'bold',
+		size: 'heading3',
 	},
 });
 
