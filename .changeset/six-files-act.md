@@ -1,5 +1,4 @@
 ---
-'@code-internet-applications/button': minor
 '@code-internet-applications/react': minor
 '@code-internet-applications/icon': minor
 ---

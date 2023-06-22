@@ -1,8 +1,8 @@
 import { Icon } from '../../../src/icon';
 import { IIconProps } from '../../../src/types';
-const SvgWaterIcon = ({ className }: IIconProps) => {
+const SvgWaterIcon = ({ className, ...props }: IIconProps) => {
 	return (
-		<Icon viewBox="0 0 24 24" className={className}>
+		<Icon viewBox="0 0 24 24" className={className} {...props}>
 			<path
 				stroke="currentColor"
 				strokeLinecap="square"

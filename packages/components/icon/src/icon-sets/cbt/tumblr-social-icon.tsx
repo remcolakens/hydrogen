@@ -1,8 +1,8 @@
 import { Icon } from '../../../src/icon';
 import { IIconProps } from '../../../src/types';
-const SvgTumblrSocialIcon = ({ className }: IIconProps) => {
+const SvgTumblrSocialIcon = ({ className, ...props }: IIconProps) => {
 	return (
-		<Icon viewBox="0 0 24 24" className={className}>
+		<Icon viewBox="0 0 24 24" className={className} {...props}>
 			<g clipPath="url(#tumblr-social-icon_svg__a)">
 				<path
 					fill="currentColor"

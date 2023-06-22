@@ -1,8 +1,8 @@
 import { Icon } from '../../../src/icon';
 import { IIconProps } from '../../../src/types';
-const SvgFinlandFlagIcon = ({ className }: IIconProps) => {
+const SvgFinlandFlagIcon = ({ className, ...props }: IIconProps) => {
 	return (
-		<Icon viewBox="0 0 24 24" className={className}>
+		<Icon viewBox="0 0 24 24" className={className} {...props}>
 			<g clipPath="url(#finland-flag-icon_svg__a)">
 				<path fill="#fff" d="M0 0h24v24H0V0Z" />
 				<path fill="#002F6C" d="M0 8.728h24v6.544H0V8.728Z" />

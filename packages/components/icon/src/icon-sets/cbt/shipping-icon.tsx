@@ -1,8 +1,8 @@
 import { Icon } from '../../../src/icon';
 import { IIconProps } from '../../../src/types';
-const SvgShippingIcon = ({ className }: IIconProps) => {
+const SvgShippingIcon = ({ className, ...props }: IIconProps) => {
 	return (
-		<Icon viewBox="0 0 80 80" className={className}>
+		<Icon viewBox="0 0 80 80" className={className} {...props}>
 			<path
 				stroke="currentColor"
 				strokeLinecap="round"

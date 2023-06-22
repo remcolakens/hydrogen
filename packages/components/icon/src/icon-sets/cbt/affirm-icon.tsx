@@ -1,8 +1,8 @@
 import { Icon } from '../../../src/icon';
 import { IIconProps } from '../../../src/types';
-const SvgAffirmIcon = ({ className }: IIconProps) => {
+const SvgAffirmIcon = ({ className, ...props }: IIconProps) => {
 	return (
-		<Icon viewBox="0 0 34 24" className={className}>
+		<Icon viewBox="0 0 34 24" className={className} {...props}>
 			<rect
 				width={33}
 				height={23}

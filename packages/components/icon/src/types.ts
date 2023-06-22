@@ -1,8 +1,3 @@
-export interface IIconProps {
-	xmlnsXlink?: string;
-	viewBox?: string;
-	className?: string;
-	focusable?: boolean;
-	role?: 'presentation' | 'img';
-	children?: React.ReactNode;
-}
+import { SVGProps } from 'react';
+
+export type IIconProps = SVGProps<SVGSVGElement>;

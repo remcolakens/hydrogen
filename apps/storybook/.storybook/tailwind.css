@@ -31,6 +31,11 @@
 			--grid-row-gap: var(--grid-row-gap-md);
 		}
 	}
+
+	b,
+	strong {
+		@apply font-semibold;
+	}
 }
 
 @layer components {

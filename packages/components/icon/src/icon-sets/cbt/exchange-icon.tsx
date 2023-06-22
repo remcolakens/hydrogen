@@ -1,8 +1,8 @@
 import { Icon } from '../../../src/icon';
 import { IIconProps } from '../../../src/types';
-const SvgExchangeIcon = ({ className }: IIconProps) => {
+const SvgExchangeIcon = ({ className, ...props }: IIconProps) => {
 	return (
-		<Icon viewBox="0 0 24 24" className={className}>
+		<Icon viewBox="0 0 24 24" className={className} {...props}>
 			<path stroke="currentColor" strokeLinecap="square" d="M13 18H6V7" />
 			<path
 				stroke="currentColor"

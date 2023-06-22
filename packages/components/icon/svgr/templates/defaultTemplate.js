@@ -26,6 +26,10 @@ const template = (variables, { tpl }) => {
 				expression: { type: 'Identifier', name: 'className' },
 			},
 		},
+		{
+			type: 'JSXAttribute',
+			name: { type: 'JSXIdentifier', name: '{...props}' },
+		},
 	];
 
 	// Build the template
@@ -36,7 +40,7 @@ const template = (variables, { tpl }) => {
 
     ${variables.interfaces};
 
-    const ${variables.componentName} = ({ className }: IIconProps) => {
+    const ${variables.componentName} = ({ className, ...props }: IIconProps) => {
       return (
         ${jsxCode}
       );

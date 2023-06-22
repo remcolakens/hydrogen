@@ -1,8 +1,8 @@
 import { Icon } from '../../../src/icon';
 import { IIconProps } from '../../../src/types';
-const SvgGoogleSocialIcon = ({ className }: IIconProps) => {
+const SvgGoogleSocialIcon = ({ className, ...props }: IIconProps) => {
 	return (
-		<Icon viewBox="0 0 24 24" className={className}>
+		<Icon viewBox="0 0 24 24" className={className} {...props}>
 			<g clipPath="url(#google-social-icon_svg__a)">
 				<path
 					fill="currentColor"

@@ -1,11 +1,12 @@
 import { Icon } from '../../../src/icon';
 import { IIconProps } from '../../../src/types';
-const SvgTrustlyIcon = ({ className }: IIconProps) => {
+const SvgTrustlyIcon = ({ className, ...props }: IIconProps) => {
 	return (
 		<Icon
 			xmlnsXlink="http://www.w3.org/1999/xlink"
 			viewBox="0 0 34 24"
 			className={className}
+			{...props}
 		>
 			<rect
 				width={33}
