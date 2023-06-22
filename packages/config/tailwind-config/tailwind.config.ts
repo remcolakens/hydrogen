@@ -193,6 +193,10 @@ export const tailwindConfig: Config = {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 			},
+			borderRadius: {
+				'4xl': '2rem',
+				'5xl': '2.25rem',
+			},
 			lineHeight: {
 				xs: '1rem',
 				sm: '1.25rem',

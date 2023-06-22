@@ -30,6 +30,7 @@
 	},
 	"dependencies": {
 		"@code-internet-applications/accordion": "workspace:*",
+		"@code-internet-applications/badge": "workspace:*",
 		"@code-internet-applications/button": "workspace:*",
 		"@code-internet-applications/heading": "workspace:*",
 		"@code-internet-applications/text": "workspace:*"

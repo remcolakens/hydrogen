@@ -1,0 +1,26 @@
+import { Canvas, Meta, Story } from '@storybook/blocks';
+
+import * as BadgePrimaryStories from './badge-primary.stories';
+import * as BadgeOutlineStories from './badge-outline.stories';
+
+<Meta title="Badge" name="Docs" />
+
+# Badge
+
+Badges are used to highlight an item's status for quick recognition.
+
+<Canvas>
+	<Story of={BadgePrimaryStories.primary} />
+</Canvas>
+
+<Canvas>
+	<Story of={BadgePrimaryStories.icon} />
+</Canvas>
+
+<Canvas>
+	<Story of={BadgeOutlineStories.primary} />
+</Canvas>
+
+<Canvas>
+	<Story of={BadgeOutlineStories.icon} />
+</Canvas>

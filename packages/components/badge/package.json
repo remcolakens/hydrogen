@@ -1,12 +1,12 @@
 {
-	"name": "@code-internet-applications/accordion",
+	"name": "@code-internet-applications/badge",
 	"version": "0.0.0",
-	"description": "A simple and accessible accordion component for React",
+	"description": "Badges are used to highlight an item&#x27;s status for quick recognition.",
 	"author": "Code Internet Applications <info@code.nl>",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/code-internet-applications/cbt-hydrogen",
-		"directory": "components/accordion"
+		"directory": "components/badge"
 	},
 	"main": "src/index.ts",
 	"sideEffects": false,
@@ -30,8 +30,7 @@
 	},
 	"dependencies": {
 		"@code-internet-applications/icon": "workspace:*",
-		"@code-internet-applications/tailwind-utils": "workspace:*",
-		"@radix-ui/react-accordion": "^1.1.2"
+		"@code-internet-applications/tailwind-utils": "workspace:*"
 	},
 	"peerDependencies": {
 		"class-variance-authority": "^0.6.0",

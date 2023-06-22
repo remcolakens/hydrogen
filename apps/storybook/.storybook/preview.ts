@@ -34,6 +34,8 @@ const preview: Preview = {
 					],
 					'Buttons',
 					['Primary', 'Secondary', 'Outline', 'Funnel', 'Ghost'],
+					'Badge',
+					['Primary', 'Outline'],
 					'Components',
 				],
 			},
