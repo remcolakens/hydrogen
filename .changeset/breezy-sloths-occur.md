@@ -1,6 +1,7 @@
 ---
 '@code-internet-applications/tailwind-config': minor
 '@code-internet-applications/button': minor
+'@code-internet-applications/badge': minor
 '@code-internet-applications/react': minor
 ---
 
