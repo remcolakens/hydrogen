@@ -1,7 +1,9 @@
+import { FC, ReactNode } from 'react';
+
 export interface IStyleText {
-	children: React.ReactNode;
+	children: ReactNode;
 }
 
-export const StyleText: React.FC<IStyleText> = ({ children }) => {
+export const StyleText: FC<IStyleText> = ({ children }) => {
 	return <div className="mb-8 flex flex-col justify-between">{children}</div>;
 };

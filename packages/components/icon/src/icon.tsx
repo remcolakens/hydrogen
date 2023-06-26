@@ -1,7 +1,8 @@
 import { cn } from '@code-internet-applications/tailwind-utils';
+import { FC } from 'react';
 import type { IIconProps } from './types';
 
-export const Icon: React.FC<IIconProps> = ({
+export const Icon: FC<IIconProps> = ({
 	viewBox = '0 0 24 24',
 	focusable = false,
 	role,

@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import { FC, ReactNode, useState } from 'react';
 
 export interface IGridIcon {
-	children: React.ReactNode;
+	children: ReactNode;
 	name: string;
 }
 
-export const GridIcon: React.FC<IGridIcon> = ({ children, name }) => {
+export const GridIcon: FC<IGridIcon> = ({ children, name }) => {
 	const [isCopied, setIsCopied] = useState(false);
 
 	const handleClick = () => {

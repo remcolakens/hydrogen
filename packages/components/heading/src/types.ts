@@ -1,4 +1,5 @@
 import { type VariantProps } from 'class-variance-authority';
+import { HTMLAttributes } from 'react';
 import { headingVariants } from './heading';
 
 export type IHeadingHTMLTypes = 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6';
@@ -13,7 +14,7 @@ export type IHeadingTypes =
 	| undefined;
 
 export interface IHeadingProps
-	extends React.HTMLAttributes<HTMLSpanElement>,
+	extends HTMLAttributes<HTMLSpanElement>,
 		VariantProps<typeof headingVariants> {
 	as?: IHeadingHTMLTypes;
 }

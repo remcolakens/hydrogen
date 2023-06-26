@@ -1,4 +1,5 @@
 import { type VariantProps } from 'class-variance-authority';
+import { HTMLAttributes } from 'react';
 import { textVariants } from './text';
 
 export type ITextHTMLTypes = 'span' | 'p';
@@ -29,7 +30,7 @@ export type ITextTypes =
 	| undefined;
 
 export interface ITextProps
-	extends React.HTMLAttributes<HTMLSpanElement>,
+	extends HTMLAttributes<HTMLSpanElement>,
 		VariantProps<typeof textVariants> {
 	as?: ITextHTMLTypes;
 }

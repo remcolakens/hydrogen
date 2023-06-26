@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { useState } from 'react';
+import { FC, useState } from 'react';
 import { Button } from '../../button/src';
 import { ChevronRightIcon } from '../../icon/src';
 import { Input } from '../src/input';
@@ -11,7 +11,7 @@ const meta: Meta<typeof Input> = {
 export default meta;
 type Story = StoryObj<typeof Input>;
 
-const PasswordElement: React.FC = () => {
+const PasswordElement: FC = () => {
 	const [show, setShow] = useState(false);
 	const handleClick = () => setShow(!show);
 

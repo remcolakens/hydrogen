@@ -1,5 +1,6 @@
 import { cn } from '@code-internet-applications/tailwind-utils';
 import { cva } from 'class-variance-authority';
+import { FC } from 'react';
 import { ITextProps } from './types';
 
 const textVariants = cva('', {
@@ -42,7 +43,7 @@ const textVariants = cva('', {
 	},
 });
 
-const Text: React.FC<ITextProps> = ({
+const Text: FC<ITextProps> = ({
 	children,
 	className,
 	weight,

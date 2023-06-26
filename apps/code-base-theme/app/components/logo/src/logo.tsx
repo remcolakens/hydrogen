@@ -1,5 +1,6 @@
 import { cn } from '@code-internet-applications/tailwind-utils';
 import { cva } from 'class-variance-authority';
+import { FC } from 'react';
 import type { ILogoProps } from './types';
 
 const logoVariants = cva('inline-block', {
@@ -19,12 +20,7 @@ const logoVariants = cva('inline-block', {
 	},
 });
 
-const Logo: React.FC<ILogoProps> = ({
-	className,
-	size,
-	variant,
-	brand = true,
-}) => {
+const Logo: FC<ILogoProps> = ({ className, size, variant, brand = true }) => {
 	const isMonochrome = variant === 'monochrome';
 	const colorBlack = '#000000';
 	const colorWhite = '#FFFFFF';

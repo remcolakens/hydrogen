@@ -1,5 +1,6 @@
 import { cn } from '@code-internet-applications/tailwind-utils';
 import { cva } from 'class-variance-authority';
+import { FC } from 'react';
 import { IHeadingProps } from './types';
 
 const headingVariants = cva('', {
@@ -23,7 +24,7 @@ const headingVariants = cva('', {
 	},
 });
 
-const Heading: React.FC<IHeadingProps> = ({
+const Heading: FC<IHeadingProps> = ({
 	children,
 	className,
 	weight,

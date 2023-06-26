@@ -5,7 +5,7 @@ export interface IColorTile {
 	border?: boolean;
 }
 
-export const ColorTile: React.FC<IColorTile> = ({ color, border }) => {
+export const ColorTile: FC<IColorTile> = ({ color, border }) => {
 	const colorTitleClasses = clsx('h-16 w-16 rounded-xl', color, {
 		border: border,
 	});
