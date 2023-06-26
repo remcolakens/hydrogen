@@ -4,7 +4,7 @@ import { ITextProps } from './types';
 
 const textVariants = cva('', {
 	variants: {
-		variant: {
+		weight: {
 			regular: ['font-normal'],
 			bold: ['font-semibold'],
 		},
@@ -37,7 +37,7 @@ const textVariants = cva('', {
 		},
 	},
 	defaultVariants: {
-		variant: 'regular',
+		weight: 'regular',
 		size: 'base',
 	},
 });
@@ -45,7 +45,7 @@ const textVariants = cva('', {
 const Text: React.FC<ITextProps> = ({
 	children,
 	className,
-	variant,
+	weight,
 	size,
 	as = 'p',
 	...props
@@ -54,7 +54,7 @@ const Text: React.FC<ITextProps> = ({
 
 	return (
 		<Component
-			className={cn(textVariants({ size, className, variant }))}
+			className={cn(textVariants({ size, weight, className }))}
 			{...props}
 		>
 			{children}

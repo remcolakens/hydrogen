@@ -29,11 +29,14 @@
 		]
 	},
 	"dependencies": {
+		"@code-internet-applications/label": "workspace:*",
+		"@code-internet-applications/input": "workspace:*",
 		"@code-internet-applications/accordion": "workspace:*",
 		"@code-internet-applications/badge": "workspace:*",
 		"@code-internet-applications/button": "workspace:*",
 		"@code-internet-applications/heading": "workspace:*",
-		"@code-internet-applications/text": "workspace:*"
+		"@code-internet-applications/text": "workspace:*",
+		"@code-internet-applications/textarea": "workspace:*"
 	},
 	"peerDependencies": {
 		"react": "^18.2.0",

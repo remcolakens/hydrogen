@@ -4,7 +4,7 @@ import { IHeadingProps } from './types';
 
 const headingVariants = cva('', {
 	variants: {
-		variant: {
+		weight: {
 			regular: ['font-normal'],
 			bold: ['font-semibold'],
 		},
@@ -18,7 +18,7 @@ const headingVariants = cva('', {
 		},
 	},
 	defaultVariants: {
-		variant: 'bold',
+		weight: 'bold',
 		size: 'heading3',
 	},
 });
@@ -26,7 +26,7 @@ const headingVariants = cva('', {
 const Heading: React.FC<IHeadingProps> = ({
 	children,
 	className,
-	variant,
+	weight,
 	size,
 	as = 'h2',
 	...props
@@ -35,7 +35,7 @@ const Heading: React.FC<IHeadingProps> = ({
 
 	return (
 		<Component
-			className={cn(headingVariants({ size, className, variant }))}
+			className={cn(headingVariants({ size, weight, className }))}
 			{...props}
 		>
 			{children}

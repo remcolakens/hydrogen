@@ -1,0 +1,53 @@
+import { Canvas, Meta, Story } from '@storybook/blocks';
+
+import * as TextareaStories from './textarea.stories';
+import * as TextareaDisabledStories from './textarea-disabled.stories';
+import * as TextareaWithLabelStories from './textarea-with-label.stories';
+import * as TextareaWithTextStories from './textarea-with-text.stories';
+
+<Meta title="Textarea" name="Docs" />
+
+# Textarea
+
+Textarea component is a component that is used to get user input in a text
+field.
+
+<Canvas>
+	<Story of={TextareaStories.valid} />
+</Canvas>
+
+<Canvas>
+	<Story of={TextareaStories.isInvalid} />
+</Canvas>
+
+### Disabled
+
+The disabled state of the input component.
+
+<Canvas>
+	<Story of={TextareaDisabledStories.disabled} />
+</Canvas>
+
+### With Label
+
+The textarea component with a label.
+
+<Canvas>
+	<Story of={TextareaWithLabelStories.valid} />
+</Canvas>
+
+<Canvas>
+	<Story of={TextareaWithLabelStories.IsInvalid} />
+</Canvas>
+
+### With Text
+
+The textarea component with text content.
+
+<Canvas>
+	<Story of={TextareaWithTextStories.valid} />
+</Canvas>
+
+<Canvas>
+	<Story of={TextareaWithTextStories.isInvalid} />
+</Canvas>

@@ -6,7 +6,7 @@ export default {
 	content: [
 		// monorepo components
 		'../../packages/components/**/src/*.{js,ts,jsx,tsx}',
-		'../../packages/components/icon/src/ikonate/*.{js,ts,jsx,tsx}',
+		'../../packages/utilities/tailwind-utils/src/styles/*.{js,ts,jsx,tsx}',
 
 		// code base theme specific components
 		'./app/components/**/src/*.{js,jsx,ts,tsx}',

@@ -34,7 +34,7 @@ const TypographyBrand = () => {
 		<>
 			{headingTypes.map((type) => (
 				<StyleText key={type}>
-					<Heading variant="bold" size={type} className="mb-4">
+					<Heading weight="bold" size={type} className="mb-4">
 						{type}
 					</Heading>
 					<Heading size={type}>{type}</Heading>
@@ -43,7 +43,7 @@ const TypographyBrand = () => {
 
 			{textTypes.map((type) => (
 				<StyleText key={type}>
-					<Text variant="bold" size={type} className="mb-4">
+					<Text weight="bold" size={type} className="mb-4">
 						{type}
 					</Text>
 					<Text size={type}>{type}</Text>

@@ -26,7 +26,7 @@ const TypographyBase = () => {
 		<>
 			{textTypes.map((type) => (
 				<StyleText key={type}>
-					<Text variant="bold" size={type} className="mb-4">
+					<Text weight="bold" size={type} className="mb-4">
 						text-{type}
 					</Text>
 					<Text size={type}>text-{type}</Text>

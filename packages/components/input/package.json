@@ -1,12 +1,12 @@
 {
-	"name": "@code-internet-applications/{{dashCase componentName}}",
+	"name": "@code-internet-applications/input",
 	"version": "0.0.0",
-	"description": "{{description}}",
+	"description": "Input component is a component that is used to get user input in a text field.",
 	"author": "Code Internet Applications <info@code.nl>",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/code-internet-applications/cbt-hydrogen",
-		"directory": "{{outDir}}/{{dashCase componentName}}"
+		"directory": "components/input"
 	},
 	"main": "src/index.ts",
 	"sideEffects": false,

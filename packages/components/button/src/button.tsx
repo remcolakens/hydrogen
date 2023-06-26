@@ -1,7 +1,7 @@
 import { cn } from '@code-internet-applications/tailwind-utils';
 import { Slot } from '@radix-ui/react-slot';
 import { cva } from 'class-variance-authority';
-import * as React from 'react';
+import { forwardRef } from 'react';
 import { IButtonProps } from './types';
 
 const buttonVariants = cva(
@@ -56,7 +56,7 @@ const buttonVariants = cva(
 	},
 );
 
-const Button = React.forwardRef<HTMLButtonElement, IButtonProps>(
+const Button = forwardRef<HTMLButtonElement, IButtonProps>(
 	({ icon, className, variant, size, asChild = false, ...props }, ref) => {
 		const Comp = asChild ? Slot : 'button';
 

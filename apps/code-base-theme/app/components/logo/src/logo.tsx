@@ -40,7 +40,7 @@ const Logo: React.FC<ILogoProps> = ({
 	};
 
 	return (
-		<div className={cn(logoVariants({ className, size }))}>
+		<div className={cn(logoVariants({ size, className }))}>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
 				viewBox={logoViewbox}

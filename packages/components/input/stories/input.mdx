@@ -1,0 +1,76 @@
+import { Canvas, Meta, Story } from '@storybook/blocks';
+
+import * as InputStories from './input.stories';
+import * as InputDisabledStories from './input-disabled.stories';
+import * as InputWithLabelStories from './input-with-label.stories';
+import * as InputWithTextStories from './input-with-text.stories';
+import * as InputWithButtonStories from './input-with-button.stories';
+import * as InputWithElementStories from './input-with-element.stories';
+
+<Meta title="Inputs" name="Docs" />
+
+# Inputs
+
+Input component is a component that is used to get user input in a text field.
+
+<Canvas>
+	<Story of={InputStories.valid} />
+</Canvas>
+<Canvas>
+	<Story of={InputStories.isInvalid} />
+</Canvas>
+
+### Disabled
+
+The disabled state of the input component.
+
+<Canvas>
+	<Story of={InputDisabledStories.disabled} />
+</Canvas>
+
+### With Label
+
+The input component with a label.
+
+<Canvas>
+	<Story of={InputWithLabelStories.valid} />
+</Canvas>
+
+<Canvas>
+	<Story of={InputWithLabelStories.IsInvalid} />
+</Canvas>
+
+### With Text
+
+The input component with text content.
+
+<Canvas>
+	<Story of={InputWithTextStories.valid} />
+</Canvas>
+
+<Canvas>
+	<Story of={InputWithTextStories.isInvalid} />
+</Canvas>
+
+### With Button
+
+The input component with a button.
+
+<Canvas>
+	<Story of={InputWithButtonStories.valid} />
+</Canvas>
+
+<Canvas>
+	<Story of={InputWithButtonStories.isInvalid} />
+</Canvas>
+
+### With Element
+
+The input component with additional elements like Buttons or SVGs.
+
+<Canvas>
+	<Story of={InputWithElementStories.withButton} />
+</Canvas>
+<Canvas>
+	<Story of={InputWithElementStories.withSVG} />
+</Canvas>

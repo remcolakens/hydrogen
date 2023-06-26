@@ -9,7 +9,7 @@ export default {
 		'./stories/**/*.{js,ts,jsx,tsx}',
 
 		// monorepo components
-		'../../packages/components/icon/src/ikonate/*.{js,ts,jsx,tsx}',
+		'../../packages/utilities/tailwind-utils/src/styles/*.{js,ts,jsx,tsx}',
 		'../../packages/components/**/src/*.{js,ts,jsx,tsx}',
 		'../../packages/components/**/stories/*.stories.{js,ts,jsx,tsx}',
 		'../../packages/components/**/stories/*.{js,ts,jsx,tsx}',
