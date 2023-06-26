@@ -1,5 +1,19 @@
 # @code-internet-applications/tailwind-config
 
+## 0.3.0
+
+### Minor Changes
+
+- [#51](https://github.com/code-internet-applications/cbt-hydrogen/pull/51)
+  [`74fcbf0`](https://github.com/code-internet-applications/cbt-hydrogen/commit/74fcbf0534171aac99555a9eac934e15f78d15e0)
+  Thanks [@remcolakens](https://github.com/remcolakens)! - SCH-33: add basic
+  badge styling for primary, outline and icon variant
+
+- [#50](https://github.com/code-internet-applications/cbt-hydrogen/pull/50)
+  [`81ee2f9`](https://github.com/code-internet-applications/cbt-hydrogen/commit/81ee2f9e4e5caf8c78015b66b522fb686c14541e)
+  Thanks [@remcolakens](https://github.com/remcolakens)! - SCH-58: Added new
+  React Accordion component and applied basic styling following the CBT design.
+
 ## 0.2.0
 
 ### Minor Changes

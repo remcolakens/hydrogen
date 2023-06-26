@@ -1,6 +1,6 @@
 {
 	"name": "@code-internet-applications/label",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "Renders an accessible label associated with controls.",
 	"author": "Code Internet Applications <info@code.nl>",
 	"repository": {

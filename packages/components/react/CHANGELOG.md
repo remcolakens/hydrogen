@@ -1,5 +1,44 @@
 # @code-internet-applications/react
 
+## 0.3.0
+
+### Minor Changes
+
+- [#51](https://github.com/code-internet-applications/cbt-hydrogen/pull/51)
+  [`74fcbf0`](https://github.com/code-internet-applications/cbt-hydrogen/commit/74fcbf0534171aac99555a9eac934e15f78d15e0)
+  Thanks [@remcolakens](https://github.com/remcolakens)! - SCH-33: add basic
+  badge styling for primary, outline and icon variant
+
+- [#52](https://github.com/code-internet-applications/cbt-hydrogen/pull/52)
+  [`4fbec91`](https://github.com/code-internet-applications/cbt-hydrogen/commit/4fbec9159ed266724d0e01ab92da3b76218d381e)
+  Thanks [@remcolakens](https://github.com/remcolakens)! - SCH-32: Added new
+  components for styling the input fields & textareas
+
+- [#50](https://github.com/code-internet-applications/cbt-hydrogen/pull/50)
+  [`81ee2f9`](https://github.com/code-internet-applications/cbt-hydrogen/commit/81ee2f9e4e5caf8c78015b66b522fb686c14541e)
+  Thanks [@remcolakens](https://github.com/remcolakens)! - SCH-58: Added new
+  React Accordion component and applied basic styling following the CBT design.
+
+- [#46](https://github.com/code-internet-applications/cbt-hydrogen/pull/46)
+  [`f226d16`](https://github.com/code-internet-applications/cbt-hydrogen/commit/f226d1647339adaf7c7752f0eaf17f9f4e099624)
+  Thanks [@remcolakens](https://github.com/remcolakens)! - SCH-31: Introduced a
+  new React Button component and applied basic styling following the CBT design.
+
+### Patch Changes
+
+- Updated dependencies
+  [[`74fcbf0`](https://github.com/code-internet-applications/cbt-hydrogen/commit/74fcbf0534171aac99555a9eac934e15f78d15e0),
+  [`4fbec91`](https://github.com/code-internet-applications/cbt-hydrogen/commit/4fbec9159ed266724d0e01ab92da3b76218d381e),
+  [`81ee2f9`](https://github.com/code-internet-applications/cbt-hydrogen/commit/81ee2f9e4e5caf8c78015b66b522fb686c14541e)]:
+  - @code-internet-applications/button@0.1.0
+  - @code-internet-applications/badge@0.1.0
+  - @code-internet-applications/heading@0.2.0
+  - @code-internet-applications/input@0.1.0
+  - @code-internet-applications/label@0.1.0
+  - @code-internet-applications/textarea@0.1.0
+  - @code-internet-applications/text@0.2.0
+  - @code-internet-applications/accordion@0.1.0
+
 ## 0.2.0
 
 ### Minor Changes
