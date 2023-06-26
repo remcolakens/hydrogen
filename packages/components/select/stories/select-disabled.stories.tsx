@@ -11,7 +11,7 @@ type Story = StoryObj<typeof Select>;
 
 export const disabled: Story = {
 	render: () => (
-		<Select disabled>
+		<Select placeholder="Select variation" disabled>
 			{Object.entries(defaultVariants).map(([value, label]) => (
 				<Option value={value} key={value}>
 					{label}

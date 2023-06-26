@@ -36,6 +36,8 @@
 		"@code-internet-applications/button": "workspace:*",
 		"@code-internet-applications/heading": "workspace:*",
 		"@code-internet-applications/text": "workspace:*",
+		"@code-internet-applications/radio": "workspace:*",
+		"@code-internet-applications/select": "workspace:*",
 		"@code-internet-applications/textarea": "workspace:*"
 	},
 	"peerDependencies": {

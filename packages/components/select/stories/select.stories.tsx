@@ -11,7 +11,7 @@ type Story = StoryObj<typeof Select>;
 
 export const valid: Story = {
 	render: () => (
-		<Select>
+		<Select placeholder="Select variation">
 			{Object.entries(defaultVariants).map(([value, label]) => (
 				<Option value={value} key={value}>
 					{label}
@@ -23,7 +23,7 @@ export const valid: Story = {
 
 export const isInvalid: Story = {
 	render: () => (
-		<Select isInvalid>
+		<Select placeholder="Select variation" isInvalid>
 			{Object.entries(defaultVariants).map(([value, label]) => (
 				<Option value={value} key={value}>
 					{label}

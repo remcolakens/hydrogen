@@ -1,10 +1,11 @@
 import { cn, inputClasses } from '@code-internet-applications/tailwind-utils';
 import { forwardRef } from 'react';
 import { ChevronDownIcon } from '../../icon/src';
+import { Option } from './option';
 import { ISelectProps } from './types';
 
 const Select = forwardRef<HTMLSelectElement, ISelectProps>(
-	({ isInvalid, children, className, ...props }, ref) => {
+	({ isInvalid, placeholder, children, className, ...props }, ref) => {
 		return (
 			<div className="relative">
 				<select
@@ -15,6 +16,7 @@ const Select = forwardRef<HTMLSelectElement, ISelectProps>(
 					)}
 					{...props}
 				>
+					{placeholder ? <Option value="">{placeholder}</Option> : null}
 					{children}
 				</select>
 

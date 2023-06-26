@@ -14,7 +14,7 @@ export const valid: Story = {
 	render: () => (
 		<div className="grid items-center gap-2">
 			<Label htmlFor="nameLabel">Variation</Label>
-			<Select>
+			<Select placeholder="Select variation">
 				{Object.entries(defaultVariants).map(([value, label]) => (
 					<Option value={value} key={value}>
 						{label}
@@ -29,7 +29,7 @@ export const isInvalid: Story = {
 	render: () => (
 		<div className="grid items-center gap-2">
 			<Label htmlFor="nameLabel">Variation</Label>
-			<Select isInvalid>
+			<Select placeholder="Select variation" isInvalid>
 				{Object.entries(defaultVariants).map(([value, label]) => (
 					<Option value={value} key={value}>
 						{label}

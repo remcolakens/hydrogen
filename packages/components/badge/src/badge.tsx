@@ -4,7 +4,7 @@ import { cn } from '@code-internet-applications/tailwind-utils';
 import { IBadgeProps } from './types';
 
 const badgeVariants = cva(
-	'inline-flex items-center justify-center rounded-5xl text-xs leading-5 [&>svg]:h-4 [&>svg]:w-4',
+	'inline-flex items-center justify-center rounded-5xl text-xs leading-5 transition-colors [&>svg]:h-4 [&>svg]:w-4',
 	{
 		variants: {
 			variant: {
@@ -19,8 +19,40 @@ const badgeVariants = cva(
 			icon: {
 				true: true,
 			},
+			withHover: {
+				true: true,
+			},
+			isActive: {
+				true: true,
+			},
 		},
 		compoundVariants: [
+			//
+			// hover & active variants
+			//
+			{
+				variant: 'primary',
+				withHover: true,
+				class: 'hover:bg-gray-600',
+			},
+			{
+				variant: 'primary',
+				isActive: true,
+				class: 'bg-gray-600',
+			},
+			{
+				variant: 'outline',
+				withHover: true,
+				class: 'hover:bg-black hover:text-white',
+			},
+			{
+				variant: 'outline',
+				isActive: true,
+				class: 'bg-black text-white',
+			},
+			//
+			// icon variants
+			//
 			{
 				variant: ['primary', 'outline'],
 				size: 'sm',
@@ -47,10 +79,21 @@ const badgeVariants = cva(
 	},
 );
 
-function Badge({ icon, size, className, variant, ...props }: IBadgeProps) {
+function Badge({
+	withHover,
+	isActive,
+	icon,
+	size,
+	className,
+	variant,
+	...props
+}: IBadgeProps) {
 	return (
 		<div
-			className={cn(badgeVariants({ icon, size, variant }), className)}
+			className={cn(
+				badgeVariants({ icon, size, variant, withHover, isActive }),
+				className,
+			)}
 			{...props}
 		/>
 	);

@@ -1,0 +1,25 @@
+import { Canvas, Meta, Story } from '@storybook/blocks';
+
+import * as RadioStories from './radio.stories';
+
+<Meta title="Components/Radio" name="Docs" />
+
+# Radio
+
+Radios are used when only one choice may be selected in a series of options.
+
+<Canvas>
+	<Story of={RadioStories.regular} />
+</Canvas>
+
+### With Labels
+
+<Canvas>
+	<Story of={RadioStories.withLabels} />
+</Canvas>
+
+### With color
+
+<Canvas>
+	<Story of={RadioStories.withColor} />
+</Canvas>
