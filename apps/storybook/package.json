@@ -11,14 +11,14 @@
 	"devDependencies": {
 		"@code-internet-applications/tailwind-utils": "workspace:*",
 		"@code-internet-applications/tsconfig": "workspace:*",
-		"@storybook/addon-essentials": "^7.0.22",
-		"@storybook/addon-interactions": "^7.0.22",
-		"@storybook/addon-links": "^7.0.22",
-		"@storybook/blocks": "^7.0.22",
-		"@storybook/react": "^7.0.22",
-		"@storybook/react-vite": "^7.0.22",
+		"@storybook/addon-essentials": "^7.0.23",
+		"@storybook/addon-interactions": "^7.0.23",
+		"@storybook/addon-links": "^7.0.23",
+		"@storybook/blocks": "^7.0.23",
+		"@storybook/react": "^7.0.23",
+		"@storybook/react-vite": "^7.0.23",
 		"autoprefixer": "^10.4.14",
-		"storybook": "^7.0.22",
+		"storybook": "^7.0.23",
 		"vite": "^4.3.9"
 	},
 	"peerDependencies": {
@@ -27,7 +27,7 @@
 		"tailwindcss": "^3.3.2"
 	},
 	"engines": {
-		"node": ">=v18.16.0"
+		"node": ">=v18.16.1"
 	},
 	"dependencies": {
 		"@code-internet-applications/react": "workspace:*"

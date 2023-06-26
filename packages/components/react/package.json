@@ -43,6 +43,6 @@
 		"tailwindcss": "^3.3.2"
 	},
 	"engines": {
-		"node": ">=v18.16.0"
+		"node": ">=v18.16.1"
 	}
 }

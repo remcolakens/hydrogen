@@ -29,7 +29,7 @@
 		]
 	},
 	"engines": {
-		"node": ">=v18.16.0"
+		"node": ">=v18.16.1"
 	},
 	"dependencies": {
 		"clsx": "^1.2.1",
