@@ -45,6 +45,8 @@ const preview: Preview = {
 						'With Button',
 						'With Element',
 					],
+					'Select',
+					['Select', 'Disabled', 'With Label', 'With Text'],
 					'Textarea',
 					['Textarea', 'Disabled', 'Upload', 'With Label', 'With Text'],
 					'Components',
