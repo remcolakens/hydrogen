@@ -1,0 +1,17 @@
+import { Canvas, Meta, Story } from '@storybook/blocks';
+
+import * as PriceStories from './price.stories';
+
+<Meta title="Components/Price" name="Docs" />
+
+# Price
+
+A small, lightweight javascript library for working with currency values.
+
+<Canvas>
+	<div class="grid grid-cols-3">
+		<Story of={PriceStories.regular} />
+		<Story of={PriceStories.discount} />
+		<Story of={PriceStories.discountHorizontal} />
+	</div>
+</Canvas>

@@ -4,6 +4,7 @@ export * from '@code-internet-applications/button';
 export * from '@code-internet-applications/heading';
 export * from '@code-internet-applications/input';
 export * from '@code-internet-applications/label';
+export * from '@code-internet-applications/price';
 export * from '@code-internet-applications/radio';
 export * from '@code-internet-applications/select';
 export * from '@code-internet-applications/text';
