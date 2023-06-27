@@ -43,12 +43,12 @@ const badgeVariants = cva(
 			{
 				variant: 'outline',
 				withHover: true,
-				class: 'hover:bg-black hover:text-white',
+				class: 'hover:border-gray-500 active:border-black',
 			},
 			{
 				variant: 'outline',
 				isActive: true,
-				class: 'bg-black text-white',
+				class: 'border-4 border-negative-400',
 			},
 			//
 			// icon variants

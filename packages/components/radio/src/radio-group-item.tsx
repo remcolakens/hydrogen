@@ -7,12 +7,12 @@ import { Icon } from '../../icon/src';
 import { RadioItemProps, RadioItemRef } from './types';
 
 const radioVariants = cva(
-	'aspect-square h-4 w-4 rounded-full border focus:outline-none disabled:cursor-not-allowed disabled:opacity-5',
+	'aspect-square h-4 w-4 rounded-full border transition-colors hover:border-gray-500 focus:border-4 focus:border-notice-400 focus:outline-none active:border-black disabled:cursor-not-allowed disabled:opacity-5',
 	{
 		variants: {
 			size: {
-				md: 'h-4 w-4 p-0.5',
-				lg: 'h-10 w-10 p-1.5',
+				md: 'h-4 w-4 p-0.5 focus:border-2 focus:p-[1px]',
+				lg: 'h-10 w-10 p-1.5 focus:p-[3px]',
 			},
 			variant: {
 				hidden: 'hidden',
