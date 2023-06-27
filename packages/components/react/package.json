@@ -37,6 +37,7 @@
 		"@code-internet-applications/heading": "workspace:*",
 		"@code-internet-applications/text": "workspace:*",
 		"@code-internet-applications/radio": "workspace:*",
+		"@code-internet-applications/container": "workspace:*",
 		"@code-internet-applications/select": "workspace:*",
 		"@code-internet-applications/price": "workspace:*",
 		"@code-internet-applications/quantity-selector": "workspace:*",

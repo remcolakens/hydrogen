@@ -8,70 +8,27 @@
 		--site-center-md: 820px;
 		--site-center-sm: 620px;
 
-		--site-side-spacing: var(--spacing-4);
-		--site-side-spacing-md: var(--spacing-10);
+		--element-spacing: 1.5rem;
 
-		--container-spacing: var(--spacing-8);
-		--container-spacing-md: var(--spacing-14);
+		--site-side-spacing: 1rem;
+		--container-spacing: 2rem;
 
-		--element-spacing: var(--spacing-6);
-
-		--grid-col-gap: var(--gap-4);
-		--grid-col-gap-md: var(--gap-8);
-
-		--grid-row-gap: var(--gap-4);
-		--grid-row-gap-md: var(--gap-8);
+		--grid-col-gap: 1rem;
+		--grid-row-gap: 1rem;
 	}
 
 	@screen md {
 		:root {
-			--site-side-spacing: var(--site-side-spacing-md);
-			--container-spacing: var(--container-spacing-md);
-			--grid-col-gap: var(--grid-col-gap-md);
-			--grid-row-gap: var(--grid-row-gap-md);
+			--site-side-spacing: 2.5rem;
+			--container-spacing: 3.5rem;
+
+			--grid-col-gap: 2rem;
+			--grid-row-gap: 2rem;
 		}
 	}
 
 	b,
 	strong {
 		@apply font-semibold;
-	}
-}
-
-@layer components {
-	.container {
-		@apply my-[var(--container-spacing)];
-	}
-
-	.container--background {
-		@apply my-0 py-[var(--container-spacing)];
-	}
-
-	.container__header,
-	.container__content,
-	.container__footer {
-		@apply mx-auto;
-		@apply mb-element-spacing;
-		@apply w-full;
-		@apply max-w-screen-2xl;
-		@apply px-[var(--site-side-spacing)];
-		@apply last:mb-0;
-	}
-
-	.container--sm .container {
-		@apply max-w-[var(--site-center-sm)];
-	}
-
-	.container--md .container {
-		@apply max-w-[var(--site-center-md)];
-	}
-
-	.container--wide .container {
-		@apply max-w-full;
-	}
-
-	.container--full .container {
-		@apply max-w-full;
-		@apply px-0;
 	}
 }

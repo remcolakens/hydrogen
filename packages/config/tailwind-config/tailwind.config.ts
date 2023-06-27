@@ -236,6 +236,8 @@ export const tailwindConfig: Config = {
 			},
 			spacing: {
 				'element-spacing': 'var(--element-spacing)',
+				'container-spacing': 'var(--container-spacing)',
+				'site-side-spacing': 'var(--site-side-spacing)',
 			},
 			height: {
 				'screen-smallest': ['100vh', '100svh'] as unknown as string,
