@@ -39,6 +39,7 @@
 		"@code-internet-applications/radio": "workspace:*",
 		"@code-internet-applications/select": "workspace:*",
 		"@code-internet-applications/price": "workspace:*",
+		"@code-internet-applications/quantity-selector": "workspace:*",
 		"@code-internet-applications/textarea": "workspace:*"
 	},
 	"peerDependencies": {
