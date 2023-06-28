@@ -1,4 +1,5 @@
 export * from '@code-internet-applications/accordion';
+export * from '@code-internet-applications/aspect-ratio';
 export * from '@code-internet-applications/badge';
 export * from '@code-internet-applications/button';
 export * from '@code-internet-applications/container';

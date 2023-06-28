@@ -1,0 +1,27 @@
+import { Canvas, Meta, Story } from '@storybook/blocks';
+
+import * as AspectRatioStories from './aspect-ratio.stories';
+
+<Meta title="Components/Aspect Ratio" name="Docs" />
+
+# Aspect Ratio
+
+Aspect Ratio component is used to embed responsive videos and maps, etc.
+
+### 1:1 Image
+
+<Canvas>
+	<Story of={AspectRatioStories.image} />
+</Canvas>
+
+### 16:9 Video
+
+<Canvas>
+	<Story of={AspectRatioStories.video} />
+</Canvas>
+
+### 2:1 Maps
+
+<Canvas>
+	<Story of={AspectRatioStories.maps} />
+</Canvas>

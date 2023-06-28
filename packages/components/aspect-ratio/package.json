@@ -1,0 +1,40 @@
+{
+	"name": "@code-internet-applications/aspect-ratio",
+	"version": "0.0.0",
+	"description": "Aspect Ratio component is used to embed responsive videos and maps, etc.",
+	"author": "Code Internet Applications <info@code.nl>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/code-internet-applications/cbt-hydrogen",
+		"directory": "components/aspect-ratio"
+	},
+	"main": "src/index.ts",
+	"sideEffects": false,
+	"files": [
+		"dist"
+	],
+	"scripts": {
+		"build": "tsup src/index.ts --dts",
+		"dev": "tsup src/index.ts --watch",
+		"clean": "rimraf .turbo node_modules dist",
+		"typecheck": "tsc --noEmit",
+		"lint": "eslint \"src/**/*.ts*\""
+	},
+	"tsup": {
+		"clean": true,
+		"target": "es2019",
+		"format": [
+			"cjs",
+			"esm"
+		]
+	},
+	"dependencies": {
+		"@radix-ui/react-aspect-ratio": "^1.0.3"
+	},
+	"peerDependencies": {
+		"react": "^18.2.0"
+	},
+	"engines": {
+		"node": ">=v18.16.0"
+	}
+}
