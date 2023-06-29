@@ -8,7 +8,7 @@
 		"preinstall": "npx only-allow pnpm",
 		"build": "turbo run build",
 		"build:core": "turbo run build --filter='./packages/*/*'",
-		"dev": "turbo run dev",
+		"dev": "turbo run dev --parallel",
 		"lint:eslint": "turbo run lint",
 		"lint:typecheck": "turbo run typecheck",
 		"lint": "npm-run-all build:core lint:*",

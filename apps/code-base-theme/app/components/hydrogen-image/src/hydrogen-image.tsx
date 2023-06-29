@@ -13,19 +13,17 @@ const HydrogenImage: FC<IHydrogenImageProps> = ({
 	crop,
 }) => {
 	return (
-		<div className={className}>
-			<AspectRatio ratio={aspectRatio}>
-				<Image
-					src={src}
-					width={width}
-					height={height}
-					crop={crop}
-					alt={alt}
-					aspectRatio={String(aspectRatio)}
-					sizes="(min-width: 45em) 50vw, 100vw"
-				/>
-			</AspectRatio>
-		</div>
+		<AspectRatio ratio={aspectRatio} className={className}>
+			<Image
+				src={src}
+				width={width}
+				height={height}
+				crop={crop}
+				alt={alt}
+				aspectRatio={String(aspectRatio)}
+				sizes="(min-width: 45em) 50vw, 100vw"
+			/>
+		</AspectRatio>
 	);
 };
 

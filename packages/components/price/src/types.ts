@@ -7,5 +7,7 @@ export interface IPriceProps
 		VariantProps<typeof priceVariants> {
 	originalAmount: number | string;
 	discountAmount?: number | string;
-	orientation?: 'horizontal' | 'vertical';
+	orientation?: PriceOrientation;
 }
+
+export type PriceOrientation = 'horizontal' | 'vertical';
