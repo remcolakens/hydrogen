@@ -1,6 +1,6 @@
 {
 	"name": "@code-internet-applications/card",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "Displays a card with header, content, and footer.",
 	"author": "Code Internet Applications <info@code.nl>",
 	"repository": {

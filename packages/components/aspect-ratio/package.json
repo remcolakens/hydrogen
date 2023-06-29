@@ -1,6 +1,6 @@
 {
 	"name": "@code-internet-applications/aspect-ratio",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "Aspect Ratio component is used to embed responsive videos and maps, etc.",
 	"author": "Code Internet Applications <info@code.nl>",
 	"repository": {

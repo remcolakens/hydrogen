@@ -1,5 +1,19 @@
 # @code-internet-applications/badge
 
+## 0.2.0
+
+### Minor Changes
+
+- [#64](https://github.com/code-internet-applications/cbt-hydrogen/pull/64)
+  [`94ee07f`](https://github.com/code-internet-applications/cbt-hydrogen/commit/94ee07fa32933c3145d2876ba6141639565e75da)
+  Thanks [@remcolakens](https://github.com/remcolakens)! - SCH-27: add product
+  card
+
+- [#58](https://github.com/code-internet-applications/cbt-hydrogen/pull/58)
+  [`1368a2a`](https://github.com/code-internet-applications/cbt-hydrogen/commit/1368a2a1daf50c12e752b301a3453b253269f391)
+  Thanks [@remcolakens](https://github.com/remcolakens)! - SCH-34: Added new
+  radio buttons to match with the CBT design
+
 ## 0.1.0
 
 ### Minor Changes

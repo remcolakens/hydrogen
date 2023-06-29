@@ -1,6 +1,6 @@
 {
 	"name": "@code-internet-applications/container",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "Containers are used to constrain a contents width to the current breakpoint",
 	"author": "Code Internet Applications <info@code.nl>",
 	"repository": {

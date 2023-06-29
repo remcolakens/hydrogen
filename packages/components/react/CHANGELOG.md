@@ -1,5 +1,59 @@
 # @code-internet-applications/react
 
+## 0.4.0
+
+### Minor Changes
+
+- [#64](https://github.com/code-internet-applications/cbt-hydrogen/pull/64)
+  [`94ee07f`](https://github.com/code-internet-applications/cbt-hydrogen/commit/94ee07fa32933c3145d2876ba6141639565e75da)
+  Thanks [@remcolakens](https://github.com/remcolakens)! - SCH-27: add product
+  card
+
+- [#62](https://github.com/code-internet-applications/cbt-hydrogen/pull/62)
+  [`e2cd2f6`](https://github.com/code-internet-applications/cbt-hydrogen/commit/e2cd2f6484d0dac9678dfa6d7e2ec675cf9863c3)
+  Thanks [@remcolakens](https://github.com/remcolakens)! - SCH-103: add
+  container component
+
+- [#61](https://github.com/code-internet-applications/cbt-hydrogen/pull/61)
+  [`fe3cc29`](https://github.com/code-internet-applications/cbt-hydrogen/commit/fe3cc29e36b7dac027411905fc67e0a7c92d0143)
+  Thanks [@remcolakens](https://github.com/remcolakens)! - SCH-35: add quantity
+  selector
+
+- [#60](https://github.com/code-internet-applications/cbt-hydrogen/pull/60)
+  [`cc39edd`](https://github.com/code-internet-applications/cbt-hydrogen/commit/cc39eddee2edd03d03b9b930343e093141943a84)
+  Thanks [@remcolakens](https://github.com/remcolakens)! - SCH-36: add price
+  styling
+
+- [#63](https://github.com/code-internet-applications/cbt-hydrogen/pull/63)
+  [`65896a7`](https://github.com/code-internet-applications/cbt-hydrogen/commit/65896a76614c65c773824dba9fdf922275ab58d5)
+  Thanks [@remcolakens](https://github.com/remcolakens)! - SCH-75: add aspect
+  ratio & image component
+
+- [#58](https://github.com/code-internet-applications/cbt-hydrogen/pull/58)
+  [`1368a2a`](https://github.com/code-internet-applications/cbt-hydrogen/commit/1368a2a1daf50c12e752b301a3453b253269f391)
+  Thanks [@remcolakens](https://github.com/remcolakens)! - SCH-34: Added new
+  radio buttons to match with the CBT design
+
+### Patch Changes
+
+- Updated dependencies
+  [[`94ee07f`](https://github.com/code-internet-applications/cbt-hydrogen/commit/94ee07fa32933c3145d2876ba6141639565e75da),
+  [`e2cd2f6`](https://github.com/code-internet-applications/cbt-hydrogen/commit/e2cd2f6484d0dac9678dfa6d7e2ec675cf9863c3),
+  [`fe3cc29`](https://github.com/code-internet-applications/cbt-hydrogen/commit/fe3cc29e36b7dac027411905fc67e0a7c92d0143),
+  [`cc39edd`](https://github.com/code-internet-applications/cbt-hydrogen/commit/cc39eddee2edd03d03b9b930343e093141943a84),
+  [`65896a7`](https://github.com/code-internet-applications/cbt-hydrogen/commit/65896a76614c65c773824dba9fdf922275ab58d5),
+  [`1368a2a`](https://github.com/code-internet-applications/cbt-hydrogen/commit/1368a2a1daf50c12e752b301a3453b253269f391),
+  [`c33327a`](https://github.com/code-internet-applications/cbt-hydrogen/commit/c33327a5e3d6107517dff5507c220ed1c9feb960)]:
+  - @code-internet-applications/badge@0.2.0
+  - @code-internet-applications/price@0.1.0
+  - @code-internet-applications/card@0.1.0
+  - @code-internet-applications/container@0.1.0
+  - @code-internet-applications/quantity-selector@0.1.0
+  - @code-internet-applications/aspect-ratio@0.1.0
+  - @code-internet-applications/select@0.1.0
+  - @code-internet-applications/label@0.2.0
+  - @code-internet-applications/radio@0.1.0
+
 ## 0.3.0
 
 ### Minor Changes

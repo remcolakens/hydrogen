@@ -1,6 +1,6 @@
 {
 	"name": "@code-internet-applications/react",
-	"version": "0.3.0",
+	"version": "0.4.0",
 	"description": "The React component library of the Code Base Theme",
 	"author": "Code Internet Applications <info@code.nl>",
 	"main": "src/index.ts",
