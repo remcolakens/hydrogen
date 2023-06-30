@@ -10,7 +10,8 @@
 	},
 	"main": "tailwind.config.ts",
 	"files": [
-		"tailwind.config.ts"
+		"tailwind.config.ts",
+		"tailwind.css"
 	],
 	"dependencies": {
 		"@tailwindcss/forms": "^0.5.3",

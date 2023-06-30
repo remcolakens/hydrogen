@@ -15,12 +15,12 @@ import {
 	type LoaderArgs,
 } from '@shopify/remix-oxygen';
 import { Layout } from '~/components';
+import styles from '../../../packages/config/tailwind-config/tailwind.css';
 import appleTouchIcon from '../public/apple-touch-icon.png';
 import appleTouchIcon16 from '../public/favicon-16x16.png';
 import appleTouchIcon32 from '../public/favicon-32x32.png';
 import safariPinnedTab from '../public/safari-pinned-tab.svg';
 import siteWebmanifest from '../public/site.webmanifest';
-import styles from './styles/tailwind.css';
 
 export const links: LinksFunction = () => {
 	return [
