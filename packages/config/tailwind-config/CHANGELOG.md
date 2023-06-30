@@ -1,5 +1,14 @@
 # @code-internet-applications/tailwind-config
 
+## 0.5.0
+
+### Minor Changes
+
+- [#66](https://github.com/code-internet-applications/cbt-hydrogen/pull/66)
+  [`3ee7429`](https://github.com/code-internet-applications/cbt-hydrogen/commit/3ee742919d270b43ea509c816de78c31a5bff26a)
+  Thanks [@remcolakens](https://github.com/remcolakens)! - add tailwind.css to
+  the package
+
 ## 0.4.0
 
 ### Minor Changes
