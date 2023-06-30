@@ -15,7 +15,7 @@ export default {
 		'../../packages/components/**/stories/*.{js,ts,jsx,tsx}',
 
 		// code base theme specific components
-		'../code-base-theme/app/components/**/**/src/*.{js,jsx,ts,tsx}',
+		'../code-base-theme/app/components/**/**/*.{js,jsx,ts,tsx}',
 		'../code-base-theme/app/components/**/stories/*.stories.{js,jsx,ts,tsx}',
 	],
 } satisfies Config;

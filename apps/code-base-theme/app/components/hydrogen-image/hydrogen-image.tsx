@@ -1,7 +1,7 @@
 import { AspectRatio } from '@code-internet-applications/react';
 import { Image } from '@shopify/hydrogen';
 import { FC } from 'react';
-import type { IHydrogenImageProps } from './types';
+import type { IHydrogenImageProps } from '~/types';
 
 const HydrogenImage: FC<IHydrogenImageProps> = ({
 	className,

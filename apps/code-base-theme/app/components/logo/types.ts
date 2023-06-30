@@ -1,6 +1,6 @@
 import { VariantProps } from 'class-variance-authority';
 import { HTMLAttributes } from 'react';
-import { logoVariants } from './logo';
+import { logoVariants } from '~/components';
 
 export interface ILogoProps
 	extends HTMLAttributes<HTMLDivElement>,

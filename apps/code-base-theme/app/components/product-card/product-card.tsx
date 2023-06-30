@@ -10,8 +10,8 @@ import {
 } from '@code-internet-applications/react';
 import { Link } from '@remix-run/react';
 import { FC, useState } from 'react';
-import { HydrogenImage } from '../../hydrogen-image/src/hydrogen-image';
-import type { IProductCardImage, IProductCardProps } from './types';
+import { HydrogenImage } from '~/components';
+import type { IProductCardImage, IProductCardProps } from '~/types';
 
 const ProductCard: FC<IProductCardProps> = ({
 	brand,

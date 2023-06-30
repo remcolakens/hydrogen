@@ -1,6 +1,6 @@
 import { AspectRatio } from '@code-internet-applications/react';
 import { FC } from 'react';
-import type { IImageProps } from './types';
+import type { IImageProps } from '~/types';
 
 const Image: FC<IImageProps> = ({
 	className,

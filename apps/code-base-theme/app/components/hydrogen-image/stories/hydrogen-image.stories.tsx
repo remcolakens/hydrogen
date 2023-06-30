@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import { HydrogenImage } from '../src/hydrogen-image';
+import { HydrogenImage } from '~/components';
 
 const meta: Meta<typeof HydrogenImage> = {
 	title: 'Hydrogen/Hydrogen Image',

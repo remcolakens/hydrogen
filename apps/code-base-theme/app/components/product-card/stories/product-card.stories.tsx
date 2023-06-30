@@ -1,7 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { BrowserRouter } from 'react-router-dom';
-import { ProductCard } from '../src/product-card';
-import { IProductCardProps } from '../src/types';
+import { ProductCard } from '~/components';
+import type { IProductCardProps } from '~/types';
 
 const meta: Meta<typeof ProductCard> = {
 	title: 'Hydrogen/Product Card',
@@ -44,11 +44,9 @@ const product: IProductCardProps = {
 };
 
 export const productCard: Story = {
-	render: () => {
-		return (
-			<BrowserRouter>
-				<ProductCard {...product} />
-			</BrowserRouter>
-		);
-	},
+	render: () => (
+		<BrowserRouter>
+			<ProductCard {...product} />
+		</BrowserRouter>
+	),
 };

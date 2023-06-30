@@ -5,13 +5,11 @@ import {
 	Heading,
 	Text,
 } from '@code-internet-applications/react';
-import { Logo } from '~/components/logo';
 
 export default function Homepage() {
 	return (
 		<Container>
 			<ContainerContent>
-				<Logo className="mb-8" />
 				<Heading>Hello CODE.</Heading>
 				<Text className="mt-4">
 					Welcome to the Code Base Theme Hydrogen (CBTH).

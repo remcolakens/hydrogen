@@ -1,7 +1,7 @@
 import { cn } from '@code-internet-applications/tailwind-utils';
 import { cva } from 'class-variance-authority';
 import { FC } from 'react';
-import type { ILogoProps } from './types';
+import type { ILogoProps } from '~/types';
 
 const logoVariants = cva('inline-block', {
 	variants: {
@@ -10,8 +10,9 @@ const logoVariants = cva('inline-block', {
 			monochrome: true,
 		},
 		size: {
-			regular: 'h-7',
 			small: 'h-4',
+			regular: 'h-7',
+			large: 'h-14',
 		},
 	},
 	defaultVariants: {

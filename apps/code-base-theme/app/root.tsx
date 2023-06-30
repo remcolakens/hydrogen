@@ -1,5 +1,6 @@
 import {
 	Links,
+	LiveReload,
 	Meta,
 	Outlet,
 	Scripts,
@@ -13,6 +14,7 @@ import {
 	type LinksFunction,
 	type LoaderArgs,
 } from '@shopify/remix-oxygen';
+import { Layout } from '~/components';
 import appleTouchIcon from '../public/apple-touch-icon.png';
 import appleTouchIcon16 from '../public/favicon-16x16.png';
 import appleTouchIcon32 from '../public/favicon-32x32.png';
@@ -22,11 +24,6 @@ import styles from './styles/tailwind.css';
 
 export const links: LinksFunction = () => {
 	return [
-		{ rel: 'stylesheet', href: styles },
-		{
-			rel: 'stylesheet',
-			href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap',
-		},
 		{
 			rel: 'preconnect',
 			href: 'https://cdn.shopify.com',
@@ -42,6 +39,11 @@ export const links: LinksFunction = () => {
 		{
 			rel: 'preconnect',
 			href: 'https://fonts.gstatic.com',
+		},
+		{ rel: 'stylesheet', href: styles },
+		{
+			rel: 'stylesheet',
+			href: 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap',
 		},
 		{ rel: 'apple-touch-icon', sizes: '180x180', href: appleTouchIcon },
 		{ rel: 'icon', type: 'image/png', sizes: '32x32', href: appleTouchIcon32 },
@@ -91,9 +93,12 @@ export default function App() {
 				<Links />
 			</head>
 			<body>
-				<Outlet />
+				<Layout>
+					<Outlet />
+				</Layout>
 				<ScrollRestoration />
 				<Scripts />
+				<LiveReload />
 			</body>
 		</html>
 	);

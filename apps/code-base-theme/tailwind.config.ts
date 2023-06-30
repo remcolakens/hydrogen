@@ -9,7 +9,7 @@ export default {
 		'../../packages/utilities/tailwind-utils/src/styles/*.{js,ts,jsx,tsx}',
 
 		// code base theme specific components
-		'./app/components/**/src/*.{js,jsx,ts,tsx}',
+		'./app/components/**/*.{js,jsx,ts,tsx}',
 		'./app/routes/*.{js,jsx,ts,tsx}',
 	],
 } satisfies Config;
