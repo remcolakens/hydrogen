@@ -4,4 +4,5 @@ export { HydrogenImage } from '~/components/hydrogen-image/hydrogen-image';
 export { Image } from '~/components/image/image';
 export { Layout } from '~/components/layout/layout';
 export { Logo, logoVariants } from '~/components/logo/logo';
+export { MainNavigation } from '~/components/main-navigation/main-navigation';
 export { ProductCard } from '~/components/product-card/product-card';

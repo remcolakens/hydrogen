@@ -35,6 +35,7 @@
 		"@code-internet-applications/badge": "workspace:*",
 		"@code-internet-applications/button": "workspace:*",
 		"@code-internet-applications/heading": "workspace:*",
+		"@code-internet-applications/navigation-menu": "workspace:*",
 		"@code-internet-applications/text": "workspace:*",
 		"@code-internet-applications/card": "workspace:*",
 		"@code-internet-applications/aspect-ratio": "workspace:*",

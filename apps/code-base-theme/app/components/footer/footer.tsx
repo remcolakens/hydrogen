@@ -17,9 +17,9 @@ import {
 } from '@code-internet-applications/react';
 import { FC } from 'react';
 import { Logo } from '~/components';
-import { FooterNavigationSection } from '~/components/footer/footer-navigation-section';
-import { FooterNavigationSocials } from '~/components/footer/footer-navigation-socials';
 import type { IFooterProps } from '~/types';
+import { FooterNavigationSection } from './footer-navigation-section';
+import { FooterNavigationSocials } from './footer-navigation-socials';
 
 const Footer: FC<IFooterProps> = ({ title, description }) => {
 	const currentYear = new Date().getFullYear();
@@ -27,10 +27,10 @@ const Footer: FC<IFooterProps> = ({ title, description }) => {
 
 	return (
 		<footer>
-			<div className="border border-gray-200">
+			<div className="border-b border-t border-gray-200">
 				<Container className="my-8">
 					<ContainerContent>
-						<div className="grid grid-cols-12">
+						<div className="grid grid-cols-12 gap-4">
 							<section className="col-span-12 md:col-span-3">
 								<Logo brand={false} size="large" className="mb-4" />
 								<Text size="label1" weight="bold" className="mb-2">
@@ -46,25 +46,33 @@ const Footer: FC<IFooterProps> = ({ title, description }) => {
 											id: 'social_1',
 											title: 'YouTube',
 											href: '#',
-											svg: <YoutubeSocialIcon />,
+											svg: (
+												<YoutubeSocialIcon className="h-10 w-10 md:h-8 md:w-8" />
+											),
 										},
 										{
 											id: 'social_2',
 											title: 'Instagram',
 											href: '#',
-											svg: <InstagramSocialIcon />,
+											svg: (
+												<InstagramSocialIcon className="h-10 w-10 md:h-8 md:w-8" />
+											),
 										},
 										{
 											id: 'social_3',
 											title: 'Medium',
 											href: '#',
-											svg: <MediumSocialIcon />,
+											svg: (
+												<MediumSocialIcon className="h-10 w-10 md:h-8 md:w-8" />
+											),
 										},
 										{
 											id: 'social_4',
 											title: 'Tiktok',
 											href: '#',
-											svg: <TiktokSocialIcon />,
+											svg: (
+												<TiktokSocialIcon className="h-10 w-10 md:h-8 md:w-8" />
+											),
 										},
 									]}
 								/>
@@ -72,6 +80,8 @@ const Footer: FC<IFooterProps> = ({ title, description }) => {
 
 							<FooterNavigationSection
 								title="Brand"
+								ariaLabel="brand-navigation"
+								orientation="vertical"
 								className="lg:col-start-5"
 								navigation={[
 									{
@@ -104,6 +114,8 @@ const Footer: FC<IFooterProps> = ({ title, description }) => {
 
 							<FooterNavigationSection
 								title="Customer"
+								ariaLabel="customer-navigation"
+								orientation="vertical"
 								navigation={[
 									{
 										id: 'customer_1',
@@ -125,6 +137,8 @@ const Footer: FC<IFooterProps> = ({ title, description }) => {
 
 							<FooterNavigationSection
 								title="Services"
+								ariaLabel="services-navigation"
+								orientation="vertical"
 								navigation={[
 									{
 										id: 'services_1',
@@ -146,6 +160,8 @@ const Footer: FC<IFooterProps> = ({ title, description }) => {
 
 							<FooterNavigationSection
 								title="Need a hand?"
+								ariaLabel="contact-navigation"
+								orientation="vertical"
 								navigation={[
 									{
 										id: 'hand_1',
@@ -168,11 +184,11 @@ const Footer: FC<IFooterProps> = ({ title, description }) => {
 				</Container>
 			</div>
 
-			<Container className="mb-4 mt-8">
+			<Container className="mb-4 mt-6 md:mt-8">
 				<ContainerContent>
 					<div className="grid grid-cols-12 gap-2">
 						<section className="col-span-12 flex justify-center">
-							<ul className="flex space-x-1">
+							<ul className="flex gap-x-1">
 								<li>
 									<VisaIcon className="h-6 w-[34px] text-gray-200" />
 								</li>
@@ -195,7 +211,9 @@ const Footer: FC<IFooterProps> = ({ title, description }) => {
 						</section>
 
 						<FooterNavigationSection
-							className="mt-0 flex justify-center md:col-span-12 [&>ul>li]:text-center [&>ul]:gap-6 md:[&>ul]:flex-row"
+							ariaLabel="privacy-navigation"
+							className="flex justify-center md:col-span-12 md:mt-2"
+							navigationMenuListClasses="items-center gap-2 md:gap-6 md:flex-row justify-center"
 							navigation={[
 								{
 									id: 'terms_1',
@@ -210,16 +228,11 @@ const Footer: FC<IFooterProps> = ({ title, description }) => {
 							]}
 						/>
 
-						<FooterNavigationSection
-							className="mt-0 flex justify-center md:col-span-12 [&>ul]:mt-2"
-							navigation={[
-								{
-									id: 'copyright_1',
-									title: `${copyrightSymbol} Code Shop ${currentYear}. All rights
-									reserved.`,
-								},
-							]}
-						/>
+						<section className="col-span-12 mt-2 flex justify-center">
+							<Text className="leading-7" as="span">
+								{copyrightSymbol} Code Shop {currentYear}. All rights reserved
+							</Text>
+						</section>
 					</div>
 				</ContainerContent>
 			</Container>

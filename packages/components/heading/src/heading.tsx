@@ -36,7 +36,7 @@ const Heading: FC<IHeadingProps> = ({
 
 	return (
 		<Component
-			className={cn(headingVariants({ size, weight, className }))}
+			className={cn(headingVariants({ size, weight }), className)}
 			{...props}
 		>
 			{children}

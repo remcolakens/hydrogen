@@ -7,6 +7,7 @@ export * from '@code-internet-applications/container';
 export * from '@code-internet-applications/heading';
 export * from '@code-internet-applications/input';
 export * from '@code-internet-applications/label';
+export * from '@code-internet-applications/navigation-menu';
 export * from '@code-internet-applications/price';
 export * from '@code-internet-applications/quantity-selector';
 export * from '@code-internet-applications/radio';

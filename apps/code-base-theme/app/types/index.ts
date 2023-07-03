@@ -16,3 +16,9 @@ export type {
 	IProductCardPrice,
 	IProductCardProps,
 } from '~/components/product-card/types';
+
+export type {
+	IMenuData,
+	NavItem,
+	Navigation,
+} from '~/components/main-navigation/types';

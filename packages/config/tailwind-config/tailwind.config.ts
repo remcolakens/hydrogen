@@ -283,6 +283,7 @@ export const tailwindConfig: Config = {
 		},
 	},
 	plugins: [
+		require('tailwindcss-animate'),
 		require('@tailwindcss/forms'),
 		require('@tailwindcss/typography')({
 			className: 'rte',
@@ -291,7 +292,7 @@ export const tailwindConfig: Config = {
 		plugin(function ({ addUtilities, addVariant }: PluginAPI) {
 			addUtilities({
 				'.gap-base': {
-					gap: 'var(--grid-row-gap) --grid-col-gap)',
+					gap: 'var(--grid-row-gap), var(--grid-col-gap)',
 				},
 				'.gap-x-base': {
 					columnGap: 'var(--grid-col-gap)',

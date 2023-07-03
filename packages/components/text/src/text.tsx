@@ -45,9 +45,9 @@ const textVariants = cva('', {
 
 const Text: FC<ITextProps> = ({
 	children,
-	className,
 	weight,
 	size,
+	className,
 	as = 'p',
 	...props
 }) => {
@@ -55,12 +55,14 @@ const Text: FC<ITextProps> = ({
 
 	return (
 		<Component
-			className={cn(textVariants({ size, weight, className }))}
+			className={cn(textVariants({ size, weight }), className)}
 			{...props}
 		>
 			{children}
 		</Component>
 	);
 };
+
+Text.displayName = 'Text';
 
 export { Text, textVariants };

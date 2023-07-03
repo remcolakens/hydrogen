@@ -9,6 +9,9 @@ export interface IFooterNavigationSectionProps
 	extends HTMLAttributes<HTMLDivElement> {
 	title?: string;
 	navigation: IFooterNavigationSectionItemProps[];
+	navigationMenuListClasses?: string;
+	orientation?: 'vertical' | 'horizontal';
+	ariaLabel?: string;
 }
 
 export interface IFooterNavigationSectionItemProps {
