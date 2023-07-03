@@ -52,9 +52,8 @@ const QuantitySelector = forwardRef<HTMLInputElement, IQuantitySelectorProps>(
 					value={isNaN(value) ? '' : String(value)}
 					ref={ref}
 					className={cn(
-						inputClasses(isInvalid, [
-							'h-full text-center text-current [-moz-appearance:_textfield] [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none',
-						]),
+						inputClasses(isInvalid),
+						'h-full text-center text-current [-moz-appearance:_textfield] [&::-webkit-inner-spin-button]:m-0 [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:m-0 [&::-webkit-outer-spin-button]:appearance-none',
 					)}
 				/>
 

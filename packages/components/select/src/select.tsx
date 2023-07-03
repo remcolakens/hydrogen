@@ -11,7 +11,8 @@ const Select = forwardRef<HTMLSelectElement, ISelectProps>(
 				<select
 					ref={ref}
 					className={cn(
-						inputClasses(isInvalid, ['h-10 bg-none pr-10']),
+						inputClasses(isInvalid),
+						'h-10 bg-none pr-10',
 						className,
 					)}
 					{...props}

@@ -6,7 +6,7 @@ const Input = forwardRef<HTMLInputElement, IInputProps>(
 	({ isInvalid, className, type, ...props }, ref) => (
 		<input
 			type={type}
-			className={cn(inputClasses(isInvalid, ['h-10']), className)}
+			className={cn(inputClasses(isInvalid), 'h-10', className)}
 			ref={ref}
 			{...props}
 		/>

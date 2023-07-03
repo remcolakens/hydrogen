@@ -5,7 +5,7 @@ import { ITextareaProps } from './types';
 const Textarea = forwardRef<HTMLTextAreaElement, ITextareaProps>(
 	({ isInvalid, className, ...props }, ref) => (
 		<textarea
-			className={cn(inputClasses(isInvalid, ['min-h-[84px]']), className)}
+			className={cn(inputClasses(isInvalid), 'min-h-[84px]', className)}
 			ref={ref}
 			{...props}
 		/>
