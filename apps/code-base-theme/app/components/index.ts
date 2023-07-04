@@ -7,3 +7,4 @@ export { Layout } from '~/components/layout/layout';
 export { Logo, logoVariants } from '~/components/logo/logo';
 export { MainNavigation } from '~/components/main-navigation/main-navigation';
 export { ProductCard } from '~/components/product-card/product-card';
+export { TextBlock } from '~/components/text-block/text-block';

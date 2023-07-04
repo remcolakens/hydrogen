@@ -24,3 +24,5 @@ export type {
 } from '~/components/main-navigation/types';
 
 export type { IHeroImageProps } from '~/components/hero-image/types';
+
+export type { ITextBlockProps } from '~/components/text-block/types';

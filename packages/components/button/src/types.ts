@@ -10,3 +10,9 @@ export interface IButtonProps
 }
 
 export type buttonSizeProps = 'sm' | 'md' | 'lg';
+export type buttonVariantProps =
+	| 'primary'
+	| 'secondary'
+	| 'outline'
+	| 'funnel'
+	| 'ghost';

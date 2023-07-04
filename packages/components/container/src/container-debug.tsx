@@ -11,7 +11,7 @@ const ContainerDebug: FC<IContainerProps> = ({ size, className }) => {
 	if (process.env.NODE_ENV === 'development') {
 		return (
 			<>
-				<div className="fixed bottom-5 left-5">
+				<div className="fixed bottom-5 left-4 z-fixed">
 					<Button variant="secondary" icon onClick={() => setVisible(!visible)}>
 						<C4Icon />
 					</Button>
@@ -22,22 +22,22 @@ const ContainerDebug: FC<IContainerProps> = ({ size, className }) => {
 						<div
 							className={cn(
 								containerVariants({ size }),
-								'grid h-full w-full grid-cols-12 gap-4 opacity-20',
+								'grid h-full w-full grid-cols-2 gap-4 opacity-20 md:grid-cols-12',
 								className,
 							)}
 						>
 							<div className="col-span-1 bg-funnel-500"></div>
 							<div className="col-span-1 bg-funnel-500"></div>
-							<div className="col-span-1 bg-funnel-500"></div>
-							<div className="col-span-1 bg-funnel-500"></div>
-							<div className="col-span-1 bg-funnel-500"></div>
-							<div className="col-span-1 bg-funnel-500"></div>
-							<div className="col-span-1 bg-funnel-500"></div>
-							<div className="col-span-1 bg-funnel-500"></div>
-							<div className="col-span-1 bg-funnel-500"></div>
-							<div className="col-span-1 bg-funnel-500"></div>
-							<div className="col-span-1 bg-funnel-500"></div>
-							<div className="col-span-1 bg-funnel-500"></div>
+							<div className="col-span-1 hidden bg-funnel-500 md:block"></div>
+							<div className="col-span-1 hidden bg-funnel-500 md:block"></div>
+							<div className="col-span-1 hidden bg-funnel-500 md:block"></div>
+							<div className="col-span-1 hidden bg-funnel-500 md:block"></div>
+							<div className="col-span-1 hidden bg-funnel-500 md:block"></div>
+							<div className="col-span-1 hidden bg-funnel-500 md:block"></div>
+							<div className="col-span-1 hidden bg-funnel-500 md:block"></div>
+							<div className="col-span-1 hidden bg-funnel-500 md:block"></div>
+							<div className="col-span-1 hidden bg-funnel-500 md:block"></div>
+							<div className="col-span-1 hidden bg-funnel-500 md:block"></div>
 						</div>
 					</div>
 				) : null}
