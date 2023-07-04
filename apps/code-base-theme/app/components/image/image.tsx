@@ -12,21 +12,37 @@ const Image: FC<IImageProps> = ({
 	width,
 	height,
 	loading = 'lazy',
+	decoding,
 }) => {
 	return (
 		<div className={className}>
-			<AspectRatio ratio={aspectRatio}>
+			{aspectRatio ? (
+				<AspectRatio ratio={aspectRatio}>
+					<img
+						className="block h-full w-full object-cover"
+						src={src}
+						srcSet={srcSet}
+						sizes={sizes}
+						width={width}
+						height={height}
+						loading={loading}
+						decoding={decoding}
+						alt={alt}
+					/>
+				</AspectRatio>
+			) : (
 				<img
-					className="h-full w-full object-cover"
+					className="block h-full w-full object-cover"
 					src={src}
 					srcSet={srcSet}
 					sizes={sizes}
 					width={width}
 					height={height}
 					loading={loading}
+					decoding={decoding}
 					alt={alt}
 				/>
-			</AspectRatio>
+			)}
 		</div>
 	);
 };

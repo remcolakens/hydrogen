@@ -1,6 +1,5 @@
 import {
 	Links,
-	LiveReload,
 	Meta,
 	Outlet,
 	Scripts,
@@ -9,6 +8,7 @@ import {
 } from '@remix-run/react';
 import type { Shop } from '@shopify/hydrogen/storefront-api-types';
 
+import { ContainerDebug } from '@code-internet-applications/react';
 import {
 	V2_MetaFunction,
 	type LinksFunction,
@@ -93,12 +93,12 @@ export default function App() {
 				<Links />
 			</head>
 			<body>
+				<ContainerDebug />
 				<Layout>
 					<Outlet />
 				</Layout>
 				<ScrollRestoration />
 				<Scripts />
-				<LiveReload />
 			</body>
 		</html>
 	);

@@ -8,3 +8,5 @@ export interface IButtonProps
 	asChild?: boolean;
 	icon?: boolean;
 }
+
+export type buttonSizeProps = 'sm' | 'md' | 'lg';

@@ -28,7 +28,7 @@ const Footer: FC<IFooterProps> = ({ title, description }) => {
 	return (
 		<footer>
 			<div className="border-b border-t border-gray-200">
-				<Container className="my-8">
+				<Container>
 					<ContainerContent>
 						<div className="grid grid-cols-12 gap-4">
 							<section className="col-span-12 md:col-span-3">

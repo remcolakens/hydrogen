@@ -20,7 +20,7 @@
 	@screen md {
 		:root {
 			--site-side-spacing: 3.5rem;
-			--container-spacing: 3.5rem;
+			--container-spacing: 2rem;
 
 			--grid-col-gap: 1rem;
 			--grid-row-gap: 1rem;

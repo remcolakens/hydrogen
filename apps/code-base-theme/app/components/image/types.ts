@@ -1,7 +1,7 @@
 import { HTMLAttributes } from 'react';
 
 export interface IImageProps extends HTMLAttributes<HTMLElement> {
-	aspectRatio: number;
+	aspectRatio?: number;
 	src: string;
 	width: number;
 	height: number;
@@ -9,4 +9,5 @@ export interface IImageProps extends HTMLAttributes<HTMLElement> {
 	sizes?: string;
 	alt?: string;
 	loading?: 'lazy' | 'eager';
+	decoding?: 'sync' | 'async' | 'auto';
 }

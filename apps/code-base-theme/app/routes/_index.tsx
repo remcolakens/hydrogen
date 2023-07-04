@@ -1,27 +1,24 @@
-import {
-	Button,
-	Container,
-	ContainerContent,
-	Heading,
-	Text,
-} from '@code-internet-applications/react';
+import { Container, ContainerContent } from '@code-internet-applications/react';
+import { HeroImage } from '~/components';
 
 export default function Homepage() {
 	return (
-		<Container>
-			<ContainerContent>
-				<Heading>Hello CODE.</Heading>
-				<Text className="mt-4">
-					Welcome to the Code Base Theme Hydrogen (CBTH).
-				</Text>
-				<Button
-					className="mt-4"
-					onClick={() => {
-						window.location.href = 'https://youtu.be/dQw4w9WgXcQ';
+		<Container className="mt-0">
+			<ContainerContent className="p-0">
+				<HeroImage
+					title="Welcome to Code Shop!"
+					description="Custom Domain Collection is now up, live, and running"
+					image={{
+						src: '//cdn.shopify.com/s/files/1/0551/4566/0472/files/Chalet_Collection_Feature_2.jpg?v=1654902306&crop=center&width=2880',
+						alt: 'Chalet Collection',
 					}}
-				>
-					Lets get started
-				</Button>
+					button={{
+						text: 'Shop collection',
+						handleClick: () => {
+							console.log('Hello there');
+						},
+					}}
+				/>
 			</ContainerContent>
 		</Container>
 	);

@@ -15,7 +15,7 @@ const headingVariants = cva('', {
 			heading3: ['text-5xl leading-h3'],
 			heading4: ['text-4xl leading-h4'],
 			heading5: ['text-2xl leading-h5'],
-			heading6: ['text-lg leading-h6'],
+			heading6: ['text-xl leading-h6'],
 		},
 	},
 	defaultVariants: {

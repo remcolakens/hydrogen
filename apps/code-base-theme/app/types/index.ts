@@ -22,3 +22,5 @@ export type {
 	NavItem,
 	Navigation,
 } from '~/components/main-navigation/types';
+
+export type { IHeroImageProps } from '~/components/hero-image/types';
