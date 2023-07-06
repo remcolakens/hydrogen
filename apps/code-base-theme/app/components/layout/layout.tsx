@@ -1,3 +1,4 @@
+import { AnnouncementBar } from '@code-internet-applications/react';
 import { FC } from 'react';
 import { Footer, Header } from '~/components';
 import type { ILayoutProps } from '~/types';
@@ -10,6 +11,11 @@ const Layout: FC<ILayoutProps> = ({ children }) => {
 					Skip to content
 				</a>
 			</div>
+
+			<AnnouncementBar
+				variant="primary"
+				text="Free shipping on all orders above €30"
+			/>
 
 			<Header />
 

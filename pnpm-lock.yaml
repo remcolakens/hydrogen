@@ -231,6 +231,21 @@ importers:
         specifier: ^3.3.2
         version: 3.3.2(ts-node@10.9.1)
 
+  packages/components/announcement-bar:
+    dependencies:
+      '@code-internet-applications/tailwind-utils':
+        specifier: workspace:*
+        version: link:../../utilities/tailwind-utils
+      class-variance-authority:
+        specifier: ^0.6.0
+        version: 0.6.0(typescript@5.1.6)
+      react:
+        specifier: ^18.2.0
+        version: 18.2.0
+      tailwindcss:
+        specifier: ^3.3.2
+        version: 3.3.2(ts-node@10.9.1)
+
   packages/components/aspect-ratio:
     dependencies:
       '@radix-ui/react-aspect-ratio':
@@ -450,6 +465,9 @@ importers:
       '@code-internet-applications/accordion':
         specifier: workspace:*
         version: link:../accordion
+      '@code-internet-applications/announcement-bar':
+        specifier: workspace:*
+        version: link:../announcement-bar
       '@code-internet-applications/aspect-ratio':
         specifier: workspace:*
         version: link:../aspect-ratio
@@ -8449,6 +8467,18 @@ packages:
   /ci-info@3.8.0:
     resolution: {integrity: sha512-eXTggHWSooYhq49F2opQhuHWgzucfF2YgODK4e1566GQs5BIfP30B0oenwBJHfWxAs2fyPB1s7Mg949zLf61Yw==}
     engines: {node: '>=8'}
+
+  /class-variance-authority@0.6.0(typescript@5.1.6):
+    resolution: {integrity: sha512-qdRDgfjx3GRb9fpwpSvn+YaidnT7IUJNe4wt5/SWwM+PmUwJUhQRk/8zAyNro0PmVfmen2635UboTjIBXXxy5A==}
+    peerDependencies:
+      typescript: '>= 4.5.5 < 6'
+    peerDependenciesMeta:
+      typescript:
+        optional: true
+    dependencies:
+      clsx: 1.2.1
+      typescript: 5.1.6
+    dev: false
 
   /class-variance-authority@0.6.1:
     resolution: {integrity: sha512-eurOEGc7YVx3majOrOb099PNKgO3KnKSApOprXI4BTq6bcfbqbQXPN2u+rPPmIJ2di23bMwhk0SxCCthBmszEQ==}

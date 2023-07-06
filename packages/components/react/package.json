@@ -37,6 +37,7 @@
 		"@code-internet-applications/heading": "workspace:*",
 		"@code-internet-applications/navigation-menu": "workspace:*",
 		"@code-internet-applications/text": "workspace:*",
+		"@code-internet-applications/announcement-bar": "workspace:*",
 		"@code-internet-applications/card": "workspace:*",
 		"@code-internet-applications/aspect-ratio": "workspace:*",
 		"@code-internet-applications/radio": "workspace:*",
