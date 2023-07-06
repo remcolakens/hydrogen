@@ -1,0 +1,192 @@
+{
+	"products": {
+		"nodes": [
+			{
+				"id": "gid://shopify/Product/6730850828344",
+				"title": "The Hydrogen Snowboard",
+				"handle": "snowboard",
+				"vendor": "Snowdevil",
+				"variants": {
+					"nodes": [
+						{
+							"id": "gid://shopify/ProductVariant/41007289630776",
+							"price": {
+								"amount": "600.0",
+								"currencyCode": "USD"
+							},
+							"compareAtPrice": {
+								"amount": "649.95",
+								"currencyCode": "USD"
+							},
+							"product": {
+								"handle": "snowboard",
+								"title": "The Hydrogen Snowboard",
+								"tags": [],
+								"featuredImage": {
+									"url": "https://cdn.shopify.com/s/files/1/0551/4566/0472/products/Main.jpg?v=1655932274",
+									"altText": null,
+									"width": 3908,
+									"height": 3908
+								},
+								"images": {
+									"nodes": [
+										{
+											"url": "https://cdn.shopify.com/s/files/1/0551/4566/0472/products/Main.jpg?v=1655932274",
+											"altText": null,
+											"width": 3908,
+											"height": 3908
+										},
+										{
+											"url": "https://cdn.shopify.com/s/files/1/0551/4566/0472/products/PDP1.jpg?v=1655932274",
+											"altText": null,
+											"width": 3097,
+											"height": 3908
+										}
+									]
+								}
+							}
+						}
+					]
+				}
+			},
+			{
+				"id": "gid://shopify/Product/6730943823928",
+				"title": "The Full Stack Snowboard",
+				"handle": "the-full-stack",
+				"vendor": "Snowdevil",
+				"variants": {
+					"nodes": [
+						{
+							"id": "gid://shopify/ProductVariant/41007290482744",
+							"price": {
+								"amount": "749.95",
+								"currencyCode": "USD"
+							},
+							"compareAtPrice": null,
+							"product": {
+								"handle": "the-full-stack",
+								"title": "The Full Stack Snowboard",
+								"tags": [],
+								"featuredImage": {
+									"url": "https://cdn.shopify.com/s/files/1/0551/4566/0472/products/Main_c8ff0b5d-c712-429a-be00-b29bd55cbc9d.jpg?v=1655933474",
+									"altText": null,
+									"width": 3908,
+									"height": 3908
+								},
+								"images": {
+									"nodes": [
+										{
+											"url": "https://cdn.shopify.com/s/files/1/0551/4566/0472/products/Main_c8ff0b5d-c712-429a-be00-b29bd55cbc9d.jpg?v=1655933474",
+											"altText": null,
+											"width": 3908,
+											"height": 3908
+										},
+										{
+											"url": "https://cdn.shopify.com/s/files/1/0551/4566/0472/products/PDP1_6928063d-da03-4c54-bb49-a4a68bf2aa81.jpg?v=1655933475",
+											"altText": null,
+											"width": 3097,
+											"height": 3908
+										}
+									]
+								}
+							}
+						}
+					]
+				}
+			},
+			{
+				"id": "gid://shopify/Product/6730943922232",
+				"title": "The S-Series Snowboard",
+				"handle": "shopify-aurora",
+				"vendor": "Snowdevil",
+				"variants": {
+					"nodes": [
+						{
+							"id": "gid://shopify/ProductVariant/41007290810424",
+							"price": {
+								"amount": "699.95",
+								"currencyCode": "USD"
+							},
+							"compareAtPrice": null,
+							"product": {
+								"handle": "shopify-aurora",
+								"title": "The S-Series Snowboard",
+								"tags": [],
+								"featuredImage": {
+									"url": "https://cdn.shopify.com/s/files/1/0551/4566/0472/products/Main_589fc064-24a2-4236-9eaf-13b2bd35d21d.jpg?v=1655933595",
+									"altText": null,
+									"width": 3908,
+									"height": 3908
+								},
+								"images": {
+									"nodes": [
+										{
+											"url": "https://cdn.shopify.com/s/files/1/0551/4566/0472/products/Main_589fc064-24a2-4236-9eaf-13b2bd35d21d.jpg?v=1655933595",
+											"altText": null,
+											"width": 3908,
+											"height": 3908
+										},
+										{
+											"url": "https://cdn.shopify.com/s/files/1/0551/4566/0472/products/PDP1_85a43fe8-f8a4-4d53-bc19-d95018535845.jpg?v=1655933596",
+											"altText": null,
+											"width": 3097,
+											"height": 3908
+										}
+									]
+								}
+							}
+						}
+					]
+				}
+			},
+			{
+				"id": "gid://shopify/Product/6730943955000",
+				"title": "The H2 Snowboard",
+				"handle": "the-h2-snowboard",
+				"vendor": "Snowdevil",
+				"variants": {
+					"nodes": [
+						{
+							"id": "gid://shopify/ProductVariant/41007290712120",
+							"price": {
+								"amount": "629.95",
+								"currencyCode": "USD"
+							},
+							"compareAtPrice": {
+								"amount": "799.99",
+								"currencyCode": "USD"
+							},
+							"product": {
+								"handle": "the-h2-snowboard",
+								"title": "The H2 Snowboard",
+								"tags": [],
+								"featuredImage": {
+									"url": "https://cdn.shopify.com/s/files/1/0551/4566/0472/products/Main_0a40b01b-5021-48c1-80d1-aa8ab4876d3d.jpg?v=1655933200",
+									"altText": null,
+									"width": 3908,
+									"height": 3908
+								},
+								"images": {
+									"nodes": [
+										{
+											"url": "https://cdn.shopify.com/s/files/1/0551/4566/0472/products/Main_0a40b01b-5021-48c1-80d1-aa8ab4876d3d.jpg?v=1655933200",
+											"altText": null,
+											"width": 3908,
+											"height": 3908
+										},
+										{
+											"url": "https://cdn.shopify.com/s/files/1/0551/4566/0472/products/PDP1_c3f0c5d4-f1a3-4eb1-9f7a-deb86b6fb0e9.jpg?v=1655933200",
+											"altText": null,
+											"width": 3097,
+											"height": 3908
+										}
+									]
+								}
+							}
+						}
+					]
+				}
+			}
+		]
+	}
+}

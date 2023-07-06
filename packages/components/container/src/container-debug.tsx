@@ -1,4 +1,7 @@
-import { cn } from '@code-internet-applications/tailwind-utils';
+import {
+	cn,
+	defaultGridClasses,
+} from '@code-internet-applications/tailwind-utils';
 import { FC, useState } from 'react';
 import { Button } from '../../button';
 import { C4Icon } from '../../icon';
@@ -22,7 +25,8 @@ const ContainerDebug: FC<IContainerProps> = ({ size, className }) => {
 						<div
 							className={cn(
 								containerVariants({ size }),
-								'grid h-full w-full grid-cols-2 gap-4 opacity-20 md:grid-cols-12',
+								defaultGridClasses(),
+								'h-full w-full opacity-20',
 								className,
 							)}
 						>

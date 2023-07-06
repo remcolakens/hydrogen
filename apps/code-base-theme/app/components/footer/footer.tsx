@@ -15,6 +15,10 @@ import {
 	ContainerContent,
 	Text,
 } from '@code-internet-applications/react';
+import {
+	cn,
+	defaultGridClasses,
+} from '@code-internet-applications/tailwind-utils';
 import { FC } from 'react';
 import { Logo } from '~/components';
 import type { IFooterProps } from '~/types';
@@ -30,8 +34,8 @@ const Footer: FC<IFooterProps> = ({ title, description }) => {
 			<div className="border-b border-t border-gray-200">
 				<Container>
 					<ContainerContent>
-						<div className="grid grid-cols-12 gap-4">
-							<section className="col-span-12 md:col-span-3">
+						<div className={defaultGridClasses()}>
+							<section className="col-span-2 md:col-span-3">
 								<Logo brand={false} size="large" className="mb-4" />
 								<Text size="label1" weight="bold" className="mb-2">
 									{title}
@@ -186,8 +190,8 @@ const Footer: FC<IFooterProps> = ({ title, description }) => {
 
 			<Container className="mb-4 mt-6 md:mt-8">
 				<ContainerContent>
-					<div className="grid grid-cols-12 gap-2">
-						<section className="col-span-12 flex justify-center">
+					<div className={cn(defaultGridClasses(), 'gap-0')}>
+						<section className="col-span-2 flex justify-center md:col-span-12">
 							<ul className="flex gap-x-1">
 								<li>
 									<VisaIcon className="h-6 w-[34px] text-gray-200" />
@@ -212,7 +216,7 @@ const Footer: FC<IFooterProps> = ({ title, description }) => {
 
 						<FooterNavigationSection
 							ariaLabel="privacy-navigation"
-							className="flex justify-center md:col-span-12 md:mt-2"
+							className="col-span-2 text-center md:col-span-12 md:mt-2"
 							navigationMenuListClasses="items-center gap-2 md:gap-6 md:flex-row justify-center"
 							navigation={[
 								{
@@ -228,7 +232,7 @@ const Footer: FC<IFooterProps> = ({ title, description }) => {
 							]}
 						/>
 
-						<section className="col-span-12 mt-2 flex justify-center">
+						<section className="col-span-2 mt-2 text-center md:col-span-12">
 							<Text className="leading-7" as="span">
 								{copyrightSymbol} Code Shop {currentYear}. All rights reserved
 							</Text>

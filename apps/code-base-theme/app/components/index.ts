@@ -7,4 +7,6 @@ export { Layout } from '~/components/layout/layout';
 export { Logo, logoVariants } from '~/components/logo/logo';
 export { MainNavigation } from '~/components/main-navigation/main-navigation';
 export { ProductCard } from '~/components/product-card/product-card';
+export { ProductGrid } from '~/components/product-grid/product-grid';
+export { productGridMapper } from '~/components/product-grid/product-grid-mapper';
 export { TextBlock } from '~/components/text-block/text-block';

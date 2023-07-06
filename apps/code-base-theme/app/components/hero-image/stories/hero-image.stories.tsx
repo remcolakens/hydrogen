@@ -14,8 +14,18 @@ export const heroImage: Story = {
 			title="Welcome to Code Shop!"
 			description="Custom Domain Collection is now up, live, and running"
 			image={{
-				src: '//cdn.shopify.com/s/files/1/0551/4566/0472/files/Chalet_Collection_Feature_2.jpg?v=1654902306&crop=center&width=2880',
-				alt: 'Chalet Collection',
+				desktop: {
+					url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/files/Chalet_Collection_Feature_2.jpg?v=1654902306',
+					altText: 'Chalet Collection',
+					width: 2500,
+					height: 2500,
+				},
+				mobile: {
+					url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/articles/mads-schmidt-rasmussen-tSp5_w9h5TQ-unsplash.jpg?v=1654967781',
+					altText: 'Hats_and_Accessories',
+					width: 4500,
+					height: 3375,
+				},
 			}}
 			button={{
 				text: 'Shop collection',

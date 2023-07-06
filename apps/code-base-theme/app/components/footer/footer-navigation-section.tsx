@@ -23,9 +23,7 @@ const FooterNavigationSection: FC<IFooterNavigationSectionProps> = ({
 	ariaLabel,
 }) => {
 	return (
-		<section
-			className={cn('col-span-12 mt-6 md:col-span-2 md:mt-0', className)}
-		>
+		<section className={cn('col-span-2 mt-6 md:mt-0', className)}>
 			{title ? (
 				<Text size="label1" weight="bold" className="mb-4 md:mb-6">
 					{title}

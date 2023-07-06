@@ -1,3 +1,7 @@
+import {
+	cn,
+	defaultGridClasses,
+} from '@code-internet-applications/tailwind-utils';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const storyTitle = 'Grid/Mobile';
@@ -5,28 +9,18 @@ const storyTitle = 'Grid/Mobile';
 const GridMobile = () => {
 	return (
 		<>
-			<div className="container mb-4">
-				<div className="container__content">
-					<div className="grid h-60 grid-cols-2 gap-4">
-						<div className="bg-funnel-50"></div>
-						<div className="bg-funnel-50"></div>
-					</div>
-				</div>
+			<div className={cn(defaultGridClasses(), 'h-60 md:grid-cols-2')}>
+				<div className="col-span-1 bg-funnel-50 md:col-span-1"></div>
+				<div className="col-span-1 bg-funnel-50 md:col-span-1"></div>
 			</div>
 
-			<div className="container mb-4">
-				<div className="container__content">
-					<div className="mb-4 grid h-10 grid-cols-1">
-						<div className="bg-funnel-50"></div>
-					</div>
-				</div>
+			<div className={cn(defaultGridClasses(), 'mt-4 h-10 md:grid-cols-2')}>
+				<div className="col-span-2 bg-funnel-50 md:col-span-2"></div>
+			</div>
 
-				<div className="container__content">
-					<div className="grid h-10 grid-cols-2 gap-4">
-						<div className="bg-funnel-50"></div>
-						<div className="bg-funnel-50"></div>
-					</div>
-				</div>
+			<div className={cn(defaultGridClasses(), 'mt-4 h-10 md:grid-cols-2')}>
+				<div className="col-span-1 bg-funnel-50 md:col-span-1"></div>
+				<div className="col-span-1 bg-funnel-50 md:col-span-1"></div>
 			</div>
 		</>
 	);

@@ -1,3 +1,7 @@
+import {
+	cn,
+	defaultGridClasses,
+} from '@code-internet-applications/tailwind-utils';
 import type { Meta, StoryObj } from '@storybook/react';
 
 const storyTitle = 'Grid/Base';
@@ -5,66 +9,58 @@ const storyTitle = 'Grid/Base';
 const GridBase = () => {
 	return (
 		<>
-			<div className="container mb-4">
-				<div className="container__content">
-					<div className="grid h-60 grid-cols-12 gap-4">
-						<div className="bg-funnel-50"></div>
-						<div className="bg-funnel-50"></div>
-						<div className="bg-funnel-50"></div>
-						<div className="bg-funnel-50"></div>
-						<div className="bg-funnel-50"></div>
-						<div className="bg-funnel-50"></div>
-						<div className="bg-funnel-50"></div>
-						<div className="bg-funnel-50"></div>
-						<div className="bg-funnel-50"></div>
-						<div className="bg-funnel-50"></div>
-						<div className="bg-funnel-50"></div>
-						<div className="bg-funnel-50"></div>
-					</div>
-				</div>
+			<div className={cn(defaultGridClasses(), 'h-60')}>
+				<div className="bg-funnel-50"></div>
+				<div className="bg-funnel-50"></div>
+				<div className="bg-funnel-50"></div>
+				<div className="bg-funnel-50"></div>
+				<div className="bg-funnel-50"></div>
+				<div className="bg-funnel-50"></div>
+				<div className="bg-funnel-50"></div>
+				<div className="bg-funnel-50"></div>
+				<div className="bg-funnel-50"></div>
+				<div className="bg-funnel-50"></div>
+				<div className="bg-funnel-50"></div>
+				<div className="bg-funnel-50"></div>
 			</div>
 
-			<div className="container">
-				<div className="container__content">
-					<div className="mb-4 grid h-10 grid-cols-1 gap-4">
-						<div className="bg-funnel-50"></div>
-					</div>
+			<div className={cn(defaultGridClasses(), 'mt-4 h-10')}>
+				<div className="col-span-12 bg-funnel-50"></div>
+			</div>
 
-					<div className="mb-4 grid h-10 grid-cols-2 gap-4">
-						<div className="bg-funnel-50"></div>
-						<div className="bg-funnel-50"></div>
-					</div>
+			<div className={cn(defaultGridClasses(), 'mt-4 h-10')}>
+				<div className="col-span-6 bg-funnel-50"></div>
+				<div className="col-span-6 bg-funnel-50"></div>
+			</div>
 
-					<div className="mb-4 grid h-10 grid-cols-3 gap-4">
-						<div className="bg-funnel-50"></div>
-						<div className="bg-funnel-50"></div>
-						<div className="bg-funnel-50"></div>
-					</div>
+			<div className={cn(defaultGridClasses(), 'mt-4 h-10')}>
+				<div className="col-span-4 bg-funnel-50"></div>
+				<div className="col-span-4 bg-funnel-50"></div>
+				<div className="col-span-4 bg-funnel-50"></div>
+			</div>
 
-					<div className="mb-4 grid h-10 grid-cols-4 gap-4">
-						<div className="bg-funnel-50"></div>
-						<div className="bg-funnel-50"></div>
-						<div className="bg-funnel-50"></div>
-						<div className="bg-funnel-50"></div>
-					</div>
+			<div className={cn(defaultGridClasses(), 'mt-4 h-10')}>
+				<div className="col-span-3 bg-funnel-50"></div>
+				<div className="col-span-3 bg-funnel-50"></div>
+				<div className="col-span-3 bg-funnel-50"></div>
+				<div className="col-span-3 bg-funnel-50"></div>
+			</div>
 
-					<div className="mb-4 grid h-10 grid-cols-5 gap-4">
-						<div className="bg-funnel-50"></div>
-						<div className="bg-funnel-50"></div>
-						<div className="bg-funnel-50"></div>
-						<div className="bg-funnel-50"></div>
-						<div className="bg-funnel-50"></div>
-					</div>
+			<div className={cn(defaultGridClasses(), 'mt-4 h-10 md:grid-cols-5')}>
+				<div className="col-span-1 bg-funnel-50"></div>
+				<div className="col-span-1 bg-funnel-50"></div>
+				<div className="col-span-1 bg-funnel-50"></div>
+				<div className="col-span-1 bg-funnel-50"></div>
+				<div className="col-span-1 bg-funnel-50"></div>
+			</div>
 
-					<div className="mb-4 grid h-10 grid-cols-6 gap-4">
-						<div className="bg-funnel-50"></div>
-						<div className="bg-funnel-50"></div>
-						<div className="bg-funnel-50"></div>
-						<div className="bg-funnel-50"></div>
-						<div className="bg-funnel-50"></div>
-						<div className="bg-funnel-50"></div>
-					</div>
-				</div>
+			<div className={cn(defaultGridClasses(), 'mt-4 h-10')}>
+				<div className="col-span-2 bg-funnel-50"></div>
+				<div className="col-span-2 bg-funnel-50"></div>
+				<div className="col-span-2 bg-funnel-50"></div>
+				<div className="col-span-2 bg-funnel-50"></div>
+				<div className="col-span-2 bg-funnel-50"></div>
+				<div className="col-span-2 bg-funnel-50"></div>
 			</div>
 		</>
 	);

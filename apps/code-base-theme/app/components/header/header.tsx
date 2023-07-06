@@ -11,6 +11,10 @@ import {
 	ContainerContent,
 } from '@code-internet-applications/react';
 
+import {
+	cn,
+	defaultGridClasses,
+} from '@code-internet-applications/tailwind-utils';
 import { Link } from '@remix-run/react';
 import { FC, useState } from 'react';
 import { Logo, MainNavigation } from '~/components';
@@ -24,7 +28,12 @@ const Header: FC<IHeaderProps> = () => {
 		<header className="border-b border-gray-200">
 			<Container className="my-0">
 				<ContainerContent>
-					<div className="relative flex items-center py-3 md:grid md:grid-cols-12 md:gap-4">
+					<div
+						className={cn(
+							defaultGridClasses(),
+							'relative flex items-center py-3 md:grid',
+						)}
+					>
 						<div className="flex-1 md:hidden">
 							<Button
 								variant="ghost"

@@ -1,3 +1,5 @@
+export type { IDocumentProps } from './root';
+
 export type {
 	IFooterNavigationSectionItemProps,
 	IFooterNavigationSectionProps,
@@ -26,3 +28,5 @@ export type {
 export type { IHeroImageProps } from '~/components/hero-image/types';
 
 export type { ITextBlockProps } from '~/components/text-block/types';
+
+export type { IProductGridProps } from '~/components/product-grid/types';

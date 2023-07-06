@@ -1,5 +1,8 @@
 import { Button, Heading, Text } from '@code-internet-applications/react';
-import { cn } from '@code-internet-applications/tailwind-utils';
+import {
+	cn,
+	defaultGridClasses,
+} from '@code-internet-applications/tailwind-utils';
 import parse from 'html-react-parser';
 import { FC } from 'react';
 import type { ITextBlockProps } from '~/types';
@@ -10,16 +13,20 @@ const TextBlock: FC<ITextBlockProps> = ({
 	button,
 	className,
 }) => (
-	<div className="grid grid-cols-12 gap-4">
+	<div className={defaultGridClasses()}>
 		<div
 			className={cn(
-				'col-span-12 text-center md:col-span-8 md:col-start-3',
+				'col-span-2 text-center md:col-span-8 md:col-start-3',
 				className,
 			)}
 		>
-			<Heading className="text-xl leading-h6 md:text-4xl md:leading-h4">
+			<Heading size="heading4" className="hidden md:inline-flex">
 				{parse(title)}
 			</Heading>
+			<Heading size="heading6" className="inline-flex md:hidden">
+				{parse(title)}
+			</Heading>
+
 			<Text className="mt-6" size="body1">
 				{parse(description)}
 			</Text>

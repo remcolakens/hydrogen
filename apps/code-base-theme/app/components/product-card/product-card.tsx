@@ -13,16 +13,23 @@ import { FC, useState } from 'react';
 import { HydrogenImage } from '~/components';
 import type { IProductCardImage, IProductCardProps } from '~/types';
 
+const defaultImage: IProductCardImage = {
+	url: './cart-placeholder.jpg',
+};
+
 const ProductCard: FC<IProductCardProps> = ({
 	brand,
 	name,
 	url,
 	price,
+	aspectRatio,
 	badges,
 	featuredImage,
 	images,
 }) => {
-	const [image, setImage] = useState<IProductCardImage>(featuredImage);
+	const [image, setImage] = useState<IProductCardImage>(
+		featuredImage ?? defaultImage,
+	);
 
 	const handleAddToCart = () => {
 		console.log('Add to cart');
@@ -30,59 +37,73 @@ const ProductCard: FC<IProductCardProps> = ({
 
 	const handleProductImageChange = (isMouseEnter: boolean) => {
 		if (isMouseEnter) {
-			setImage(images?.[0] || featuredImage);
+			setImage((images?.[1] || featuredImage) ?? defaultImage);
 		} else {
-			setImage(featuredImage);
+			setImage(featuredImage ?? defaultImage);
 		}
 	};
 
 	return (
-		<div className="w-80">
-			<Card
-				onMouseEnter={() => handleProductImageChange(true)}
-				onMouseLeave={() => handleProductImageChange(false)}
-			>
-				<Link to={url}>
-					<CardContent className="relative overflow-hidden p-0">
-						<div className="absolute left-0 top-0 z-10 flex flex-wrap items-start gap-2 p-4">
-							{badges?.map((badge) => (
-								<Badge key={badge.id} size="md" variant="primary">
-									{badge.name}
-								</Badge>
-							))}
-						</div>
+		<Card
+			onMouseEnter={() => handleProductImageChange(true)}
+			onMouseLeave={() => handleProductImageChange(false)}
+		>
+			<Link to={url}>
+				<CardContent className="relative overflow-hidden p-0">
+					<div className="absolute left-0 top-0 z-10 flex flex-wrap items-start gap-2 p-4">
+						{badges?.map((badge) => (
+							<Badge key={badge.id} size="md" variant="primary">
+								{badge.name}
+							</Badge>
+						))}
+					</div>
 
-						<HydrogenImage
-							aspectRatio={1}
-							width={image.width}
-							height={image.height}
-							src={image.src}
-							className="overflow-hidden rounded-2xl"
-						/>
-						<div className="absolute bottom-0 left-0 z-10 p-4">
-							<Button variant="funnel" size="lg" onClick={handleAddToCart}>
-								Add to cart
-								<AddToBagIcon className="ml-2.5" />
-							</Button>
-						</div>
-					</CardContent>
-					<CardFooter className="pt-4">
-						<Text size="body3" className="text-gray-500">
-							{brand}
-						</Text>
-						<Text size="label1" weight="bold">
-							{name}
-						</Text>
-						<Price
+					<HydrogenImage
+						aspectRatio={aspectRatio}
+						sizes="(min-width: 1440px) 320px, (min-width: 375px) 160px"
+						name={name}
+						image={image}
+						className="overflow-hidden rounded-2xl"
+					/>
+
+					<div className="absolute bottom-0 left-0 z-10 flex w-full justify-center p-4 md:justify-start">
+						<Button
+							variant="funnel"
+							size="lg"
+							onClick={handleAddToCart}
+							className="hidden whitespace-nowrap md:inline-flex"
+						>
+							Add to cart
+							<AddToBagIcon className="ml-2.5" />
+						</Button>
+
+						<Button
+							variant="funnel"
 							size="md"
-							originalAmount={price.orginal}
-							discountAmount={price.discount}
-							orientation={price.orientation}
-						/>
-					</CardFooter>
-				</Link>
-			</Card>
-		</div>
+							onClick={handleAddToCart}
+							className="inline-flex md:hidden"
+							icon
+						>
+							<AddToBagIcon />
+						</Button>
+					</div>
+				</CardContent>
+				<CardFooter className="pt-4">
+					<Text size="body3" className="text-gray-500">
+						{brand}
+					</Text>
+					<Text size="label1" weight="bold">
+						{name}
+					</Text>
+					<Price
+						size="md"
+						originalAmount={price.orginal}
+						discountAmount={price.discount}
+						orientation={price.orientation}
+					/>
+				</CardFooter>
+			</Link>
+		</Card>
 	);
 };
 

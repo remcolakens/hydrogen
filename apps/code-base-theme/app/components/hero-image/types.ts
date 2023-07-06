@@ -1,16 +1,12 @@
-import { buttonSizeProps } from '@code-internet-applications/react';
+import { IButton } from '@code-internet-applications/react';
+import { IProductCardImage } from '~/types';
 
 export interface IHeroImageProps {
 	title: string;
 	description: string;
 	image: {
-		src: string;
-		alt: string;
+		mobile: IProductCardImage;
+		desktop: IProductCardImage;
 	};
-	button?: {
-		text: string;
-		handleClick: () => void;
-		size?: buttonSizeProps;
-		className?: string;
-	};
+	button?: IButton;
 }

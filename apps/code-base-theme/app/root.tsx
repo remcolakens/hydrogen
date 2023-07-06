@@ -5,22 +5,28 @@ import {
 	Scripts,
 	ScrollRestoration,
 	useLoaderData,
+	useRouteError,
 } from '@remix-run/react';
 import type { Shop } from '@shopify/hydrogen/storefront-api-types';
 
-import { ContainerDebug } from '@code-internet-applications/react';
+import {
+	Container,
+	ContainerContent,
+	ContainerDebug,
+} from '@code-internet-applications/react';
 import {
 	V2_MetaFunction,
 	type LinksFunction,
 	type LoaderArgs,
 } from '@shopify/remix-oxygen';
-import { Layout } from '~/components';
+import { HeroImage, Layout } from '~/components';
 import styles from '../../../packages/config/tailwind-config/tailwind.css';
 import appleTouchIcon from '../public/apple-touch-icon.png';
 import appleTouchIcon16 from '../public/favicon-16x16.png';
 import appleTouchIcon32 from '../public/favicon-32x32.png';
 import safariPinnedTab from '../public/safari-pinned-tab.svg';
 import siteWebmanifest from '../public/site.webmanifest';
+import { IDocumentProps } from './types';
 
 export const links: LinksFunction = () => {
 	return [
@@ -78,12 +84,12 @@ export async function loader({ context }: LoaderArgs) {
 	return { layout };
 }
 
-export default function App() {
-	const data = useLoaderData<typeof loader>();
-
-	const { name } = data.layout.shop;
-
-	console.log(name);
+function Document({ hasError, children }: IDocumentProps) {
+	if (!hasError) {
+		const data = useLoaderData<typeof loader>();
+		const { name } = data.layout.shop;
+		console.log(name);
+	}
 
 	return (
 		<html lang="en">
@@ -95,9 +101,7 @@ export default function App() {
 			</head>
 			<body>
 				<ContainerDebug />
-				<Layout>
-					<Outlet />
-				</Layout>
+				<Layout>{children}</Layout>
 				<ScrollRestoration />
 				<Scripts />
 			</body>
@@ -105,6 +109,49 @@ export default function App() {
 	);
 }
 
+export default function App() {
+	return (
+		<Document>
+			<Outlet />
+		</Document>
+	);
+}
+
+export function ErrorBoundary() {
+	const error = useRouteError();
+	console.error(error);
+
+	return (
+		<Document hasError>
+			<Container className="mt-0">
+				<ContainerContent className="p-0">
+					<HeroImage
+						title="404 ;("
+						description="The page is currently on quarantine, come backto visit later."
+						image={{
+							mobile: {
+								url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/articles/mads-schmidt-rasmussen-tSp5_w9h5TQ-unsplash.jpg?v=1654967781',
+								altText: 'Hats_and_Accessories',
+								width: 4500,
+								height: 3375,
+							},
+							desktop: {
+								url: 'https://cdn.shopify.com/s/files/1/0551/4566/0472/articles/mads-schmidt-rasmussen-tSp5_w9h5TQ-unsplash.jpg?v=1654967781',
+								altText: 'Hats_and_Accessories',
+								width: 4500,
+								height: 3375,
+							},
+						}}
+						button={{
+							text: 'Back to Homepage',
+							href: '/',
+						}}
+					/>
+				</ContainerContent>
+			</Container>
+		</Document>
+	);
+}
 const LAYOUT_QUERY = `#graphql
   query layout {
     shop {

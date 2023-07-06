@@ -6,6 +6,7 @@ build
 public
 storybook-static
 *.hbs
+*.d.ts
 
 **/dist/**
 **/__tmp__/**

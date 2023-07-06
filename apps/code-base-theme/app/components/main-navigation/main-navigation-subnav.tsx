@@ -3,6 +3,10 @@ import {
 	NavigationMenuItem,
 	NavigationMenuTrigger,
 } from '@code-internet-applications/react';
+import {
+	cn,
+	defaultGridClasses,
+} from '@code-internet-applications/tailwind-utils';
 import { FC } from 'react';
 import { MainNavigationSubnavColumn } from './main-navigation-subnav-column';
 import { MainNavigationSubnavImage } from './main-navigation-subnav-image';
@@ -16,7 +20,7 @@ const MainNavigationSubnav: FC<IMainNavigationSubnav> = ({
 		<NavigationMenuItem>
 			<NavigationMenuTrigger>{name}</NavigationMenuTrigger>
 			<NavigationMenuContent>
-				<div className="grid w-full grid-cols-12 gap-4 py-6 ">
+				<div className={cn(defaultGridClasses(), 'w-full py-6')}>
 					{navItems.map((item, index) => {
 						switch (item.type) {
 							case 'column': {

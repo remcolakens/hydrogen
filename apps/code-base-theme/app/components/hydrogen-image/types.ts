@@ -1,10 +1,11 @@
 import { HTMLAttributes } from 'react';
+import { IProductCardImage } from '~/types';
 
 export interface IHydrogenImageProps extends HTMLAttributes<HTMLElement> {
-	aspectRatio: number;
-	src: string;
-	crop?: 'center' | 'top' | 'bottom' | 'left' | 'right';
-	width?: number;
-	height?: number;
+	aspectRatio?: string;
+	image: IProductCardImage;
+	sizes: string;
+	name: string;
 	alt?: string;
+	loading?: 'lazy' | 'eager';
 }

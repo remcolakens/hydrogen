@@ -6,7 +6,7 @@ import { forwardRef } from 'react';
 import { NavigationMenuTriggerProps, NavigationMenuTriggerRef } from './types';
 
 const navigationMenuTriggerStyle = cva(
-	'group inline-flex h-7 w-max items-center justify-center border-b border-transparent bg-white transition-colors hover:border-primary hover:text-primary focus:border-primary focus:text-primary focus:outline-none active:border-primary-400 active:text-primary-400 data-[active]:border-primary-400 data-[state=open]:border-primary data-[active]:text-primary-400 data-[state=open]:text-primary disabled:pointer-events-none disabled:opacity-50',
+	'group inline-flex h-7 w-max items-center justify-center border-b border-transparent bg-white leading-7 transition-colors hover:border-primary hover:text-primary focus:border-primary focus:text-primary focus:outline-none active:border-primary-400 active:text-primary-400 data-[active]:border-primary-400 data-[state=open]:border-primary data-[active]:text-primary-400 data-[state=open]:text-primary disabled:pointer-events-none disabled:opacity-50',
 );
 
 const NavigationMenuTrigger = forwardRef<

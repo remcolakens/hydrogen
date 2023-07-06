@@ -9,6 +9,15 @@ export interface IButtonProps
 	icon?: boolean;
 }
 
+export interface IButton {
+	text?: string;
+	handleClick?: () => void;
+	href?: string;
+	size?: buttonSizeProps;
+	variant?: buttonVariantProps;
+	className?: string;
+}
+
 export type buttonSizeProps = 'sm' | 'md' | 'lg';
 export type buttonVariantProps =
 	| 'primary'
