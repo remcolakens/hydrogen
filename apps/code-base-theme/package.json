@@ -5,7 +5,7 @@
 	"description": "The repository for the Code Base Theme Hydrogen",
 	"sideEffects": false,
 	"scripts": {
-		"dev": "shopify hydrogen dev",
+		"dev": "shopify hydrogen dev --codegen-unstable",
 		"codegen": "shopify hydrogen codegen-unstable",
 		"build": "shopify hydrogen build",
 		"clean": "rimraf dist .turbo node_modules .cache",
@@ -17,6 +17,7 @@
 		"@code-internet-applications/icon": "workspace:*",
 		"@code-internet-applications/react": "workspace:*",
 		"@code-internet-applications/tailwind-utils": "workspace:*",
+		"@code-internet-applications/hydrogen-utils": "workspace:*",
 		"@remix-run/react": "1.17.1",
 		"@shopify/cli": "3.45.0",
 		"@shopify/cli-hydrogen": "^5.0.2",
@@ -24,9 +25,10 @@
 		"@shopify/remix-oxygen": "^1.1.1",
 		"framer-motion": "^10.12.18",
 		"graphql": "^16.7.1",
-		"graphql-tag": "^2.12.6",
 		"html-react-parser": "^4.0.0",
-		"isbot": "^3.6.12"
+		"isbot": "^3.6.12",
+		"react-use": "^17.4.0",
+		"tiny-invariant": "^1.3.1"
 	},
 	"devDependencies": {
 		"@code-internet-applications/eslint-config-code": "workspace:*",

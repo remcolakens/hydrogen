@@ -1,6 +1,6 @@
 import { IMenuData } from '~/types';
 
-export const multipleMenu: IMenuData[] = [
+export const mainNavigationData: IMenuData[] = [
 	{
 		name: 'T-shirts',
 		navigation: [
@@ -8,10 +8,10 @@ export const multipleMenu: IMenuData[] = [
 				type: 'column',
 				className: 'col-start-2',
 				navItems: [
-					{ name: 'V-Neck', href: '#' },
-					{ name: 'Crew-neck', href: '#' },
-					{ name: 'Polo', href: '#' },
-					{ name: 'Henley', href: '#' },
+					{ name: 'V-Neck', href: '/collections/freestyle' },
+					{ name: 'Crew-neck', href: '/collections/backcountry' },
+					{ name: 'Polo', href: '/collections/thermals-and-layers' },
+					{ name: 'Henley', href: '/collections/insulated-and-puffy-jackets' },
 				],
 			},
 		],
@@ -24,20 +24,20 @@ export const multipleMenu: IMenuData[] = [
 				type: 'column',
 				className: 'col-start-2',
 				navItems: [
-					{ name: 'V-Neck', href: '#' },
-					{ name: 'Crew-neck', href: '#' },
-					{ name: 'Polo', href: '#' },
-					{ name: 'Henley', href: '#' },
+					{ name: 'V-Neck', href: '/collections/freestyle' },
+					{ name: 'Crew-neck', href: '/collections/backcountry' },
+					{ name: 'Polo', href: '/collections/thermals-and-layers' },
+					{ name: 'Henley', href: '/collections/insulated-and-puffy-jackets' },
 				],
 			},
 			{
 				name: 'Men',
 				type: 'column',
 				navItems: [
-					{ name: 'Kangaroos', href: '#' },
-					{ name: 'Zip', href: '#' },
-					{ name: 'Polo', href: '#' },
-					{ name: 'Henley', href: '#' },
+					{ name: 'Kangaroos', href: '/collections/freestyle' },
+					{ name: 'Zip', href: '/collections/backcountry' },
+					{ name: 'Polo', href: '/collections/thermals-and-layers' },
+					{ name: 'Henley', href: '/collections/insulated-and-puffy-jackets' },
 				],
 			},
 			{
@@ -55,11 +55,11 @@ export const multipleMenu: IMenuData[] = [
 	},
 	{
 		name: 'Sweaters',
-		href: '#',
+		href: '/collections/freestyle',
 	},
 	{
 		name: 'Accessories',
-		href: '#',
+		href: '/collections/freestyle',
 	},
 	{
 		name: 'Blog',

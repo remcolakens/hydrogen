@@ -8,7 +8,7 @@ const meta: Meta<typeof AnnouncementBar> = {
 export default meta;
 type Story = StoryObj<typeof AnnouncementBar>;
 
-export const announcementbar: Story = {
+export const announcementBar: Story = {
 	render: () => (
 		<AnnouncementBar
 			variant="primary"

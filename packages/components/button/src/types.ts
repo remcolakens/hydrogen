@@ -1,5 +1,5 @@
 import { VariantProps } from 'class-variance-authority';
-import { ButtonHTMLAttributes } from 'react';
+import { ButtonHTMLAttributes, ReactNode } from 'react';
 import { buttonVariants } from './button';
 
 export interface IButtonProps
@@ -10,7 +10,7 @@ export interface IButtonProps
 }
 
 export interface IButton {
-	text?: string;
+	text?: string | ReactNode;
 	handleClick?: () => void;
 	href?: string;
 	size?: buttonSizeProps;

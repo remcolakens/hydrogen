@@ -36,7 +36,7 @@ const Footer: FC<IFooterProps> = ({ title, description }) => {
 					<ContainerContent>
 						<div className={defaultGridClasses()}>
 							<section className="col-span-2 md:col-span-3">
-								<Logo brand={false} size="large" className="mb-4" />
+								<Logo size="large" className="mb-4" />
 								<Text size="label1" weight="bold" className="mb-2">
 									{title}
 								</Text>

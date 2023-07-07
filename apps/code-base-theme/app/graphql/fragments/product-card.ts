@@ -1,15 +1,6 @@
-import gql from 'graphql-tag';
+import { PRODUCT_CARD_IMAGE_FRAGMENT } from './product-card-image';
 
-export const PRODUCT_CARD_IMAGE_FRAGMENT = gql`
-	fragment ProductCardImage on Image {
-		url
-		altText
-		width
-		height
-	}
-`;
-
-export const PRODUCT_CARD_FRAGMENT = gql`
+export const PRODUCT_CARD_FRAGMENT = `#graphql
 	fragment ProductCard on Product {
 		id
 		title
@@ -43,15 +34,4 @@ export const PRODUCT_CARD_FRAGMENT = gql`
 		}
 	}
 	${PRODUCT_CARD_IMAGE_FRAGMENT}
-`;
-
-export const HOMEPAGE_FEATURED_PRODUCTS_QUERY = gql`
-	query homepageFeaturedProducts {
-		products(first: 4) {
-			nodes {
-				...ProductCard
-			}
-		}
-	}
-	${PRODUCT_CARD_FRAGMENT}
-`;
+` as const;

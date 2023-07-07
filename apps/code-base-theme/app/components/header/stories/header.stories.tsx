@@ -1,4 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
+import { BrowserRouter } from 'react-router-dom';
 import { Header } from '~/components';
 
 const meta: Meta<typeof Header> = {
@@ -9,5 +10,9 @@ export default meta;
 type Story = StoryObj<typeof Header>;
 
 export const header: Story = {
-	render: () => <Header />,
+	render: () => (
+		<BrowserRouter>
+			<Header />
+		</BrowserRouter>
+	),
 };

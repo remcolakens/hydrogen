@@ -4,8 +4,6 @@ import { IProductCardProps } from '~/types';
 const productGridMapper = ({
 	products,
 }: HomepageFeaturedProductsQuery): IProductCardProps[] => {
-	const aspectRatio = '7 / 9';
-
 	return products.nodes.map((product) => {
 		const {
 			id,
@@ -24,7 +22,6 @@ const productGridMapper = ({
 			brand: vendor,
 			url: `/products/${handle}`,
 			name: title,
-			aspectRatio,
 			price: {
 				orginal: parseFloat(price.amount),
 				discount: compareAtPrice

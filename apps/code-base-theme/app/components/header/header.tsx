@@ -15,6 +15,7 @@ import {
 	cn,
 	defaultGridClasses,
 } from '@code-internet-applications/tailwind-utils';
+
 import { Link } from '@remix-run/react';
 import { FC, useState } from 'react';
 import { Logo, MainNavigation } from '~/components';
@@ -25,7 +26,7 @@ const Header: FC<IHeaderProps> = () => {
 	const [toggleMenu, setToggleMenu] = useState<boolean>(false);
 
 	return (
-		<header className="border-b border-gray-200">
+		<header className="z-40 border-b border-gray-200">
 			<Container className="my-0">
 				<ContainerContent>
 					<div
@@ -46,9 +47,9 @@ const Header: FC<IHeaderProps> = () => {
 
 						<Link
 							to="/"
-							className="flex flex-none justify-center rounded-lg border-4 border-transparent leading-none focus:border-notice-400 focus:outline-none md:justify-start"
+							className="box-content inline-flex h-7 w-7 flex-none justify-center rounded-lg border-4 border-transparent leading-none focus:border-notice-400 focus:outline-none md:justify-start"
 						>
-							<Logo brand={false} />
+							<Logo />
 						</Link>
 
 						<MainNavigation className="col-span-9 hidden md:block" />

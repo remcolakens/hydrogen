@@ -1,4 +1,4 @@
-export type { IDocumentProps } from './root';
+export type { IDocumentProps, IGridViewProps } from './globals';
 
 export type {
 	IFooterNavigationSectionItemProps,

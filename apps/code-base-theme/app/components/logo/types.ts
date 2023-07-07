@@ -5,5 +5,6 @@ import { logoVariants } from '~/components';
 export interface ILogoProps
 	extends HTMLAttributes<HTMLDivElement>,
 		VariantProps<typeof logoVariants> {
-	brand?: boolean;
+	text?: boolean;
+	variant?: 'regular' | 'monochrome';
 }

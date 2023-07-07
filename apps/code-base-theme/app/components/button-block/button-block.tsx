@@ -7,20 +7,20 @@ import { cn } from '@code-internet-applications/tailwind-utils';
 import { Link } from '@remix-run/react';
 import { FC } from 'react';
 
-const HeroImageButton: FC<IButton> = ({
+const ButtonBlock: FC<IButton> = ({
 	text,
 	handleClick,
 	href,
-	size,
-	variant,
+	size = 'lg',
+	variant = 'primary',
 	className,
 }) => {
 	if (handleClick && text) {
 		return (
 			<Button
-				variant={variant ?? 'primary'}
-				size={size ?? 'lg'}
-				className={cn(className, 'mt-8')}
+				variant={variant}
+				size={size}
+				className={cn(className)}
 				onClick={handleClick}
 			>
 				{text}
@@ -34,11 +34,10 @@ const HeroImageButton: FC<IButton> = ({
 				to={href}
 				className={cn(
 					buttonVariants({
-						variant: variant ?? 'primary',
-						size: size ?? 'lg',
+						variant: variant,
+						size: size,
 					}),
 					className,
-					'mt-8',
 				)}
 			>
 				{text}
@@ -49,4 +48,4 @@ const HeroImageButton: FC<IButton> = ({
 	return null;
 };
 
-export { HeroImageButton };
+export { ButtonBlock };

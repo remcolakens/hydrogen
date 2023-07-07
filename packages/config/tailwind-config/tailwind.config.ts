@@ -1,3 +1,4 @@
+/* eslint-disable eslint-comments/disable-enable-pair */
 /* eslint-disable @typescript-eslint/no-var-requires */
 import type { Config } from 'tailwindcss';
 import { PluginAPI } from 'tailwindcss/types/config';

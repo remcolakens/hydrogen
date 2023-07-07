@@ -1,15 +1,15 @@
+import { ChevronRightIcon } from '@code-internet-applications/icon';
 import { Container, ContainerContent } from '@code-internet-applications/react';
 import { Await, useLoaderData } from '@remix-run/react';
-import { LoaderArgs, defer } from '@shopify/remix-oxygen';
-import { print } from 'graphql';
+import { defer, type LoaderArgs } from '@shopify/remix-oxygen';
 import { Suspense } from 'react';
 import { HeroImage, ProductGrid, TextBlock } from '~/components';
-import { HOMEPAGE_FEATURED_PRODUCTS_QUERY } from '~/queries/homepageFeaturedProduct';
+import { HOMEPAGE_FEATURED_PRODUCTS_QUERY } from '~/graphql/homepage';
 
 export async function loader({ context }: LoaderArgs) {
 	return defer({
 		featuredProducts: context.storefront.query(
-			print(HOMEPAGE_FEATURED_PRODUCTS_QUERY),
+			HOMEPAGE_FEATURED_PRODUCTS_QUERY,
 		),
 	});
 }
@@ -39,7 +39,8 @@ export default function Homepage() {
 					}}
 					button={{
 						text: 'Shop collection',
-						href: '/collections',
+						href: '/collections/freestyle',
+						className: 'mt-8',
 					}}
 				/>
 			</ContainerContent>
@@ -62,8 +63,12 @@ export default function Homepage() {
 								title="Our bestsellers"
 								products={{ products: products }}
 								button={{
-									text: 'Shop all',
-									handleClick: () => console.log('Hello'),
+									text: (
+										<>
+											Shop all <ChevronRightIcon className="ml-2" />
+										</>
+									),
+									href: '/collections/freestyle',
 								}}
 							/>
 						)}

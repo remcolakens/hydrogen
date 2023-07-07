@@ -1,5 +1,7 @@
+export { ButtonBlock } from '~/components/button-block/button-block';
 export { Footer } from '~/components/footer/footer';
 export { Header } from '~/components/header/header';
+export { HeadingBlock } from '~/components/heading-block/heading-block';
 export { HeroImage } from '~/components/hero-image/hero-image';
 export { HydrogenImage } from '~/components/hydrogen-image/hydrogen-image';
 export { Image } from '~/components/image/image';

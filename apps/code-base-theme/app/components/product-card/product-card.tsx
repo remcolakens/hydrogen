@@ -26,6 +26,7 @@ const ProductCard: FC<IProductCardProps> = ({
 	badges,
 	featuredImage,
 	images,
+	sizes,
 }) => {
 	const [image, setImage] = useState<IProductCardImage>(
 		featuredImage ?? defaultImage,
@@ -60,7 +61,7 @@ const ProductCard: FC<IProductCardProps> = ({
 
 					<HydrogenImage
 						aspectRatio={aspectRatio}
-						sizes="(min-width: 1440px) 320px, (min-width: 375px) 160px"
+						sizes={sizes ?? ''}
 						name={name}
 						image={image}
 						className="overflow-hidden rounded-2xl"

@@ -46,7 +46,9 @@ const product: IProductCardProps = {
 export const productCard: Story = {
 	render: () => (
 		<BrowserRouter>
-			<ProductCard {...product} />
+			<div className="w-80">
+				<ProductCard {...product} />
+			</div>
 		</BrowserRouter>
 	),
 };

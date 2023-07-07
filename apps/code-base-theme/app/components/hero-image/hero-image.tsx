@@ -4,9 +4,8 @@ import {
 	defaultGridClasses,
 } from '@code-internet-applications/tailwind-utils';
 import { FC } from 'react';
-import { HydrogenImage } from '~/components';
+import { ButtonBlock, HydrogenImage } from '~/components';
 import type { IHeroImageProps } from '~/types';
-import { HeroImageButton } from './hero-image-button';
 
 const HeroImage: FC<IHeroImageProps> = ({
 	title,
@@ -53,7 +52,7 @@ const HeroImage: FC<IHeroImageProps> = ({
 					{description}
 				</Text>
 
-				<HeroImageButton
+				<ButtonBlock
 					text={button?.text}
 					handleClick={button?.handleClick}
 					href={button?.href}

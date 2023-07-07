@@ -11,6 +11,7 @@ export interface IProductCardProps {
 	badges: IProductCardBadge[];
 	featuredImage?: IProductCardImage;
 	images?: IProductCardImage[];
+	sizes?: string;
 }
 export interface IProductCardPrice {
 	orginal: number;

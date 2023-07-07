@@ -7,6 +7,19 @@ const storyLogo = () => {
 	return (
 		<div className="grid-flow-col-1 grid gap-4">
 			<div>
+				<Logo variant="monochrome" text={true} />
+			</div>
+			<div>
+				<Logo text={true} />
+			</div>
+			<div>
+				<Logo variant="monochrome" size="small" text={true} />
+			</div>
+			<div>
+				<Logo size="small" text={true} />
+			</div>
+
+			<div>
 				<Logo variant="monochrome" />
 			</div>
 			<div>
@@ -17,19 +30,6 @@ const storyLogo = () => {
 			</div>
 			<div>
 				<Logo size="small" />
-			</div>
-
-			<div>
-				<Logo variant="monochrome" brand={false} />
-			</div>
-			<div>
-				<Logo brand={false} />
-			</div>
-			<div>
-				<Logo variant="monochrome" size="small" brand={false} />
-			</div>
-			<div>
-				<Logo size="small" brand={false} />
 			</div>
 		</div>
 	);
