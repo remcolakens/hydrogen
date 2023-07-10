@@ -1,5 +1,14 @@
 # @code-internet-applications/eslint-config-code
 
+## 0.3.0
+
+### Minor Changes
+
+- [#74](https://github.com/code-internet-applications/cbt-hydrogen/pull/74)
+  [`b18a13b`](https://github.com/code-internet-applications/cbt-hydrogen/commit/b18a13bd0b95bdb9fb8bf492c0ff471a0a594408)
+  Thanks [@remcolakens](https://github.com/remcolakens)! - Added eslint-comments
+  for better support with Hydrogen linting
+
 ## 0.2.0
 
 ### Minor Changes

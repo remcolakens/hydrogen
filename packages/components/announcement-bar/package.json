@@ -1,6 +1,6 @@
 {
 	"name": "@code-internet-applications/announcement-bar",
-	"version": "0.0.0",
+	"version": "0.1.0",
 	"description": "The announcement bar is a component for displaying important messages or announcements",
 	"author": "Code Internet Applications <info@code.nl>",
 	"repository": {

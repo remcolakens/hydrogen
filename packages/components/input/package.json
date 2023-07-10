@@ -1,6 +1,6 @@
 {
 	"name": "@code-internet-applications/input",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Input component is a component that is used to get user input in a text field.",
 	"author": "Code Internet Applications <info@code.nl>",
 	"repository": {

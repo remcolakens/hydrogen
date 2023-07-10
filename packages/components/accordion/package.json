@@ -1,6 +1,6 @@
 {
 	"name": "@code-internet-applications/accordion",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "A simple and accessible accordion component for React",
 	"author": "Code Internet Applications <info@code.nl>",
 	"repository": {

@@ -1,6 +1,6 @@
 {
 	"name": "@code-internet-applications/icon",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"description": "A base React component for icons",
 	"author": "Code Internet Applications <info@code.nl>",
 	"repository": {

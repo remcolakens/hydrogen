@@ -1,5 +1,26 @@
 # @code-internet-applications/tailwind-config
 
+## 0.6.0
+
+### Minor Changes
+
+- [#72](https://github.com/code-internet-applications/cbt-hydrogen/pull/72)
+  [`21f5a89`](https://github.com/code-internet-applications/cbt-hydrogen/commit/21f5a89c63988ca10444b86a8b5e7205a219fec9)
+  Thanks [@remcolakens](https://github.com/remcolakens)! - SCH-93: Add hero
+  banner component
+
+- [#69](https://github.com/code-internet-applications/cbt-hydrogen/pull/69)
+  [`85661c1`](https://github.com/code-internet-applications/cbt-hydrogen/commit/85661c187763889d037909a68fc718b3e7280c80)
+  Thanks [@remcolakens](https://github.com/remcolakens)! - Fixed issue in
+  twMerge where custom theme scales are not recognized
+
+### Patch Changes
+
+- [#76](https://github.com/code-internet-applications/cbt-hydrogen/pull/76)
+  [`9d42df4`](https://github.com/code-internet-applications/cbt-hydrogen/commit/9d42df4444896b28c0b955b1283df2c8996d5e51)
+  Thanks [@remcolakens](https://github.com/remcolakens)! - Fixed issue with
+  eslint comments
+
 ## 0.5.0
 
 ### Minor Changes

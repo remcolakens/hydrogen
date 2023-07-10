@@ -1,6 +1,6 @@
 {
 	"name": "@code-internet-applications/price",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "A small, lightweight javascript library for working with currency values.",
 	"author": "Code Internet Applications <info@code.nl>",
 	"repository": {

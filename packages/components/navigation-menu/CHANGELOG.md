@@ -1,6 +1,13 @@
-# @code-internet-applications/radio
+# @code-internet-applications/navigation-menu
 
-## 0.1.1
+## 0.1.0
+
+### Minor Changes
+
+- [#69](https://github.com/code-internet-applications/cbt-hydrogen/pull/69)
+  [`85661c1`](https://github.com/code-internet-applications/cbt-hydrogen/commit/85661c187763889d037909a68fc718b3e7280c80)
+  Thanks [@remcolakens](https://github.com/remcolakens)! - SCH-13: Added basic
+  header styling and new react component
 
 ### Patch Changes
 
@@ -9,12 +16,4 @@
   [`85661c1`](https://github.com/code-internet-applications/cbt-hydrogen/commit/85661c187763889d037909a68fc718b3e7280c80),
   [`92907c5`](https://github.com/code-internet-applications/cbt-hydrogen/commit/92907c5c2d639caf3e987616207a12faeabb12c7)]:
   - @code-internet-applications/tailwind-utils@0.4.0
-
-## 0.1.0
-
-### Minor Changes
-
-- [#58](https://github.com/code-internet-applications/cbt-hydrogen/pull/58)
-  [`1368a2a`](https://github.com/code-internet-applications/cbt-hydrogen/commit/1368a2a1daf50c12e752b301a3453b253269f391)
-  Thanks [@remcolakens](https://github.com/remcolakens)! - SCH-34: Added new
-  radio buttons to match with the CBT design
+  - @code-internet-applications/icon@0.2.1

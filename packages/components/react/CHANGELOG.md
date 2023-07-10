@@ -1,5 +1,48 @@
 # @code-internet-applications/react
 
+## 0.5.0
+
+### Minor Changes
+
+- [#75](https://github.com/code-internet-applications/cbt-hydrogen/pull/75)
+  [`0486806`](https://github.com/code-internet-applications/cbt-hydrogen/commit/0486806eba4e19371c2de948a38017407486a056)
+  Thanks [@remcolakens](https://github.com/remcolakens)! - Add announcement bar
+
+- [#69](https://github.com/code-internet-applications/cbt-hydrogen/pull/69)
+  [`85661c1`](https://github.com/code-internet-applications/cbt-hydrogen/commit/85661c187763889d037909a68fc718b3e7280c80)
+  Thanks [@remcolakens](https://github.com/remcolakens)! - SCH-13: Added basic
+  header styling and new react component
+
+### Patch Changes
+
+- Updated dependencies
+  [[`0486806`](https://github.com/code-internet-applications/cbt-hydrogen/commit/0486806eba4e19371c2de948a38017407486a056),
+  [`21f5a89`](https://github.com/code-internet-applications/cbt-hydrogen/commit/21f5a89c63988ca10444b86a8b5e7205a219fec9),
+  [`b18a13b`](https://github.com/code-internet-applications/cbt-hydrogen/commit/b18a13bd0b95bdb9fb8bf492c0ff471a0a594408),
+  [`85661c1`](https://github.com/code-internet-applications/cbt-hydrogen/commit/85661c187763889d037909a68fc718b3e7280c80),
+  [`85661c1`](https://github.com/code-internet-applications/cbt-hydrogen/commit/85661c187763889d037909a68fc718b3e7280c80),
+  [`21f5a89`](https://github.com/code-internet-applications/cbt-hydrogen/commit/21f5a89c63988ca10444b86a8b5e7205a219fec9),
+  [`92907c5`](https://github.com/code-internet-applications/cbt-hydrogen/commit/92907c5c2d639caf3e987616207a12faeabb12c7),
+  [`563ce94`](https://github.com/code-internet-applications/cbt-hydrogen/commit/563ce94141d7535664e51bdd6190761a70d16164),
+  [`563ce94`](https://github.com/code-internet-applications/cbt-hydrogen/commit/563ce94141d7535664e51bdd6190761a70d16164),
+  [`b18a13b`](https://github.com/code-internet-applications/cbt-hydrogen/commit/b18a13bd0b95bdb9fb8bf492c0ff471a0a594408)]:
+  - @code-internet-applications/announcement-bar@0.1.0
+  - @code-internet-applications/heading@0.3.0
+  - @code-internet-applications/button@0.2.0
+  - @code-internet-applications/text@0.3.0
+  - @code-internet-applications/navigation-menu@0.1.0
+  - @code-internet-applications/container@0.2.0
+  - @code-internet-applications/quantity-selector@0.1.1
+  - @code-internet-applications/textarea@0.1.1
+  - @code-internet-applications/select@0.1.1
+  - @code-internet-applications/input@0.1.1
+  - @code-internet-applications/card@0.2.0
+  - @code-internet-applications/accordion@0.1.1
+  - @code-internet-applications/badge@0.2.1
+  - @code-internet-applications/label@0.2.1
+  - @code-internet-applications/price@0.1.1
+  - @code-internet-applications/radio@0.1.1
+
 ## 0.4.0
 
 ### Minor Changes

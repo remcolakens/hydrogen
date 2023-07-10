@@ -1,6 +1,6 @@
 {
 	"name": "@code-internet-applications/eslint-config-code",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"description": "Shareable ESLint config",
 	"author": "Code Internet Applications <info@code.nl>",
 	"repository": {

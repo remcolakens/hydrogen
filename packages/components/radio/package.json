@@ -1,6 +1,6 @@
 {
 	"name": "@code-internet-applications/radio",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "Radios are used when only one choice may be selected in a series of options.",
 	"author": "Code Internet Applications <info@code.nl>",
 	"repository": {

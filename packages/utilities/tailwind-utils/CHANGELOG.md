@@ -1,5 +1,26 @@
 # @code-internet-applications/tailwind-utils
 
+## 0.4.0
+
+### Minor Changes
+
+- [#74](https://github.com/code-internet-applications/cbt-hydrogen/pull/74)
+  [`b18a13b`](https://github.com/code-internet-applications/cbt-hydrogen/commit/b18a13bd0b95bdb9fb8bf492c0ff471a0a594408)
+  Thanks [@remcolakens](https://github.com/remcolakens)! - Add default grid
+  classes
+
+- [#69](https://github.com/code-internet-applications/cbt-hydrogen/pull/69)
+  [`85661c1`](https://github.com/code-internet-applications/cbt-hydrogen/commit/85661c187763889d037909a68fc718b3e7280c80)
+  Thanks [@remcolakens](https://github.com/remcolakens)! - Fixed issue in
+  twMerge where custom theme scales are not recognized
+
+### Patch Changes
+
+- [#71](https://github.com/code-internet-applications/cbt-hydrogen/pull/71)
+  [`92907c5`](https://github.com/code-internet-applications/cbt-hydrogen/commit/92907c5c2d639caf3e987616207a12faeabb12c7)
+  Thanks [@remcolakens](https://github.com/remcolakens)! - The form styling has
+  been refactored to improve the IDE experience.
+
 ## 0.3.0
 
 ### Minor Changes

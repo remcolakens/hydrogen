@@ -1,6 +1,6 @@
 {
 	"name": "@code-internet-applications/quantity-selector",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "This component will handle the logic and styling of the product quantity",
 	"author": "Code Internet Applications <info@code.nl>",
 	"repository": {
